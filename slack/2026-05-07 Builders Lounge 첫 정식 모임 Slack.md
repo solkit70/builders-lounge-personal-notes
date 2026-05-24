@@ -18,7 +18,7 @@ tags:
 
 ## Summary
 
-2026년 5월 7일 Builders Lounge 첫 정식 모임을 앞두고 Slack에 모임 안내, 방향성, 이름 후보, 온라인 참석 안내, 당일 현장 공지, Gobi 관련 링크가 공유됐다. 이 모임은 당시 "AI Agent Builder (가칭)"으로 안내되었고, 핵심 agenda는 GOBI Hands-on, 모임 방향성 논의, 모임 이름 정하기, GOBI Space 전용 공간 만들기, 향후 운영 방식 논의였다. 당일에는 Bellevue City Hall 1E-120에서 오프라인 모임이 진행되었고, Gobi CLI, Gobi Space, Changbal Space, Jinyoung Kim의 Gobi Space 홈페이지 링크가 공유됐다.
+2026년 5월 7일 Builders Lounge 첫 정식 모임을 앞두고 Slack에 모임 안내, 방향성, 이름 후보, 온라인 참석 안내, 당일 현장 공지, Gobi 관련 링크가 공유됐다. 이 모임은 당시 "AI Agent Builder (가칭)"으로 안내되었고, 핵심 agenda는 GOBI Hands-on, 모임 방향성 논의, 모임 이름 정하기, GOBI Space 전용 공간 만들기, 향후 운영 방식 논의였다. 당일에는 Bellevue City Hall 1E-120에서 오프라인 모임이 진행되었고, 총 10명이 참석했다. 모임 후속 공지 기준 참석자는 강민석, David Sejin Park, 남승현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, Minsuk Kang, Dokyu Lee, 박창수다.
 
 → **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-04-11 Builders Lounge 준비 모임과 첫 오프라인 모임 Slack#4월 30일~5월 1일: 벨뷰 시청 장소 승인과 기록 계획|벨뷰 시청 장소 승인과 기록 계획]] 이후 5월 7일 첫 정식 모임 안내로 이어졌다.
 
@@ -225,9 +225,22 @@ tags:
 
 첨부 스크린샷에는 Jinyoung Kim의 Gobi Space 홈페이지가 공유되었다.
 
+## 첫 정식 모임 참석자
+
+5월 9일 후속 공지에서 2026년 5월 7일 Bellevue City Hall에서 열린 첫 정식 오프라인 모임 참석자는 총 10명으로 정리되었다. 이 명단은 첫 정식 모임의 실제 참여 규모와 초기 멤버 구성을 확인하는 기준으로 사용한다.
+
+| 구분 | 내용 |
+| ---- | ---- |
+| 일시 | 2026-05-07 18:30~20:30 |
+| 장소 | Bellevue City Hall, Meeting Room 1E-120 |
+| 참석자 수 | 총 10명 |
+| 참석자 | 강민석, David Sejin Park, 남승현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, Minsuk Kang, Dokyu Lee, 박창수 |
+
+→ **후속 공지**: [[AI/Initiatives/Builders Lounge/slack/2026-05-09 Builders Lounge 1회 후속 Slack#5월 9일: 1회 오프라인 모임 결과 공지|1회 오프라인 모임 결과 공지]]에서 공식 명칭이 Builders Lounge로 확정되었고, GOBI Space 개설 예정과 지속적인 소통 계획이 함께 공유되었다.
+
 ## 의미와 연결점
 
-이 Slack thread는 Builders Lounge 첫 정식 모임의 운영 의도를 잘 보여준다. 당시 이름은 아직 확정 전이어서 "AI Agent Builder (가칭)"으로 안내되었고, 모임의 핵심은 GOBI Hands-on과 운영 방향 합의였다. 김성진님의 Vibe Coding 사례 발표는 다음 기회로 연기되었고, 대신 모임 이름, GOBI Space 전용 공간, 운영 방식, 피드백 방식이 주요 논의 주제로 올라왔다.
+이 Slack thread는 Builders Lounge 첫 정식 모임의 운영 의도를 잘 보여준다. 당시 이름은 아직 확정 전이어서 "AI Agent Builder (가칭)"으로 안내되었고, 모임의 핵심은 GOBI Hands-on과 운영 방향 합의였다. 첫 정식 모임에는 총 10명이 참석했고, 김성진님의 Vibe Coding 사례 발표는 다음 기회로 연기되었다. 대신 모임 이름, GOBI Space 전용 공간, 운영 방식, 피드백 방식이 주요 논의 주제로 올라왔다.
 
 특히 방향성 댓글에 정리된 5가지 원칙은 이후 Builders Lounge 운영 철학의 기준점이 된다. Practical Build, Builder for Builders, Workflow Sharing, Collective Intelligence, Open Ecosystem은 모두 Custom Homepage와 공동 기록 저장소 설계에 직접 반영해야 할 요구사항이다.
 
@@ -236,6 +249,7 @@ tags:
 | 포인트 | Slack 대화에서 나온 근거 | Builders Lounge로의 연결 |
 | ------ | ----------------------- | ------------------------ |
 | 첫 정식 모임 | 2026-05-07 Bellevue City Hall 1E-120 | Builders Lounge 운영 시작점 |
+| 참석자 | 총 10명 참석 | 초기 멤버 기반과 후속 공유 대상 |
 | 5가지 방향성 | Practical Build, Builder for Builders, Workflow Sharing, Collective Intelligence, Open Ecosystem | 홈페이지와 운영 규칙의 기준 |
 | 첫 번째 고객 | Builder for Builders 원칙 | Product Feedback / Review Template |
 | GOBI Hands-on | Gobi CLI, Gobi Space, Changbal Space 링크 공유 | 공동 지식 축적 인프라 |

@@ -32,7 +32,7 @@ tags:
 >
 > 1️⃣ 함께해주신 분들 (총 10명) 👥
 >
-> 강민석, David Sejin Park, 남송현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, MinSuk Kang, Dokyu Lee, 박창수
+> 강민석, David Sejin Park, 남승현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, Minsuk Kang, Dokyu Lee, 박창수
 >
 > (함께해주셔서 자리를 빛내주신 모든 분들께 감사드립니다!)
 >
