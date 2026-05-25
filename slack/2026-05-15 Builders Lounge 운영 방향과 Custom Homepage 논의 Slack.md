@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 운영 방향과 Custom Homepage 논의 Slack"
 source: "Changbal Slack thread screenshots, 2026-05-15~2026-05-21"
 author:
@@ -18,11 +18,17 @@ tags:
   - gobi-space
 ---
 
-## Summary
+## 요약
 
-2026년 5월 15일 이후 Builders Lounge의 운영 방향이 더 구체화되었다. 핵심 결정은 별도 Space를 만들기보다 기존 **Changbal Gobi Space**를 함께 활용하고, 내부 별칭으로 **창발 빌라**를 쓰자는 것이다. 다음 단계로는 각자가 만든 Product를 형식에 맞게 소개하고, 서로의 첫 번째 고객이 되어 피드백을 주고받는 구조를 만들기로 했다. 이어진 대화에서는 비개발자도 Vibe Coding과 AI 활용에 관심이 있으면 참여할 수 있는 커뮤니티 방향, VC perspective 리뷰 요청, Gobi Space Custom Homepage로 Product Showcase / Review / Feedback 기능을 구현할 수 있는지에 대한 논의가 이어졌다.
+2026년 5월 15일 이후 Builders Lounge 운영 방향이 더 구체화되었습니다.
 
-→ **이전 공지**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 Builders Lounge 진행 상황 공지]]는 이 Slack 흐름의 정리본에 해당한다.
+- 운영 공간: 별도 Space를 바로 만들기보다 기존 **Changbal Gobi Space**를 함께 활용
+- 내부 별칭: **창발 빌라**
+- 다음 단계: Product 소개 형식 정리, 첫 사용자 feedback 구조 마련
+- 새 논의: 비개발자 참여 가능성, VC perspective 리뷰 요청, Custom Homepage 구현 가능성
+- 기능 후보: Product Showcase, Review, Feedback Board
+
+→ **이전 공지**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 Builders Lounge 진행 상황 공지]]는 이 Slack 흐름의 정리본입니다.
 
 ## 관련 링크
 
@@ -225,7 +231,7 @@ tags:
 
 > 예 가급적 빨리 한번 볼 수 있도록 할께요. 제가 다른데 정신이 팔려서 진행이 좀 느려졌네요. 일단 다음 발표 하실 김성진님과 얘기 해서 일정과 모임 방식이 정해 지면 곧바로 날짜 잡겠습니다.
 
-## 의미와 연결점
+## 의미와 연결 포인트
 
 이 대화는 Builders Lounge의 Product Feedback 운영 방식이 실제 기능 요구사항으로 변환되는 과정이다. 5월 15일 공지에서는 `Product 소개 템플릿`, `Observer / 입주 멤버` 멤버십, `창발 빌라`라는 운영 공간이 정리되었다. 이후 Hong Wi의 VC perspective 리뷰 요청은 Builders Lounge가 제공해야 할 실질적 가치가 무엇인지 보여주는 실제 사례가 되었다. MinSuk Kang의 답변은 Gobi Space의 post, 댓글, 향후 tag/dashboard 기능을 Product Showcase와 Review 시스템으로 연결할 수 있음을 시사한다.
 

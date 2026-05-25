@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 2회 준비 브레인덤프"
 created: 2026-05-24 12:50:26
 tags:
@@ -14,9 +14,12 @@ links:
 
 ## 요약
 
-Builders Lounge는 1회 모임을 무사히 마쳤고, 이제 2회 모임을 준비하는 단계다. 이번 브레인덤프의 핵심은 두 가지다. 첫째, 멤버들이 각자 Build 중이거나 이미 Build한 제품을 소개하고 서로의 첫 번째 사용자가 되어 피드백을 주는 흐름을 실제 운영 방식으로 만드는 것이다. 둘째, 그 과정에서 생기는 Slack 대화, Gobi Space 논의, 온라인/오프라인 Pitch, 회의 내용을 공동으로 기록해 나중에 AI로 새로운 시도와 결과물을 만들 수 있는 기반을 마련하는 것이다.
+Builders Lounge 2회 준비의 핵심은 아래 두 가지입니다.
 
-→ **운영 맥락**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 진행 상황 공지]]에서는 Builders Lounge의 핵심 활동을 "각자 만든 Product를 서로의 첫 번째 고객으로서 사용해보고 피드백을 주고받는 것"으로 정리했다.
+- **Product Demo + 첫 사용자 feedback**: 멤버분들이 각자 Build 중이거나 이미 Build한 제품을 소개하고, 서로 첫 번째 사용자 관점에서 피드백을 드리는 흐름
+- **기록 기반 Collective Intelligence**: Slack, Gobi Space, 온라인/오프라인 Pitch, 회의 내용을 공동 기록으로 남기고 나중에 AI가 활용할 수 있는 기반 마련
+
+→ **운영 맥락**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 진행 상황 공지]]에서는 Builders Lounge의 핵심 활동을 "각자 만든 Product를 서로의 첫 번째 고객으로서 사용해보고 피드백을 주고받는 것"으로 정리했습니다.
 
 ## 원문 브레인덤프
 
@@ -32,27 +35,38 @@ Builders Lounge는 1회 모임을 무사히 마쳤고, 이제 2회 모임을 준
 >
 > 위 내용들과 관련해서 다음 모임에서 멤버들과 의견을 나누면 좋겠네요.
 
-## 핵심 방향성 정리
+## 핵심 방향
 
-### 1. Product Demo와 첫 번째 사용자 피드백
+### 1. Product Demo와 첫 사용자 피드백
 
-Builders Lounge 2회의 가장 중요한 축은 "내가 만든 것"을 보여주고 "다른 멤버가 실제 사용자로 반응하는 것"이다. 단순 발표가 아니라, 제품을 직접 써보고 첫 번째 고객 관점에서 피드백을 주는 모임이어야 한다. 이 흐름이 잘 작동하면 각자는 제품을 개선할 수 있고, 멤버들 사이에는 협업 기회도 자연스럽게 생긴다.
+- 2회 모임의 중심은 "내가 만든 것"을 보여드리고, 다른 멤버분들이 실제 사용자 관점에서 반응해 주시는 흐름입니다.
+- 단순 발표보다 **직접 사용 + 구체적 feedback**이 중요합니다.
+- 발표자에게 미리 요청하면 좋은 항목:
+  - Product 이름
+  - URL / GitHub
+  - Demo 방법
+  - 해결하려는 문제
+  - 받고 싶은 feedback
 
-다음 모임에서는 발표자에게 단순 소개 자료를 요청하기보다, Product 이름, URL/GitHub, Demo 방법, 해결하려는 문제, 받고 싶은 피드백을 미리 제출하게 하는 방식이 좋다. 이 형식은 [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#🚀 다음 단계 — 내 Product 소개하기|5/18 공지의 Product 소개 형식]]과도 연결된다.
+### 2. 기록 기반 AI 활용
 
-### 2. 기록을 남겨 AI 활용 기반 만들기
-
-두 번째 축은 기록이다. Builders Lounge에서 오가는 대화와 피드백을 남기면, 나중에 AI가 이를 읽고 제품 개선안, 회고 문서, 커뮤니티 리포트, 홈페이지 콘텐츠, 협업 기회 분석 같은 결과물을 만들 수 있다. 기록은 단순 아카이브가 아니라, 미래의 AI 활용을 위한 원천 데이터가 된다.
-
-개인 컴퓨터에만 저장하는 방식은 부담이 크고 지속 가능하지 않다. 멤버들이 함께 접근하고 관리할 수 있는 공동 위치가 필요하며, 기록 담당 멤버를 정해 최소한의 운영 규칙을 만드는 것이 중요하다.
+- 모임에서 오가는 대화와 피드백은 나중에 AI가 활용할 수 있는 원천 자료가 됩니다.
+- 기록을 남기면 아래 작업이 쉬워집니다.
+  - Product 개선안 정리
+  - 모임 회고
+  - 커뮤니티 리포트
+  - 홈페이지 콘텐츠 생성
+  - 협업 기회 분석
+- 개인 컴퓨터에만 저장하기보다, 멤버분들이 함께 접근할 수 있는 공동 위치가 필요합니다.
 
 ## Gobi Space Custom Homepage 아이디어
 
-### 기본 생각
+### 기본 방향
 
-Gobi Space의 Custom Homepage를 이용해 Builders Lounge 운영에 필요한 기능을 담은 홈페이지를 만든다. 홈페이지는 완성된 하나의 정답이 아니라, 실제로 써보면서 멤버들의 의견을 반영해 계속 고쳐 나가는 실험 공간으로 둔다.
-
-Vibe Coding 시대에는 하나의 제품만 있을 필요가 없다. 각자 Builders Lounge의 핵심 요구조건을 잘 구현하는 홈페이지를 만들어볼 수 있고, 더 좋은 홈페이지가 나오면 그것을 사용하면 된다. 특정 기능이 좋다면 Main 홈페이지를 정한 뒤 그 기능을 흡수하는 방식으로 발전시킬 수 있다.
+- Gobi Space의 Custom Homepage를 Builders Lounge 운영 실험 공간으로 활용합니다.
+- 완성된 하나의 정답을 만들기보다, 실제로 써보면서 멤버분들의 의견을 반영해 개선합니다.
+- Vibe Coding 시대에는 여러 prototype이 동시에 나올 수 있습니다.
+- 더 좋은 기능이 나오면 main homepage에 흡수하는 방식도 가능합니다.
 
 ### 필요한 기능 후보
 
@@ -60,66 +74,76 @@ Vibe Coding 시대에는 하나의 제품만 있을 필요가 없다. 각자 Bui
 | ---- | ---- | ---- |
 | 멤버 Product 목록 | 누가 무엇을 만들고 있는지 한눈에 보기 | Product 이름, 링크, Demo 가능 여부 |
 | Demo 신청/예정 목록 | 다음 모임 발표자와 Demo 순서 관리 | 김성진님 Product Demo부터 시작 가능 |
-| 피드백 카드 | 첫 번째 사용자 피드백을 구조화 | 좋았던 점, 막힌 점, 개선 제안 |
+| 피드백 카드 | 첫 사용자 feedback 구조화 | 좋았던 점, 막힌 점, 개선 제안 |
 | 기록 링크 모음 | Slack, Gobi Space, 회의록, Pitch 기록 연결 | 기록 저장소와 연결 필요 |
 | 진행 상황 보드 | 각 Product의 후속 액션 추적 | 완료/진행/보류 상태 |
 
-### 다음 모임에서 물어볼 질문
+### 다음 모임 질문
 
-- Builders Lounge 홈페이지가 꼭 가져야 할 기능은 무엇인가?
-- Product Demo를 신청하고 관리하는 방식은 어떤 형태가 편한가?
-- 피드백은 익명보다 실명 기반이 좋은가, 아니면 상황에 따라 선택해야 하는가?
-- 여러 홈페이지 실험이 생겼을 때 Main 홈페이지를 정하는 기준은 무엇인가?
-- Gobi Space Custom Homepage를 우선 쓰되, GitHub Pages나 별도 웹앱도 병행해도 되는가?
+- Builders Lounge homepage에 꼭 필요한 기능은 무엇일까요?
+- Product Demo 신청과 관리는 어떤 방식이 편할까요?
+- Feedback은 실명 기반이 좋을까요, 상황에 따라 익명도 허용할까요?
+- 여러 homepage 실험이 생기면 main homepage를 어떤 기준으로 정할까요?
+- Gobi Space Custom Homepage를 우선 쓰되, GitHub Pages나 별도 웹앱도 병행할까요?
 
 ## 공동 기록 저장소 아이디어
 
-### 기록할 대상
+### 기록 대상
 
 | 기록 대상 | 예시 | 기록 방식 후보 |
 | -------- | ---- | -------------- |
-| Slack 대화 | #club-sg-ai의 Builders Lounge 논의 | 주간 요약, 결정사항, 액션 아이템 |
-| Gobi Space 대화 | 창발 Space 안의 Builders Lounge 관련 글 | 링크 수집, 주요 댓글 요약 |
+| Slack 대화 | `#club-sg-ai` Builders Lounge 논의 | 주간 요약, 결정사항, 액션 아이템 |
+| Gobi Space 대화 | Changbal Space의 Builders Lounge 관련 글 | 링크 수집, 주요 댓글 요약 |
 | 오프라인 Pitch | Product Demo, Q&A, 피드백 | 녹음/전사 후 요약 |
 | 온라인 회의 | Zoom 또는 기타 미팅 | 녹화/전사, 회의록 |
-| Product 정보 | URL, GitHub, Demo 방법, 요청 피드백 | 표준 템플릿 |
+| Product 정보 | URL, GitHub, Demo 방법, 요청 feedback | 표준 템플릿 |
 
 ### 저장 위치 후보
 
-GitHub Repo는 첫 번째 공동 저장소 후보가 될 수 있다. 장점은 멤버들이 Pull Request나 Issue로 변경 내역을 남길 수 있고, 기록의 버전 관리가 가능하다는 점이다. 단점은 GitHub에 익숙하지 않은 멤버에게 진입 장벽이 있을 수 있으므로, 기록 담당 멤버를 먼저 정하고 운영 방식을 단순하게 시작하는 편이 좋다.
+| 후보 | 장점 | 주의할 점 |
+| ---- | ---- | -------- |
+| GitHub Repo | 버전 관리, PR/Issue 활용 가능 | GitHub에 익숙하지 않은 멤버분들께 진입 장벽 |
+| Gobi Space | 커뮤니티 대화와 공개 공유에 적합 | 장기 기록 검색과 재사용 방식 검토 필요 |
+| Google Docs/Drive | 접근이 쉽고 협업 문서에 익숙함 | 장기 구조화와 AI 활용 방식 별도 설계 필요 |
 
-Gobi Space는 커뮤니티 대화와 공개 공유에 강점이 있다. 다만 장기 기록 저장소로 충분한지, 검색과 재사용이 편한지는 실제 사용하면서 확인해야 한다. 현실적인 시작점은 Gobi Space에 대화와 공유를 남기고, 핵심 결정사항과 회의록은 GitHub Repo 또는 별도 공동 문서 저장소에 정리하는 혼합 방식이다.
+현실적인 시작점은 **Gobi Space에 대화와 공유를 남기고, 핵심 결정사항과 회의록은 GitHub Repo 또는 별도 공동 문서 저장소에 정리하는 혼합 방식**입니다.
 
 ### 기록 담당 운영안
 
-- 기록 담당 멤버 1~2명을 먼저 정한다.
-- 각 모임마다 기록 담당자를 회전할지, 고정할지 논의한다.
-- 기록 템플릿을 만든다: 날짜, 참석자, Demo 제품, 주요 피드백, 결정사항, 액션 아이템.
-- 민감한 내용과 공개 가능한 내용을 구분한다.
-- AI 활용을 전제로 원본 기록, 요약본, 공개본을 나눌지 논의한다.
+- 기록 담당 멤버 1~2명 지정
+- 모임마다 담당자를 회전할지 고정할지 논의
+- 기록 템플릿 준비
+  - 날짜
+  - 참석자
+  - Demo 제품
+  - 주요 feedback
+  - 결정사항
+  - action item
+- 공개 가능한 내용과 민감한 내용 구분
+- 원본 기록, 요약본, 공개본 분리 여부 논의
 
-## Builders Lounge 2회 논의 의제 초안
+## 2회 논의 의제 초안
 
 1. Builders Lounge 5가지 방향성 재확인
 2. Product Demo 중심 운영 방식 합의
 3. 김성진님 Product Demo 진행 방식 확인
 4. Gobi Space Custom Homepage 실험 제안
-5. 여러 홈페이지 실험과 Main 홈페이지 선정 방식 논의
+5. 여러 homepage 실험과 main homepage 선정 기준 논의
 6. 공동 기록 저장소 필요성 논의
 7. GitHub Repo 또는 대체 저장소 후보 검토
-8. 기록 담당 멤버와 기록 템플릿 정하기
+8. 기록 담당 멤버와 기록 템플릿 논의
 9. 다음 모임 일정과 준비 항목 확정
 
 ## 다음 액션
 
-- [ ] Builders Lounge 5가지 방향성을 다시 정리해 다음 모임 시작 자료로 준비한다.
-- [ ] 김성진님 Product Demo에 필요한 정보 형식을 요청한다.
-- [ ] Gobi Space Custom Homepage 1차 기능 목록을 더 구체화한다.
-- [ ] 공동 기록 저장소 후보를 GitHub Repo, Gobi Space, Google Docs/Drive 등으로 비교한다.
-- [ ] 기록 담당 멤버 제안안을 만든다.
-- [ ] 다음 모임에서 논의할 질문 목록을 짧게 다듬어 공유한다.
-- [ ] 이번 주 계획 문서의 Builders Lounge task와 연결해 진행 상황을 업데이트한다. → [[Roundup/2026-05-25 - Weekly Progress and Planning#2. 진행 중 및 할 일 (In-Progress & To-Do)|이번 주 Weekly Planning]]
+- [ ] Builders Lounge 5가지 방향성을 다음 모임 시작 자료로 정리
+- [ ] 김성진님 Product Demo 정보 형식 요청
+- [ ] Gobi Space Custom Homepage 1차 기능 목록 구체화
+- [ ] 공동 기록 저장소 후보 비교: GitHub Repo, Gobi Space, Google Docs/Drive
+- [ ] 기록 담당 멤버 제안안 준비
+- [ ] 다음 모임 논의 질문 목록 간단히 정리
+- [ ] 이번 주 계획 문서와 연결해 진행 상황 업데이트 → [[Roundup/2026-05-25 - Weekly Progress and Planning#2. 진행 중 및 할 일 (In-Progress & To-Do)|이번 주 Weekly Planning]]
 
 ## 메모
 
-이 폴더는 CatchUpAI-VL 학습 프로젝트와 분리해, Builders Lounge 같은 실제 커뮤니티 운영 initiative의 아이디어와 진행 상황을 기록하기 위한 공간으로 시작한다. 앞으로 다른 task의 브레인덤프와 진행상황도 `AI/Initiatives/` 아래에 별도 폴더를 만들어 관리하면 된다.
+이 폴더는 CatchUpAI-VL 학습 프로젝트와 분리해, Builders Lounge 같은 실제 커뮤니티 운영 initiative를 관리하기 위한 공간입니다. 앞으로 다른 task의 브레인덤프와 진행 상황도 `AI/Initiatives/` 아래에 별도 폴더로 관리하시면 좋겠습니다.

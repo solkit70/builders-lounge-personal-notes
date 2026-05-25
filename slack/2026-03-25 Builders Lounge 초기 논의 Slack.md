@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 초기 논의 Slack"
 source: "Changbal Slack thread screenshots, 2026-03-25"
 author:
@@ -14,9 +14,14 @@ tags:
   - brain-training
 ---
 
-## Summary
+## 요약
 
-2026년 3월 25일 수요일, 성진님이 Brain Training Board Games 웹사이트를 Slack에 소개하면서 Builders Lounge로 이어지는 초기 논의가 시작됐다. 대화의 출발점은 두뇌 건강과 온라인 보드게임이었지만, 곧 AI 시대의 coding agent 활용, documentation 중심 개발, 그리고 관심 있는 사람들을 모아 오프라인으로 이야기해 보자는 제안으로 확장됐다. 이 흐름은 이후 Builders Lounge의 핵심 방향인 "각자 만든 Product를 소개하고 서로의 첫 번째 사용자로서 피드백을 주는 모임"으로 자연스럽게 이어진다.
+2026년 3월 25일 수요일 Slack 대화에서 Builders Lounge로 이어지는 초기 흐름이 시작되었습니다.
+
+- 출발점: 성진님의 **Brain Training Board Games** 소개
+- 확장 주제: AI coding agent 활용, documentation 중심 개발, 앱 개발 방식
+- 후속 흐름: 관심 있는 분들이 오프라인으로 만나 이야기해 보자는 제안
+- Builders Lounge 연결: 각자 만든 Product를 소개하고 서로 첫 사용자로 feedback을 드리는 모임 방향
 
 성진님이 소개한 웹사이트:
 http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/
@@ -89,7 +94,7 @@ http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/
 >
 > 봄도 됐으니까 오랜만에 함 보죠. 😉
 
-## 의미와 연결점
+## 의미와 연결 포인트
 
 이 thread는 Builders Lounge의 시작점으로 볼 수 있다. 처음에는 성진님의 Brain Training Board Games 소개와 AI 대결 기능, WASM 엔진 업그레이드, 에듀게임 방향이 공유되었다. 그러나 대화가 이어지면서 "AI coding agent를 어떻게 활용해야 하는가", "대규모 앱 개발에서 전체 코드를 맡기기보다 작은 task로 나눠야 하는가", "AI를 documenting에 더 잘 활용할 수 있는가" 같은 Builder 관점의 실전 문제가 드러났다.
 

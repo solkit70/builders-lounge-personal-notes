@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 준비 모임과 첫 오프라인 모임 Slack"
 source: "Changbal Slack thread screenshots, 2026-04-11~2026-05-07"
 author:
@@ -18,11 +18,17 @@ tags:
   - gobi-space
 ---
 
-## Summary
+## 요약
 
-2026년 4월 11일부터 5월 7일까지 Slack에서 Builders Lounge의 준비 모임, 첫 오프라인 모임, 커뮤니티 이름 공모, 장소 섭외, Gobi Space 활용 방향이 순차적으로 논의됐다. 4월 16일에는 온라인 준비 미팅을 열어 4월 23일 Dote Coffee Bar 오프라인 모임을 확정했고, 그 결과를 바탕으로 5월 7일 벨뷰 시청 모임과 GOBI hands-on 세션을 준비했다. 이 과정에서 Builders Lounge의 핵심 방향인 "스터디 그룹을 넘어 실전 빌더 커뮤니티로 전환"과 "시너지 협업, 지식 공유, 공동 지식 축적"이 명확해졌다.
+2026년 4월 11일부터 5월 7일까지 Builders Lounge 준비 흐름이 단계적으로 진행되었습니다.
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-04-09 Builders Lounge 모임 준비 Slack#Summary|4/9 모임 준비 Slack]]에서 오프라인 모임의 필요성과 온라인 사전 미팅 제안이 나왔다.
+- 4월 16일: 온라인 준비 미팅
+- 4월 23일: Dote Coffee Bar 오프라인 준비 모임
+- 5월 7일: Bellevue City Hall 첫 정식 모임 준비
+- 주요 논의: 커뮤니티 이름, 장소 섭외, Gobi Space 활용, GOBI hands-on
+- 핵심 전환: AI 스터디 그룹에서 **실전 빌더 커뮤니티**로 확장
+
+→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-04-09 Builders Lounge 모임 준비 Slack#요약|4/9 모임 준비 Slack]]에서 오프라인 모임의 필요성과 온라인 사전 미팅 제안이 나왔습니다.
 
 ## 4월 11일: 온라인 준비 미팅 안내
 
@@ -390,7 +396,7 @@ YouTube 링크 미리보기:
 
 > Jake Lim님 온라인 참석 요청을 받아 초대했습니다. (개인 이메일 주소는 문서에서 생략)
 
-## 의미와 연결점
+## 의미와 연결 포인트
 
 이 대화 묶음은 Builders Lounge가 실제 운영 형태를 갖춰가는 과정을 보여준다. 처음에는 오프라인 모임의 형식, 날짜, 장소를 정하기 위한 온라인 준비 미팅이었고, 4월 23일 Dote Coffee Bar 모임 이후에는 "스터디에서 빌더 커뮤니티로" 방향이 확정됐다. 이후 커뮤니티 이름 공모, Bellevue City Hall 장소 섭외, Gobi Space 기반 공동 지식 축적, 온라인 미팅 녹화 등 실제 운영 요소가 하나씩 정리됐다.
 

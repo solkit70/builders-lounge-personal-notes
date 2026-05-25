@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 진행 상황 공지"
 source: "Changbal Slack #club-sg-ai"
 author:
@@ -13,7 +13,10 @@ tags:
 
 ## 요약
 
-진영님, 민석님과의 미팅 후 Builders Lounge 운영 방향 확정. 별도 Space 대신 기존 창발(Changbal) Space를 함께 활용하기로 결정. 핵심 활동은 각자 만든 Product를 서로의 첫 번째 고객으로서 사용해보고 피드백을 주고받는 것.
+- **공간 방향**: 별도 Space를 새로 만들기보다 기존 창발(Changbal) Space를 함께 활용하는 방향입니다.
+- **핵심 활동**: 각자 만들고 있는 Product를 소개하고, 서로의 첫 번째 고객으로서 사용 후 피드백을 주고받는 흐름입니다.
+- **참여 방식**: Product 소개, Demo 의사 표시, 다른 멤버 Product에 대한 Feedback 참여를 기준으로 멤버십을 나누어 볼 수 있습니다.
+- **다음 실험**: Gobi Space 안에 Builders Lounge 전용 홈페이지를 만들어 Product 소개와 Feedback 흐름을 지원하는 방향입니다.
 
 ## 공지 원문
 

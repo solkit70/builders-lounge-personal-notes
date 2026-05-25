@@ -16,7 +16,7 @@ transcript_type: "auto-generated"
 transcript_language: "ko"
 ---
 
-## Summary
+## 요약
 
 Builders Lounge first meeting GOBI Space / Desktop hands-on video transcript. This is the Korean auto-generated transcript from YouTube.
 

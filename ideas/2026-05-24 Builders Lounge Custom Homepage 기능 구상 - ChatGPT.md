@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge Custom Homepage 기능 구상 - ChatGPT"
 created: 2026-05-24 12:52:00
 tags:
@@ -15,9 +15,19 @@ links:
 
 ## 요약
 
-Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 아니라 Product Showcase → 실제 사용 → 구조화된 Feedback → 개선 기록으로 이어지는 루프를 만드는 것이다. 첫 버전은 모든 기능을 한 번에 만들기보다 Product Showcase, Feedback Request, Review Template 세 가지에 집중하는 것이 좋다. 이 구조는 Builders Lounge의 핵심 방향성인 "서로의 첫 번째 사용자로서 피드백을 주고받는 Builder Community"를 홈페이지 기능으로 구현하는 출발점이 된다.
+Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 아니라 아래 루프를 만드는 것입니다.
 
-→ **연결 아이디어**: [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Gobi Space Custom Homepage 아이디어|2회 준비 브레인덤프]]에서는 Gobi Space Custom Homepage를 운영 실험 공간으로 만들고, 멤버들의 의견을 반영해 기능을 계속 개선하는 방향을 제안했다.
+`Product Showcase → 실제 사용 → 구조화된 Feedback → 개선 기록`
+
+첫 버전에서는 모든 기능을 한 번에 만들기보다 아래 세 가지에 집중하는 것이 좋겠습니다.
+
+- **Product Showcase**
+- **Feedback Request**
+- **Review Template**
+
+이 구조는 Builders Lounge의 핵심 방향성인 "서로의 첫 번째 사용자로서 피드백을 주고받는 Builder Community"를 홈페이지 기능으로 구현하는 출발점입니다.
+
+→ **연결 아이디어**: [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Gobi Space Custom Homepage 아이디어|2회 준비 브레인덤프]]에서는 Gobi Space Custom Homepage를 운영 실험 공간으로 만들고, 멤버분들의 의견을 반영해 기능을 계속 개선하는 방향을 제안했습니다.
 
 ## 원문 질문
 
@@ -145,9 +155,8 @@ Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 
 
 ## MVP 제안
 
-처음부터 모든 기능을 만들지 말고, Vibe Coding으로는 1차 MVP를 작게 만드는 것이 좋다.
+처음부터 모든 기능을 만들기보다, 1차 MVP는 작게 시작하는 것이 좋겠습니다.
 
-1차 MVP:
 - Builders Lounge 소개 페이지
 - Product 등록 페이지
 - Product 목록 페이지
@@ -156,7 +165,7 @@ Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 
 - Review 템플릿 기반 댓글
 - Demo Day 일정 페이지
 
-이 정도면 충분히 시작할 수 있다.
+이 정도면 첫 실험을 시작하기에 충분합니다.
 
 ## 페이지 구조 예시
 
@@ -179,7 +188,7 @@ Home
 
 ## 핵심 운영 원칙
 
-ChatGPT가 제안한 핵심 문장은 다음과 같다.
+ChatGPT가 제안한 핵심 문장은 아래와 같습니다.
 
 > Builders Lounge is not just a place to showcase products. It is a feedback-driven builder community where AI product makers help each other grow through real usage, honest reviews, and continuous iteration.
 
@@ -210,9 +219,9 @@ ChatGPT가 제안한 핵심 문장은 다음과 같다.
 
 ## 다음 액션
 
-- [ ] 1차 MVP 범위를 Product Showcase + Feedback Request + Review Template으로 확정할지 논의한다.
-- [ ] Product 등록 필드 초안을 만든다.
-- [ ] Review Template 초안을 Builders Lounge 멤버들에게 공유해 의견을 받는다.
-- [ ] Demo Day / Hands-on Session 페이지를 2회 모임 운영과 연결한다.
-- [ ] Gobi Space Custom Homepage에서 구현 가능한 기능과 외부 저장소가 필요한 기능을 분리한다.
-- [ ] 이 문서를 Builders Lounge 2회 준비 브레인덤프와 함께 다음 모임 논의 자료로 사용한다.
+- [ ] 1차 MVP 범위 논의: Product Showcase + Feedback Request + Review Template
+- [ ] Product 등록 필드 초안 작성
+- [ ] Review Template 초안 공유와 멤버 의견 수집
+- [ ] Demo Day / Hands-on Session 페이지와 2회 모임 운영 연결
+- [ ] Gobi Space Custom Homepage에서 구현 가능한 기능과 외부 저장소가 필요한 기능 분리
+- [ ] 이 문서를 Builders Lounge 2회 준비 브레인덤프와 함께 다음 모임 논의 자료로 활용

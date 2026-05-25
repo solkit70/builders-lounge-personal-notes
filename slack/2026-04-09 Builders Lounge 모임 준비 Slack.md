@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 모임 준비 Slack"
 source: "Changbal Slack thread screenshots, 2026-04-09~2026-04-15"
 author:
@@ -18,11 +18,16 @@ tags:
   - gobi-desktop
 ---
 
-## Summary
+## 요약
 
-2026년 4월 9일부터 4월 15일까지 Slack에서 Builders Lounge로 이어지는 오프라인 모임 준비 논의가 진행됐다. Changsoo Park는 4월 중 오프 모임을 열어 각자가 AI 공부나 프로젝트를 하며 얻은 인사이트와 Product를 소개하자고 제안했고, MinSuk Kang은 Gobi Desktop을 소개하고 싶다고 밝혔다. Sung-Jin Kim은 AI agent 시대의 "Harness Engineering"을 토론 주제로 제안했으며, 이후 온라인 사전 미팅을 통해 오프 모임의 방향을 협의하자는 흐름으로 이어졌다.
+2026년 4월 9일부터 4월 15일까지 Slack에서 오프라인 모임 준비 논의가 이어졌습니다.
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-03-25 Builders Lounge 초기 논의 Slack#의미와 연결점|3/25 초기 논의]]에서 성진님의 Brain Training Board Games 소개와 coding agent 활용 논의가 오프모임 제안으로 이어졌다.
+- Changsoo Park: 4월 중 오프모임을 열어 AI 공부, 프로젝트, Product 인사이트를 나누자고 제안
+- MinSuk Kang: Gobi Desktop 소개 의사 공유
+- Sung-Jin Kim: AI agent 시대의 **Harness Engineering** 토론 주제 제안
+- 다음 흐름: 온라인 사전 미팅을 통해 오프모임 형식과 방향을 협의
+
+→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-03-25 Builders Lounge 초기 논의 Slack#의미와 연결 포인트|3/25 초기 논의]]에서 성진님의 Brain Training Board Games 소개와 coding agent 활용 논의가 오프모임 제안으로 이어졌습니다.
 
 ## Slack Thread 원문
 
@@ -172,7 +177,7 @@ tags:
 
 > 세상이 코딩을 넘어 스킬로 광분하기 시작했네요. 이러다 입사에서 코딩 대신 스킬로 시험보는거 아닌가 싶어요. https://github.com/NomaDamas/k-skill
 
-## 의미와 연결점
+## 의미와 연결 포인트
 
 이 대화는 Builders Lounge의 형식이 "AI 관련 공부와 프로젝트에서 얻은 인사이트를 나누는 오프모임"에서 "각자의 Product와 경험을 소개하고, 온라인 사전 미팅으로 형식과 장소를 협의하는 운영 구조"로 발전하는 중간 단계다. MinSuk Kang의 Gobi Desktop 소개 의향, Changsoo Park의 VibeLearn AI 공유 계획, Sung-Jin Kim의 Vibe Coding 취미 공유와 Harness Engineering 토론 제안이 주요 후보 주제로 등장했다.
 

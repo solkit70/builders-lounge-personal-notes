@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Builders Lounge 1회 후속 Slack"
 source: "Changbal Slack thread screenshots, 2026-05-09~2026-05-13"
 author:
@@ -14,11 +14,17 @@ tags:
   - community
 ---
 
-## Summary
+## 요약
 
-2026년 5월 9일부터 5월 13일까지 Builders Lounge 1회 오프라인 모임 이후의 결과 공지와 후속 논의가 Slack에서 이어졌다. Changsoo Park는 5월 7일 Bellevue City Hall에서 열린 첫 정식 오프라인 모임 결과를 공유하며, 10명의 빌더가 참여했고 공식 명칭이 **Builders Lounge**로 확정되었으며, GOBI Space 전용 공간 개설과 지속적인 소통을 예고했다. 이후 Sung-Jin Kim은 바이브 코딩 경험 공유와 하이브리드 발표 방식, 개발자가 아니어도 참여할 수 있는 스터디 방향을 제안했고, Changsoo Park는 5가지 방향성을 다시 정리하며 향후 모임의 대상과 확장 방식에 대한 의견을 요청했다.
+2026년 5월 9일부터 5월 13일까지 첫 정식 모임 이후의 결과 공지와 후속 논의가 이어졌습니다.
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack#의미와 연결점|5/7 첫 정식 모임 Slack]]에서 GOBI Hands-on, 5가지 방향성, 이름 후보 논의가 진행됐다.
+- 1회 모임 결과 공유: 10명 참석
+- 공식 명칭 확정: **Builders Lounge**
+- GOBI Space 전용 공간 개설 계획 공유
+- Sung-Jin Kim: Vibe Coding 경험 공유, 하이브리드 발표 방식, 비개발자 참여 가능성 제안
+- Changsoo Park: 5가지 방향성 재정리와 향후 확장 방식 의견 요청
+
+→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack#의미와 연결 포인트|5/7 첫 정식 모임 Slack]]에서 GOBI Hands-on, 5가지 방향성, 이름 후보 논의가 진행되었습니다.
 
 ## 5월 9일: 1회 오프라인 모임 결과 공지
 
@@ -145,7 +151,7 @@ tags:
 >
 > 서로 접점을 찾아서 연합모임을 해도 좋을 것 같은데요... ;)
 
-## 의미와 연결점
+## 의미와 연결 포인트
 
 이 후속 대화는 Builders Lounge가 1회 모임 이후 어떤 방향으로 확장될 수 있는지를 보여준다. 첫째, 공식 명칭이 Builders Lounge로 확정되었고, "편하게 모여 서로의 빌드를 나누고 영감을 얻는 공간"이라는 의미가 부여됐다. 둘째, 비전공자나 개발자가 아닌 사람도 Vibe Coding과 AI 활용에 관심이 있다면 참여할 수 있도록 문턱을 낮추자는 방향이 제안됐다. 셋째, GOBI Space를 단순 게시판이 아니라 모임에 필요한 기능을 요청하고 실험할 수 있는 온라인 네트워킹 공간으로 보자는 관점이 나왔다.
 
