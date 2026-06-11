@@ -13,6 +13,25 @@ links:
   - "[[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#🚀 다음 단계 — 내 Product 소개하기|Builders Lounge Product 소개 형식]]"
 ---
 
+## Live #12 영상에서 정리된 핵심 비전 (2026-05-31)
+
+AI in Action Live #12 요약 영상에서 홈페이지 비전이 아래 4단계 순환 구조로 정리됐습니다.
+
+| 단계 | 설명 |
+|------|------|
+| Product 등록 | 멤버가 만든 도구 공유 |
+| Feedback 관리 | 서로 써보고 개선하기 |
+| 좋은 기능 취합 | 더 유용한 Product로 발전 |
+| GobiSpace AI Agent | 모임 활동 지원 계속 개발 |
+
+이 순환 구조의 핵심은 **GobiSpace AI Agent가 4번째 단계**로 명시적으로 포함된다는 점입니다. 단순 Product 공유 플랫폼이 아니라, AI Agent가 커뮤니티 활동 자체를 지속적으로 지원하는 플랫폼으로 발전하는 방향입니다.
+
+> "모두가 Builder이고, 동시에 서로의 사용자다" — Catch Up AI · Builders Lounge 비전
+
+→ **관련 구상**: [2026-05-30 Builders Lounge AI 코디네이터 구상](<./2026-05-30 Builders Lounge AI 코디네이터 구상.md>)
+
+---
+
 ## 요약
 
 Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 아니라 아래 루프를 만드는 것입니다.
