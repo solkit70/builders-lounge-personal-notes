@@ -177,13 +177,17 @@ Open Harness에는 장점만 있는 것은 아니다. 여러 사람이 prompt를
 
 ## GOBI 팀과 이야기해 보고 싶은 질문
 
-1. 현재 GOBI Space Agent의 system prompt와 운영 규칙은 누가 만들고 관리하는가?
-2. Space admin이 자신의 Agent prompt를 확인하거나 수정할 수 있는 기능을 고려하고 있는가?
-3. GOBI가 반드시 통제해야 하는 공통 Guardrail과 Space가 자율적으로 관리해도 되는 영역은 어디까지인가?
-4. Prompt 변경을 versioning하고 test할 수 있는 가장 작은 MVP는 무엇인가?
-5. Space별 Agent Skills와 MCP 연결을 장기적으로 지원할 계획이 있는가?
-6. 한 Space에서 잘 작동한 Harness를 다른 Space가 template으로 가져올 수 있게 할 수 있는가?
-7. Builders Lounge의 Bila AI를 이 구조의 첫 번째 실험 사례로 사용해 볼 수 있는가?
+2026-06-16 Builders Lounge Slack에서 MinSuk Kang이 답변해 주었다. → [Slack 대화 원문](../slack/2026-06-16%20Builders%20Lounge%20GOBI%20제품%20피드백%20공유%20Slack.md)
+
+| # | 질문 | MinSuk Kang 답변 (2026-06-16) |
+|---|------|-------------------------------|
+| 1 | 현재 GOBI Space Agent의 system prompt와 운영 규칙은 누가 만들고 관리하는가? | 현재 Admin이 설정할 수 있고, 기본 가드레일·instructions는 GOBI가 관리 |
+| 2 | Space admin이 자신의 Agent prompt를 확인하거나 수정할 수 있는 기능을 고려하고 있는가? | **그 기능은 이미 있습니다** |
+| 3 | GOBI가 반드시 통제해야 하는 공통 Guardrail과 Space가 자율적으로 관리해도 되는 영역은 어디까지인가? | 기존 프롬프트를 놓고 논의해보면 좋겠습니다 |
+| 4 | Prompt 변경을 versioning하고 test할 수 있는 가장 작은 MVP는 무엇인가? | 현재 구현된 Settings → Agent에서 프롬프트 입력 가능 |
+| 5 | Space별 Agent Skills와 MCP 연결을 장기적으로 지원할 계획이 있는가? | **물론입니다!** |
+| 6 | 한 Space에서 잘 작동한 Harness를 다른 Space가 template으로 가져올 수 있게 할 수 있는가? | 좋은 기능이지만 검증 된 후에 공개 예정 |
+| 7 | Builders Lounge의 Bila AI를 이 구조의 첫 번째 실험 사례로 사용해 볼 수 있는가? | 이미 그렇게 하는 것으로 알고 있었습니다 😊 |
 
 ## 제안하는 작은 실험
 
