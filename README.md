@@ -78,6 +78,7 @@ builders-lounge-personal-notes/
 ├─ notices/    멤버 공지와 진행 상황 공유
 ├─ videos/     공식 모임 영상 정리와 transcript
 ├─ ideas/      운영 아이디어와 다음 모임 준비
+├─ feedback/   멤버 Product review와 방향성 feedback
 └─ assets/     이미지 자료
 ```
 
@@ -88,6 +89,7 @@ builders-lounge-personal-notes/
 | `notices/` | 멤버분들께 공유한 진행 상황 공지와 운영 안내 |
 | `videos/` | 공식 모임 녹화 영상 정리와 transcript |
 | `ideas/` | 2회 모임 준비, Custom Homepage, 공동 기록 저장소 아이디어 |
+| `feedback/` | 멤버들이 서로의 Product, app, agent, workflow에 대해 남긴 review와 방향성 feedback |
 | `assets/` | README나 문서에서 사용할 이미지 자료 |
 
 ## 주요 문서
@@ -106,6 +108,8 @@ builders-lounge-personal-notes/
 | [2026-05-18 Builders Lounge 진행 상황 공지.md](notices/2026-05-18%20Builders%20Lounge%20%EC%A7%84%ED%96%89%20%EC%83%81%ED%99%A9%20%EA%B3%B5%EC%A7%80.md) | Builders Lounge 진행 상황 공지 정리본 |
 | [2026-05-24 Builders Lounge 2회 준비 브레인덤프.md](ideas/2026-05-24%20Builders%20Lounge%202%ED%9A%8C%20%EC%A4%80%EB%B9%84%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EB%8D%A4%ED%94%84.md) | 2회 모임 준비 아이디어, 홈페이지와 공동 기록 저장소 구상 |
 | [2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md](ideas/2026-05-24%20Builders%20Lounge%20Custom%20Homepage%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%EC%83%81%20-%20ChatGPT.md) | Product Showcase, Feedback Request, Review Template 등 홈페이지 기능 구상 |
+| [2026-06-18 GOBI B2B SI 방향 피드백 - 김성진님.md](feedback/2026-06-18%20GOBI%20B2B%20SI%20%EB%B0%A9%ED%96%A5%20%ED%94%BC%EB%93%9C%EB%B0%B1%20-%20%EA%B9%80%EC%84%B1%EC%A7%84%EB%8B%98.md) | GOBI의 데이터 수집-관리-활용 흐름과 B2B/SI Knowledge Management 가능성에 대한 멤버 피드백 |
+| [2026-06-18 GOBI Space Open Harness 제안 - Changsoo.md](feedback/2026-06-18%20GOBI%20Space%20Open%20Harness%20%EC%A0%9C%EC%95%88%20-%20Changsoo.md) | Space admin과 멤버가 Agent prompt, Skill, MCP를 함께 관리하는 Open Harness 제안 |
 | [2026-05-24 Builders Lounge GitHub Repo 공유 및 운영 아이디어 논의 Slack.md](slack/2026-05-24%20Builders%20Lounge%20GitHub%20Repo%20%EA%B3%B5%EC%9C%A0%20%EB%B0%8F%20%EC%9A%B4%EC%98%81%20%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%20%EB%85%BC%EC%9D%98%20Slack.md) | GitHub repo Slack 공유, autoresearch/HPO 논의, Gobi Space Agent Dreaming, Slack→MD 자동 변환 아이디어 |
 | [2026-05-25 Builders Lounge 2회 모임 준비 및 GitHub 공유 Slack.md](slack/2026-05-25%20Builders%20Lounge%202%ED%9A%8C%20%EB%AA%A8%EC%9E%84%20%EC%A4%80%EB%B9%84%20%EB%B0%8F%20GitHub%20%EA%B3%B5%EC%9C%A0%20Slack.md) | @Paul Kim에게 2회 모임 준비 현황 공지, GitHub 기록 저장소 공유 및 GobiSpace 안내 |
 | [2026-05-25 Builders Lounge GobiSpace Changbal 안내 글.md](notices/2026-05-25%20Builders%20Lounge%20GobiSpace%20Changbal%20%EC%95%88%EB%82%B4%20%EA%B8%80.md) | [창발 빌라] Changbal Space 게시 글 — GitHub repo 공유, 성진님 운영 아이디어, GOBI agentic network 관점 |
