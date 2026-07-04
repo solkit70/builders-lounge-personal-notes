@@ -156,14 +156,22 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 - 공개 가능한 기록과 멤버 전용 기록을 어떻게 구분하면 좋을까요?
 - Builders Lounge를 지역 기반 커뮤니티로 둘까요, 온라인으로 더 넓게 열까요?
 
-## 멤버 Product 목록
+## 멤버 목록
 
-| 멤버 | Product | URL | 상태 | 소개 |
+| 멤버 | Product | URL | 상태 | 비고 |
 | --- | --- | --- | --- | --- |
-| Sung-Jin Kim | Brain Training Board Games | [링크](http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/) | 배포 완료 | AI 시대 두뇌 훈련 보드게임 웹앱 |
-| Minsuk Kang | Gobi Space | [링크](https://www.gobispace.com/) | 서비스 중 | AI-native social space |
-| 김진영 | Washington State Leisure Map | [링크](https://trails.aiforbetter.me/) | 배포 완료 | WA 트레일·캠핑·골프 지도 앱 |
-| Daniel Kang | AllStay.ai | [링크](https://allstay.ai/) | 개발 완료, GTM 중 | AI 기반 Short-Term Rental 운영 플랫폼 (Airbnb 등 예약·청소·운영 자동화) |
+| Minsuk Kang (강민석) | Gobi Space | [gobispace.com](https://www.gobispace.com/) | 서비스 중 | AI-native social space, Bila 플랫폼 |
+| Sung-Jin Kim (김성진) | Brain Training Board Games | [링크](http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/) | 배포 완료 | AI 시대 두뇌 훈련 보드게임 웹앱 |
+| 김진영 | AI4PKM | 미확인 | 개발 중 | Beyond LLM Wiki 발표자 (CMDS, 7/2), 사이드: Washington State Leisure Map |
+| Daniel Kang | AllStay.ai | [allstay.ai](https://allstay.ai/) | GTM 중 | AI 기반 Short-Term Rental 운영 자동화 |
+| Sung Soo Kim (김성수) | HebronGuide | [hebronguide.com](https://www.hebronguide.com/) | 운영 중 | 재외 한인 75개 도시 정착 커뮤니티 플랫폼 |
+| Changsoo Park (박창수) | CatchUp AI | [catchupai.net](https://catchupai.net) | 운영 중 | AI 활용법 콘텐츠·커뮤니티, 운영자 |
+| 송재희 | Build with AI | [buildwithai.clearlyreqs.com/ko](https://buildwithai.clearlyreqs.com/ko) | 공개 완료 | 비개발자를 위한 무료 12부작 AI Builder 가이드 |
+| Dokyu Lee (이도규) | — | — | — | 2차 모임 오프라인 참석 |
+| 박세진 | — | — | — | 2차 모임 온라인 참석 |
+| 손민수 | 시스템 장애 대응 에이전트 | — | 아이디어/MVP | 2차 모임 온라인 참석, 샌프란시스코 거주 |
+| Eunsil Ha | — | — | — | Bila 멤버, 2차 모임 일정 착오로 불참 |
+| 여상호 | — | — | — | 참석 시도, 일정 불일치로 불참 |
 
 > Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 AllStay를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
 

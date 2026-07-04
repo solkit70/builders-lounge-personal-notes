@@ -16,7 +16,7 @@ links:
   - "[[Roundup/2026-06-29 - Weekly Progress and Planning]]"
   - "[[Roundup/2026-06-29 - Live17 Weekly Rundown]]"
   - "[[Roundup/2026-06-29 - Weekly Dashboard.canvas]]"
-  - "[[Ingest/CatchUpAI_VL/Topics/Material_For_Topics/Build_With_AI/2026-06-29 Build with AI source note]]"
+  - "[[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note]]"
   - "[[Ingest/CatchUpAI_VL/Topics/Bila-AI-Agent/vl_worklog/20260628_M1_Bila-AI-Agent]]"
 external:
   - "https://buildwithai.clearlyreqs.com/ko/"
@@ -128,7 +128,7 @@ Nate Cho는 창발 멤버로 Claude Cowork plugin 기반의 취업 준비 도구
 
 > "\"만든다\"와 \"서비스가 된다\" 사이에는 두꺼운 벽이 하나 있습니다. 이 벽은 코딩 실력으로 넘는 게 아닙니다."
 
-송재희님의 글은 Product Discovery Platform의 "Builder가 만든 product를 발견한다"는 방향을 넘어, 데모 이후 실제 서비스로 넘어가지 못하는 병목을 다룬다. 특히 비개발자 Builder가 먼저 배워야 할 것은 코딩 자체가 아니라 문제 구조화, 대상 사용자 정의, AI 판단과 사람 검증의 경계 설정, 서비스 기준 통과 여부라는 관점이 중요하다. 이 인사이트는 이번 주 Live #17에서 Build with AI 자료를 공부하고 영상 콘텐츠 angle을 잡는 실험으로 전환한다. → [[Ingest/CatchUpAI_VL/Topics/Material_For_Topics/Build_With_AI/2026-06-29 Build with AI source note]]
+송재희님의 글은 Product Discovery Platform의 "Builder가 만든 product를 발견한다"는 방향을 넘어, 데모 이후 실제 서비스로 넘어가지 못하는 병목을 다룬다. 특히 비개발자 Builder가 먼저 배워야 할 것은 코딩 자체가 아니라 문제 구조화, 대상 사용자 정의, AI 판단과 사람 검증의 경계 설정, 서비스 기준 통과 여부라는 관점이 중요하다. 이 인사이트는 이번 주 Live #17에서 Build with AI 자료를 공부하고 영상 콘텐츠 angle을 잡는 실험으로 전환한다. → [[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note]]
 
 **관심 포인트**:
 - 데모 이후 서비스화가 멈추는 이유를 Builder 교육과 Product Discovery 관점에서 공부
