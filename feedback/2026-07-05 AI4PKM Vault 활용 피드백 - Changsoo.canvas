@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# AI4PKM Vault 활용 피드백\n**김진영님께 드리는 Utilization Advice**\n\n2026-02-13 설치 → 5개월 실사용 분석. 원본 코어(Ingest→Roundup→Topics)는 유지하면서 라이브 방송·VibeLearn AI·영상 제작·커뮤니티 운영 4개 독자 영역을 얹어 확장.\n\n📄 [[AI/Initiatives/Builders Lounge/feedback/2026-07-05 AI4PKM Vault 활용 피드백 - Changsoo]]","x":-700,"y":-560,"width":1400,"height":220,"color":"5"},
+		{"id":"topology","type":"text","text":"### 1. 저장소 지형도 — 허브·위성 구조\n\n**Changsoo_Vault** (git 미사용, 로컬 허브)\n├─ solkit70/VibeLearn-AI — 방법론 배포 (볼트보다 6주 먼저 시작)\n├─ solkit70/CatchUpAI_VL — 학습 워크스페이스 (114 커밋)\n├─ solkit70/builders-lounge-personal-notes — 커뮤니티 기록 (14 커밋)\n└─ solkit70/BeYouLifeUpWithUs — 볼트 외부, 협업 프로젝트 (48 커밋)\n\n원본: jykim/ai4pkm-vault (업스트림, 2026-01-05)","x":-1400,"y":-280,"width":460,"height":400,"color":"2"},
+		{"id":"timeline","type":"text","text":"### 2~3. 설치와 활동 추이\n\n**설치**: 2026-02-13 23:07 (Gobi 동기화)\n**본격 운영**: 2026-02-27 (첫 Journal/Roundup)\n\n| 월 | md 생성 |\n|---|---|\n| 03 | 318 |\n| 04 | 493 |\n| 05 | 449 |\n| 06 | **679 (최고치)** |\n| 07(5일) | 36 |\n\n변곡점 2회: 4월(방송 슬라이드+외부행사), 6월(방송 전용 스킬 체계화)","x":-880,"y":-280,"width":440,"height":400,"color":"2"},
+		{"id":"layers","type":"text","text":"### 6. 활용 평가 — 3개 층\n\n**① 그대로 쓰는 층 (코어)**\nIngest→EIC→Roundup→TIU, Journal, obsidian-* 스킬군, Gobi 연동. Templates 9종 무수정.\n\n**② 고쳐 쓰는 층 (현지화)**\nCLAUDE.md 재작성, orchestrator 실행환경, 프롬프트 7종 수정(GWR 포함), 미디어 감시 추가.\n\n**③ 새로 지은 층 (독자 확장)**\n방송 체계(스킬 3종: live-broadcast·rundown-writer·live-summary-video), VibeLearn AI, Remotion, Builders Lounge, 위성 레포 구조.\n\n→ 방송 전체 주간 사이클이 스킬·프롬프트로 커버되는 수준","x":-360,"y":-280,"width":460,"height":460,"color":"3"},
+		{"id":"changes","type":"text","text":"### 4. 원본 대비 변경\n\n**프롬프트 (18개 중)**\n- 그대로 9 / 수정 7 / 제거 1 / 신규 2\n- 최근 수정: GWR — Step4 \"다음 주 준비\" 추가\n\n**스킬 (25개 중)**\n- 유지 23 / 제거 2 / **추가 14개+**\n- 최신: live-summary-video (7/5)\n\n**루트 문서**\n- CLAUDE.md 전면재작성, CODEX.md 신규생성\n- orchestrator: 0.0.19 (업스트림 0.0.30 뒤처짐)","x":160,"y":-280,"width":440,"height":460,"color":"4"},
+		{"id":"observations","type":"text","text":"### 7. 관찰과 제안\n\n1. **업스트림 버전 격차** — 0.0.19 vs 0.0.30, gobi-migration으로 선별 반영 검토\n2. **볼트 본체 백업 부재** — 위성 4개는 GitHub 있지만 본체는 Gobi 동기화뿐\n3. **루트 폴더 잔여물** — 실험 파일들 `_Sandbox_`/`_Archive_` 정리 필요\n4. **스케줄 자동화 휴면** — 4월 말 이후 cron 로그 없음, 대화형 운영으로 전환됨","x":660,"y":-280,"width":420,"height":400,"color":"6"},
+		{"id":"qA","type":"text","text":"### A. 설계 철학 vs 사용 방식\n\n1. 원래 설계 시 가장 핵심으로 본 워크플로우는? (EIC/TIU가 실제 최다 사용)\n2. 라이브방송·영상·커뮤니티 독자 확장이 원본 구조를 존중하는 방향인가?\n3. \"병목 진단 먼저\" 관점에서 진짜 병목은 수집/정리/검색/생산 중 어디?","x":-1400,"y":260,"width":440,"height":280,"color":"1"},
+		{"id":"qB","type":"text","text":"### B. 미활용 영역\n\n4. 안 쓰는 프롬프트(ARP·ICB·DRB) 중 놓치면 아까운 기능은?\n5. 토픽 단위 외 기간·프로젝트·엔티티 인덱싱을 어떻게 적용?\n6. Gobi Brain/Space를 지식 검색·컴파일 측면에서 더 활용할 여지는?","x":-920,"y":260,"width":440,"height":280,"color":"1"},
+		{"id":"qC","type":"text","text":"### C. 구조·운영 조언\n\n7. 허브-위성 레포 구조가 확장 가능한 패턴인가, 관리 위험이 있나?\n8. 버전 마이그레이션 주기·방식은? (커스터마이징 많아 충돌 우려)\n9. 자동화(스케줄) vs 대화형 실행의 이상적 균형은?","x":-440,"y":260,"width":440,"height":280,"color":"1"},
+		{"id":"qD","type":"text","text":"### D. 지식 자산 지속가능성\n\n10. \"리듬이 없으면 예쁜 쓰레기\" — Topic 76개·Journal 67개를 살아있게 유지하는 리듬 장치는?\n11. md 2,264개 규모에서 검색·재사용이 무너지지 않으려면?\n12. Human/Shared/AI Zone 경계를 이 볼트에 적용한다면?","x":40,"y":260,"width":440,"height":280,"color":"1"},
+		{"id":"infographics","type":"text","text":"### 인포그래픽 요약 실험\n**ChatGPT vs Gemini vs Claude Fable 5**\n\n같은 문서를 3개 AI 도구로 각각 요약 인포그래픽 생성. 아래는 각 도구의 결과 중 1장씩.","x":580,"y":260,"width":500,"height":180,"color":"6"},
+		{"id":"img-claude","type":"file","file":"AI/Initiatives/Builders Lounge/feedback/images/AI4PKM_Feedback_ClaudeFable5_01.png","x":580,"y":470,"width":300,"height":169},
+		{"id":"img-chatgpt","type":"file","file":"AI/Initiatives/Builders Lounge/feedback/images/AI4PKM_Feedback_ChatGPT01.png","x":900,"y":470,"width":300,"height":169},
+		{"id":"img-gemini","type":"file","file":"AI/Initiatives/Builders Lounge/feedback/images/AI4PKM_Feedback_Gemini.png","x":1220,"y":470,"width":300,"height":164}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","fromSide":"bottom","toNode":"topology","toSide":"top"},
+		{"id":"e2","fromNode":"topology","fromSide":"right","toNode":"timeline","toSide":"left"},
+		{"id":"e3","fromNode":"timeline","fromSide":"right","toNode":"layers","toSide":"left"},
+		{"id":"e4","fromNode":"layers","fromSide":"right","toNode":"changes","toSide":"left"},
+		{"id":"e5","fromNode":"changes","fromSide":"right","toNode":"observations","toSide":"left"},
+		{"id":"e6","fromNode":"layers","fromSide":"bottom","toNode":"qA","toSide":"top"},
+		{"id":"e7","fromNode":"qA","fromSide":"right","toNode":"qB","toSide":"left"},
+		{"id":"e8","fromNode":"qB","fromSide":"right","toNode":"qC","toSide":"left"},
+		{"id":"e9","fromNode":"qC","fromSide":"right","toNode":"qD","toSide":"left"},
+		{"id":"e10","fromNode":"observations","fromSide":"bottom","toNode":"infographics","toSide":"top"},
+		{"id":"e11","fromNode":"infographics","fromSide":"bottom","toNode":"img-claude","toSide":"top"},
+		{"id":"e12","fromNode":"img-claude","fromSide":"right","toNode":"img-chatgpt","toSide":"left"},
+		{"id":"e13","fromNode":"img-chatgpt","fromSide":"right","toNode":"img-gemini","toSide":"left"}
+	]
+}
