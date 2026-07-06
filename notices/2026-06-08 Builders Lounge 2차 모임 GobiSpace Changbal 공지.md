@@ -72,5 +72,5 @@ GobiSpace 전용 Space, AI Agent 개발 현황, Builders Lounge AI Agent 이름 
 - 온라인 참석 신청자: 손민수, Sung-Jin Kim, aingoppa
 - Slack 잡담 채널 홍보 글과 달리 주차 안내 포함, Builders Lounge 소개 섹션 생략 (기존 회원 대상)
 
-→ **Slack BL 채널 공지**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 Slack 공지|2차 모임 Slack 공지]]
-→ **모임 상세**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 안내|2차 모임 안내]]
+→ **Slack BL 채널 공지**: [2차 모임 Slack 공지](<2026-06-08 Builders Lounge 2차 모임 Slack 공지.md>)
+→ **모임 상세**: [2차 모임 안내](<2026-06-08 Builders Lounge 2차 모임 안내.md>)

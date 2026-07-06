@@ -60,18 +60,18 @@ tags:
 
 - 1차 Changsoo 후보: **Bila**
 - 2차 모임에서 공식 결정 예정
-- 배경: [[AI/Initiatives/Builders Lounge/slack/2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack|2026-05-26 Slack 논의]] 참조
+- 배경: [2026-05-26 Slack 논의](<../slack/2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack.md>) 참조
 
 ### Builders Lounge AI 코디네이터
 
 - Phase 1 (Q&A) → Phase 2 (멤버 매칭) → Phase 3 (모임 코디네이터) 로드맵
 - 커뮤니티 AI 그라운딩 3원칙: GitHub (버전 관리) + Google Drive (문서) + GobiSpace Vault (실시간 피드)
-- → [[AI/Initiatives/Builders Lounge/ideas/2026-05-30 Builders Lounge AI 코디네이터 구상|AI 코디네이터 구상 문서]]
+- → [AI 코디네이터 구상 문서](<../ideas/2026-05-30 Builders Lounge AI 코디네이터 구상.md>)
 
 ### GobiSpace Space 이름 논의
 
 - 창발 Space 내 유지 vs. 별도 Builders Lounge Space 생성 결정 예정
-- 배경: [[AI/Initiatives/Builders Lounge/slack/2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack|2026-05-26 Slack 논의]]
+- 배경: [2026-05-26 Slack 논의](<../slack/2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack.md>)
 
 ## 배경 — 1차 모임 이후 변화 (5/7 → 6/8)
 
@@ -86,4 +86,4 @@ tags:
 
 AI in Action Live #14에서 Builders Lounge 2차 모임 후기를 공유할 예정.
 
-→ **장소 예약 경위**: [[AI/Initiatives/Builders Lounge/slack/2026-06-01 Builders Lounge 2차 모임 장소 예약 및 일정 변경 Slack|6/1~6/2 장소 예약 및 일정 변경 Slack]]
+→ **장소 예약 경위**: [6/1~6/2 장소 예약 및 일정 변경 Slack](<../slack/2026-06-01 Builders Lounge 2차 모임 장소 예약 및 일정 변경 Slack.md>)

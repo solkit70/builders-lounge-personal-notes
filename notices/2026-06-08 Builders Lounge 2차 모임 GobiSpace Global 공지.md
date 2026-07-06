@@ -66,5 +66,5 @@ AI를 활용해 무언가를 만들고 있는 Builder들이 모여, 자신의 Pr
 - Changbal 버전과 달리 Builders Lounge 소개 섹션 포함, 주차 안내 생략
 - 커뮤니티 외부 독자를 위한 입문 안내 성격
 
-→ **Changbal 버전**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 GobiSpace Changbal 공지|GobiSpace Changbal 공지]]
-→ **모임 상세**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 안내|2차 모임 안내]]
+→ **Changbal 버전**: [GobiSpace Changbal 공지](<2026-06-08 Builders Lounge 2차 모임 GobiSpace Changbal 공지.md>)
+→ **모임 상세**: [2차 모임 안내](<2026-06-08 Builders Lounge 2차 모임 안내.md>)

@@ -8,8 +8,8 @@ tags:
   - community
 source: "사용자 브레인덤프, 2026-05-24"
 links:
-  - "[[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|Builders Lounge 진행 상황 공지]]"
-  - "[[Roundup/2026-05-25 - Weekly Progress and Planning#2. 진행 중 및 할 일 (In-Progress & To-Do)|2026-05-25 Weekly Planning]]"
+  - "[Builders Lounge 진행 상황 공지](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#요약>)"
+  - "[2026-05-25 Weekly Planning](<../../../Roundup/2026-05-25 - Weekly Progress and Planning.md#2. 진행 중 및 할 일 (In-Progress & To-Do)>)"
 ---
 
 ## 요약
@@ -19,7 +19,7 @@ Builders Lounge 2회 준비의 핵심은 아래 두 가지입니다.
 - **Product Demo + 첫 사용자 feedback**: 멤버분들이 각자 Build 중이거나 이미 Build한 제품을 소개하고, 서로 첫 번째 사용자 관점에서 피드백을 드리는 흐름
 - **기록 기반 Collective Intelligence**: Slack, Gobi Space, 온라인/오프라인 Pitch, 회의 내용을 공동 기록으로 남기고 나중에 AI가 활용할 수 있는 기반 마련
 
-→ **운영 맥락**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 진행 상황 공지]]에서는 Builders Lounge의 핵심 활동을 "각자 만든 Product를 서로의 첫 번째 고객으로서 사용해보고 피드백을 주고받는 것"으로 정리했습니다.
+→ **운영 맥락**: [5/18 진행 상황 공지](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#요약>)에서는 Builders Lounge의 핵심 활동을 "각자 만든 Product를 서로의 첫 번째 고객으로서 사용해보고 피드백을 주고받는 것"으로 정리했습니다.
 
 ## 원문 브레인덤프
 
@@ -142,7 +142,7 @@ Builders Lounge 2회 준비의 핵심은 아래 두 가지입니다.
 - [ ] 공동 기록 저장소 후보 비교: GitHub Repo, Gobi Space, Google Docs/Drive
 - [ ] 기록 담당 멤버 제안안 준비
 - [ ] 다음 모임 논의 질문 목록 간단히 정리
-- [ ] 이번 주 계획 문서와 연결해 진행 상황 업데이트 → [[Roundup/2026-05-25 - Weekly Progress and Planning#2. 진행 중 및 할 일 (In-Progress & To-Do)|이번 주 Weekly Planning]]
+- [ ] 이번 주 계획 문서와 연결해 진행 상황 업데이트 → [이번 주 Weekly Planning](<../../../Roundup/2026-05-25 - Weekly Progress and Planning.md#2. 진행 중 및 할 일 (In-Progress & To-Do)>)
 
 ## 메모
 

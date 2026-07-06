@@ -46,4 +46,4 @@ tags:
 
 > ✅ 2026-06-04 CityHallEvents로부터 예약 확정 이메일 수신.
 
-→ **관련 문서**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 안내|2차 모임 안내]]
+→ **관련 문서**: [2차 모임 안내](<../notices/2026-06-08 Builders Lounge 2차 모임 안내.md>)

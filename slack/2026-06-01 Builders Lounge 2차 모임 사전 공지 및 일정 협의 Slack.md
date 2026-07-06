@@ -104,5 +104,5 @@ tags:
 | 잡담방 공지 | 승인 확정 후 잡담방에도 공지하기로 함 |
 | 김성진님 제품 | Brain Training Sciences — http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/ |
 
-→ **관련 문서**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 안내|2차 모임 안내]]
-→ **관련 문서**: [[AI/Initiatives/Builders Lounge/slack/2026-06-01 Builders Lounge 2차 모임 장소 예약 및 일정 변경 Slack|장소 예약 및 일정 변경 Slack]]
+→ **관련 문서**: [2차 모임 안내](<../notices/2026-06-08 Builders Lounge 2차 모임 안내.md>)
+→ **관련 문서**: [장소 예약 및 일정 변경 Slack](<2026-06-01 Builders Lounge 2차 모임 장소 예약 및 일정 변경 Slack.md>)

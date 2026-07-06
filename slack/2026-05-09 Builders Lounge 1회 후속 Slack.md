@@ -24,7 +24,7 @@ tags:
 - Sung-Jin Kim: Vibe Coding 경험 공유, 하이브리드 발표 방식, 비개발자 참여 가능성 제안
 - Changsoo Park: 5가지 방향성 재정리와 향후 확장 방식 의견 요청
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack#의미와 연결 포인트|5/7 첫 정식 모임 Slack]]에서 GOBI Hands-on, 5가지 방향성, 이름 후보 논의가 진행되었습니다.
+→ **이전 맥락**: [5/7 첫 정식 모임 Slack](<2026-05-07 Builders Lounge 첫 정식 모임 Slack.md#의미와 연결 포인트>)에서 GOBI Hands-on, 5가지 방향성, 이름 후보 논의가 진행되었습니다.
 
 ## 5월 9일: 1회 오프라인 모임 결과 공지
 
@@ -177,4 +177,4 @@ tags:
 - [ ] GOBI Space에 요청할 기능 후보를 Custom Homepage 기능 구상 문서에 반영한다.
 - [ ] 성진님의 Brain Training Vibe Guiding 경험을 2회 Product Demo 후보로 관리한다.
 - [ ] 독서모임 연합 가능성을 Open Ecosystem 아이디어로 별도 추적한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Gobi Space Custom Homepage 아이디어|Gobi Space Custom Homepage 아이디어]]와 연결해 다음 모임 논의 자료로 활용한다.
+- [ ] [Gobi Space Custom Homepage 아이디어](<../ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#Gobi Space Custom Homepage 아이디어>)와 연결해 다음 모임 논의 자료로 활용한다.

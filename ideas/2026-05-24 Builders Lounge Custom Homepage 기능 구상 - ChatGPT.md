@@ -9,8 +9,8 @@ tags:
   - product-feedback
 source: "ChatGPT 대화, 2026-05-24"
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Gobi Space Custom Homepage 아이디어|Builders Lounge 2회 준비 브레인덤프]]"
-  - "[[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#🚀 다음 단계 — 내 Product 소개하기|Builders Lounge Product 소개 형식]]"
+  - "[Builders Lounge 2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#Gobi Space Custom Homepage 아이디어>)"
+  - "[Builders Lounge Product 소개 형식](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#🚀 다음 단계 — 내 Product 소개하기>)"
 ---
 
 ## Live #12 영상에서 정리된 핵심 비전 (2026-05-31)
@@ -46,7 +46,7 @@ Builders Lounge Custom Homepage의 핵심은 "예쁜 커뮤니티 사이트"가 
 
 이 구조는 Builders Lounge의 핵심 방향성인 "서로의 첫 번째 사용자로서 피드백을 주고받는 Builder Community"를 홈페이지 기능으로 구현하는 출발점입니다.
 
-→ **연결 아이디어**: [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Gobi Space Custom Homepage 아이디어|2회 준비 브레인덤프]]에서는 Gobi Space Custom Homepage를 운영 실험 공간으로 만들고, 멤버분들의 의견을 반영해 기능을 계속 개선하는 방향을 제안했습니다.
+→ **연결 아이디어**: [2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#Gobi Space Custom Homepage 아이디어>)에서는 Gobi Space Custom Homepage를 운영 실험 공간으로 만들고, 멤버분들의 의견을 반영해 기능을 계속 개선하는 방향을 제안했습니다.
 
 ## 원문 질문
 

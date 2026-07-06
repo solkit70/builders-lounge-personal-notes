@@ -64,4 +64,4 @@ GobiSpace 전용 Space, AI Agent 개발 현황, Builders Lounge AI Agent 이름 
 - 온라인 참석 신청자: 손민수, Sung-Jin Kim, aingoppa
 - Teams 링크 비공개 방침: 온라인 참석 희망자는 댓글 또는 Changsoo Park·김진영님 DM으로 개별 전달
 
-→ **모임 상세**: [[AI/Initiatives/Builders Lounge/notices/2026-06-08 Builders Lounge 2차 모임 안내|2차 모임 안내]]
+→ **모임 상세**: [2차 모임 안내](<2026-06-08 Builders Lounge 2차 모임 안내.md>)

@@ -8,7 +8,7 @@ tags:
   - cmds
   - product-candidate
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-07-04 Park Jun - Mark]]"
+  - "[2026-07-04 Park Jun - Mark](<2026-07-04 Park Jun - Mark.md>)"
 external:
   - "https://bio.cmdspace.work"
   - "https://github.com/johnfkoo951/cmds-bio"
@@ -35,7 +35,7 @@ external:
 
 | 항목 | 내용 |
 |------|------|
-| 원작자 | 박준님 → [[AI/Initiatives/Builders Lounge/ideas/2026-07-04 Park Jun - Mark]] |
+| 원작자 | 박준님 → [2026-07-04 Park Jun - Mark](<2026-07-04 Park Jun - Mark.md>) |
 | 개선자 | 구요한 |
 | Instagram Reel | https://www.instagram.com/reel/DaUsYl0BjhP/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ== |
 | 플랫폼 | macOS |

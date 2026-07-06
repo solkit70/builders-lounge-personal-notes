@@ -9,8 +9,8 @@ tags:
   - build-with-ai
   - vibe-coding
 links:
-  - "[[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
+  - "[2026-06-29 Build with AI source note](<../builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note.md>)"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
 external:
   - "https://buildwithai.clearlyreqs.com/ko/"
 ---
@@ -39,7 +39,7 @@ external:
 | 웹사이트 | https://buildwithai.clearlyreqs.com/ko/ |
 | 대상 | 비개발자 창업자 · 운영 관리자 · 컨설턴트 · 도메인 전문가 |
 | 상태 | 공개 배포 중 (무료) |
-| 자료 | → [[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note]] |
+| 자료 | → [2026-06-29 Build with AI source note](<../builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note.md>) |
 
 ### 해결하려는 문제
 
@@ -69,7 +69,7 @@ external:
 | `data-readiness-ko.pdf` | 데이터 준비도 가이드 |
 | `assets/images/` | Facebook 포스트 이미지 보관 폴더 |
 
-→ 모든 자료: [[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note]]
+→ 모든 자료: [2026-06-29 Build with AI source note](<../builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note.md>)
 
 ---
 

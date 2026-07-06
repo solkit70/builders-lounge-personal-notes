@@ -23,7 +23,7 @@ tags:
 - 온라인/오프라인 여부 설문 예정
 - GobiSpace에 개인 기록 repo 공유 글 게시
 
-→ **이전 논의**: [[AI/Initiatives/Builders Lounge/slack/2026-05-15 Builders Lounge 운영 방향과 Custom Homepage 논의 Slack#Custom Homepage 구현 가능성 논의|5/15~5/21 Custom Homepage 및 운영 방향 논의]]에서 이어진 흐름입니다.
+→ **이전 논의**: [5/15~5/21 Custom Homepage 및 운영 방향 논의](<2026-05-15 Builders Lounge 운영 방향과 Custom Homepage 논의 Slack.md#Custom Homepage 구현 가능성 논의>)에서 이어진 흐름입니다.
 
 ## 관련 링크
 

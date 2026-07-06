@@ -8,9 +8,9 @@ tags:
   - meeting-note
   - shareable
 links:
-  - "[[AI/Initiatives/Builders Lounge/README|Builders Lounge README]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프|2회 준비 브레인덤프]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT|Custom Homepage 기능 구상]]"
+  - "[Builders Lounge README](<../README.md>)"
+  - "[2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md>)"
+  - "[Custom Homepage 기능 구상](<2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>)"
 ---
 
 ## 요약

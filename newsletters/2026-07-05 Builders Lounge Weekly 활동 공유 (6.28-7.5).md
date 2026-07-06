@@ -8,9 +8,9 @@ tags:
   - newsletter
   - weekly
 links:
-  - "[[AI/Initiatives/Builders Lounge/README]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
-  - "[[AI/Initiatives/Builders Lounge/slack/2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack]]"
+  - "[README](<../README.md>)"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<../ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
+  - "[2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack](<../slack/2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack.md>)"
 ---
 
 ## 문서 정보

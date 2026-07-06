@@ -10,8 +10,8 @@ tags:
   - llmwiki
   - knowledge-management
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-07-04 Yohan Koo - MacPilot & CMDS-bio]]"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
+  - "[2026-07-04 Yohan Koo - MacPilot & CMDS-bio](<2026-07-04 Yohan Koo - MacPilot & CMDS-bio.md>)"
 external:
   - "https://www.youtube.com/watch?v=FEQ-yqD0pvs"
 ---

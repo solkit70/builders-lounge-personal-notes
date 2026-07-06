@@ -27,7 +27,7 @@ tags:
 - Sung-Jin Kim: AI agent 시대의 **Harness Engineering** 토론 주제 제안
 - 다음 흐름: 온라인 사전 미팅을 통해 오프모임 형식과 방향을 협의
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-03-25 Builders Lounge 초기 논의 Slack#의미와 연결 포인트|3/25 초기 논의]]에서 성진님의 Brain Training Board Games 소개와 coding agent 활용 논의가 오프모임 제안으로 이어졌습니다.
+→ **이전 맥락**: [3/25 초기 논의](<2026-03-25 Builders Lounge 초기 논의 Slack.md#의미와 연결 포인트>)에서 성진님의 Brain Training Board Games 소개와 coding agent 활용 논의가 오프모임 제안으로 이어졌습니다.
 
 ## Slack Thread 원문
 
@@ -199,4 +199,4 @@ tags:
 - [ ] Builders Lounge 2회 준비 자료에 "가벼운 5분 인사이트 공유 vs 정식 Product Demo" 두 가지 참여 방식을 반영한다.
 - [ ] Harness Engineering을 토론 주제 후보로 남긴다.
 - [ ] 온라인 사전 미팅을 오프라인 모임 전 준비 절차로 둘지 논의한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#Builders Lounge 2회 논의 의제 초안|Builders Lounge 2회 논의 의제]]와 연결해 모임 형식 논의에 반영한다.
+- [ ] [Builders Lounge 2회 논의 의제](<../ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#Builders Lounge 2회 논의 의제 초안>)와 연결해 모임 형식 논의에 반영한다.

@@ -8,8 +8,8 @@ tags:
   - product-candidate
   - changbal
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
-  - "[[AI/Initiatives/Builders Lounge/README]]"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
+  - "[README](<../README.md>)"
 external:
   - "https://www.hebronguide.com"
 ---

@@ -8,8 +8,8 @@ tags:
   - product-candidate
   - changbal
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
-  - "[[AI/Initiatives/Builders Lounge/README]]"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
+  - "[README](<../README.md>)"
 external:
   - "https://github.com/nathanscho/jobsearch-copilot"
   - "https://www.linkedin.com/posts/nathanscho_interviewing-communication-productmanagement-share-7478447354132525056-OR-g/"

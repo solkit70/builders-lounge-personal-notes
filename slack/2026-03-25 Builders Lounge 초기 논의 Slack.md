@@ -116,4 +116,4 @@ http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/
 - [ ] 성진님 Product Demo 요청 시 이 thread를 배경 자료로 연결한다.
 - [ ] "코딩 에이전트의 활용 이대로 좋은가"를 Builders Lounge 토론 주제 후보로 남긴다.
 - [ ] 이 Slack thread를 Builders Lounge 공동 기록 저장소 설계의 초기 샘플로 사용한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프#공동 기록 저장소 아이디어|공동 기록 저장소 아이디어]]와 연결해 기록 대상 예시로 반영한다.
+- [ ] [공동 기록 저장소 아이디어](<../ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#공동 기록 저장소 아이디어>)와 연결해 기록 대상 예시로 반영한다.

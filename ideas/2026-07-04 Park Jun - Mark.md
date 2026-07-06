@@ -8,7 +8,7 @@ tags:
   - cmds
   - product-candidate
 links:
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-07-04 Yohan Koo - MacPilot & CMDS-bio]]"
+  - "[2026-07-04 Yohan Koo - MacPilot & CMDS-bio](<2026-07-04 Yohan Koo - MacPilot & CMDS-bio.md>)"
 external:
   - "https://loomm.ai/mark"
 ---
@@ -46,7 +46,7 @@ Markdown 파일을 코드 편집기나 Obsidian 같은 복잡한 도구 없이, 
 - 빠르고 단순한 macOS 데스크탑 Markdown 뷰어/에디터
 - "Open Markdown like a document" — 진입 장벽 최소화
 - CMDS 커뮤니티 내 "아는 분"이 만들었다는 방식으로 소개 (자연스러운 입소문)
-- 구요한님이 MacPilot 개선 작업에도 기반으로 활용 → [[AI/Initiatives/Builders Lounge/ideas/2026-07-04 Yohan Koo - MacPilot & CMDS-bio]]
+- 구요한님이 MacPilot 개선 작업에도 기반으로 활용 → [2026-07-04 Yohan Koo - MacPilot & CMDS-bio](<2026-07-04 Yohan Koo - MacPilot & CMDS-bio.md>)
 
 ---
 

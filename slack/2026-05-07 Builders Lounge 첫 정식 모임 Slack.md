@@ -31,7 +31,7 @@ tags:
   - 향후 운영 방식 논의
 - 후속 공지 기준 참석자: 강민석, David Sejin Park, 남승현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, Minsuk Kang, Dokyu Lee, 박창수
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-04-11 Builders Lounge 준비 모임과 첫 오프라인 모임 Slack#4월 30일~5월 1일: 벨뷰 시청 장소 승인과 기록 계획|벨뷰 시청 장소 승인과 기록 계획]] 이후 5월 7일 첫 정식 모임 안내로 이어졌습니다.
+→ **이전 맥락**: [벨뷰 시청 장소 승인과 기록 계획](<2026-04-11 Builders Lounge 준비 모임과 첫 오프라인 모임 Slack.md#4월 30일~5월 1일: 벨뷰 시청 장소 승인과 기록 계획>) 이후 5월 7일 첫 정식 모임 안내로 이어졌습니다.
 
 ## 관련 링크
 
@@ -247,7 +247,7 @@ tags:
 | 참석자 수 | 총 10명 |
 | 참석자 | 강민석, David Sejin Park, 남승현, Jinyoung Kim, James H Kim, Sung-Jin Kim, 하은실, Minsuk Kang, Dokyu Lee, 박창수 |
 
-→ **후속 공지**: [[AI/Initiatives/Builders Lounge/slack/2026-05-09 Builders Lounge 1회 후속 Slack#5월 9일: 1회 오프라인 모임 결과 공지|1회 오프라인 모임 결과 공지]]에서 공식 명칭이 Builders Lounge로 확정되었고, GOBI Space 개설 예정과 지속적인 소통 계획이 함께 공유되었다.
+→ **후속 공지**: [1회 오프라인 모임 결과 공지](<2026-05-09 Builders Lounge 1회 후속 Slack.md#5월 9일: 1회 오프라인 모임 결과 공지>)에서 공식 명칭이 Builders Lounge로 확정되었고, GOBI Space 개설 예정과 지속적인 소통 계획이 함께 공유되었다.
 
 ## 의미와 연결 포인트
 
@@ -274,4 +274,4 @@ tags:
 - [ ] Changbal Space 링크를 Builders Lounge 공동 기록/공유 채널 후보로 유지한다.
 - [ ] Jinyoung Kim의 Gobi Space 홈페이지를 Custom Homepage 레퍼런스 후보로 기록한다.
 - [ ] "AI Agent Builder Community"에서 "Builders Lounge"로 이름이 확정되는 흐름을 타임라인에 반영한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT#기능 우선순위 정리|Custom Homepage 기능 우선순위]]와 연결해 Product Feedback / Gobi Space 연동 요구사항으로 반영한다.
+- [ ] [Custom Homepage 기능 우선순위](<../ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md#기능 우선순위 정리>)와 연결해 Product Feedback / Gobi Space 연동 요구사항으로 반영한다.

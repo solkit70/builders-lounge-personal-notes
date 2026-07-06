@@ -28,7 +28,7 @@ tags:
 - 새 논의: 비개발자 참여 가능성, VC perspective 리뷰 요청, Custom Homepage 구현 가능성
 - 기능 후보: Product Showcase, Review, Feedback Board
 
-→ **이전 공지**: [[AI/Initiatives/Builders Lounge/notices/2026-05-18 Builders Lounge 진행 상황 공지#요약|5/18 Builders Lounge 진행 상황 공지]]는 이 Slack 흐름의 정리본입니다.
+→ **이전 공지**: [5/18 Builders Lounge 진행 상황 공지](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#요약>)는 이 Slack 흐름의 정리본입니다.
 
 ## 관련 링크
 
@@ -235,7 +235,7 @@ tags:
 
 이 대화는 Builders Lounge의 Product Feedback 운영 방식이 실제 기능 요구사항으로 변환되는 과정이다. 5월 15일 공지에서는 `Product 소개 템플릿`, `Observer / 입주 멤버` 멤버십, `창발 빌라`라는 운영 공간이 정리되었다. 이후 Hong Wi의 VC perspective 리뷰 요청은 Builders Lounge가 제공해야 할 실질적 가치가 무엇인지 보여주는 실제 사례가 되었다. MinSuk Kang의 답변은 Gobi Space의 post, 댓글, 향후 tag/dashboard 기능을 Product Showcase와 Review 시스템으로 연결할 수 있음을 시사한다.
 
-Google Docs에 정리한 Custom Homepage 기능 구상은 이후 [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT|Builders Lounge Custom Homepage 기능 구상]] 문서로 Vault에 저장되었다.
+Google Docs에 정리한 Custom Homepage 기능 구상은 이후 [Builders Lounge Custom Homepage 기능 구상](<../ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>) 문서로 Vault에 저장되었다.
 
 ## Builders Lounge 관점의 핵심 포인트
 
@@ -256,4 +256,4 @@ Google Docs에 정리한 Custom Homepage 기능 구상은 이후 [[AI/Initiative
 - [ ] Hong Wi의 VC perspective 리뷰 요청을 Feedback Request Board 예시로 반영한다.
 - [ ] Tag / Dashboard 기능 부재를 고려해 1차 MVP는 post + 댓글 기반으로 설계한다.
 - [ ] Observer / 입주 멤버 멤버십을 Review Credit System과 연결할 수 있는지 검토한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT#기능 우선순위 정리|Custom Homepage 기능 우선순위]]와 연결해 다음 모임 논의 자료로 활용한다.
+- [ ] [Custom Homepage 기능 우선순위](<../ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md#기능 우선순위 정리>)와 연결해 다음 모임 논의 자료로 활용한다.

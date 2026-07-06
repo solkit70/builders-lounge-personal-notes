@@ -9,11 +9,11 @@ tags:
   - content-candidate
 source: "송재희님 Facebook 글, 2026-06-28"
 links:
-  - "[[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/materials/build-with-ai-complete-ko.pdf]]"
-  - "[[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/materials/build-with-ai-complete-ko.epub]]"
-  - "[[AI/Roundup/2026-06-29 - Live17 Weekly Rundown]]"
-  - "[[AI/Roundup/2026-06-29 - Weekly Progress and Planning]]"
-  - "[[AI/Initiatives/Builders Lounge/ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상]]"
+  - "[build-with-ai-complete-ko.pdf](<materials/build-with-ai-complete-ko.pdf>)"
+  - "[build-with-ai-complete-ko.epub](<materials/build-with-ai-complete-ko.epub>)"
+  - "[2026-06-29 - Live17 Weekly Rundown](<../../../../Roundup/2026-06-29 - Live17 Weekly Rundown.md>)"
+  - "[2026-06-29 - Weekly Progress and Planning](<../../../../Roundup/2026-06-29 - Weekly Progress and Planning.md>)"
+  - "[2026-06-29 Builders Lounge Product Discovery Platform 구상](<../../ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)"
 external:
   - "https://buildwithai.clearlyreqs.com/ko/"
 ---
@@ -26,8 +26,8 @@ Build with AI는 송재희님이 공개한 비개발자 창업자, 운영 관리
 
 ## Source Materials
 
-- PDF: [[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/materials/build-with-ai-complete-ko.pdf]]
-- EPUB: [[AI/Initiatives/Builders Lounge/builders/Song-Jae-hee-Build-with-AI/materials/build-with-ai-complete-ko.epub]]
+- PDF: [build-with-ai-complete-ko.pdf](<materials/build-with-ai-complete-ko.pdf>)
+- EPUB: [build-with-ai-complete-ko.epub](<materials/build-with-ai-complete-ko.epub>)
 - Website: https://buildwithai.clearlyreqs.com/ko/
 
 ## Facebook Post

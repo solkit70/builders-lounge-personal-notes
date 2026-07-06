@@ -93,4 +93,4 @@ Product 소개, feedback, 모임 기록, Slack / Gobi Space 대화가 쌓이고,
 - [창발 빌라] prefix: Changbal Space에서 Builders Lounge 관련 글을 모아 보기 위한 태그 역할
 - Global feed 버전과 달리 성진님 미팅 아이디어 정리(3️⃣)와 GOBI 관점(4️⃣) 섹션이 추가됨
 
-→ **관련 문서**: [[AI/Initiatives/Builders Lounge/ideas/2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅|2026-05-25 김성진님 미팅 아이디어 메모]]
+→ **관련 문서**: [2026-05-25 김성진님 미팅 아이디어 메모](<../ideas/2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅.md>)

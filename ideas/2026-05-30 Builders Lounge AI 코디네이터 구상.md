@@ -8,8 +8,8 @@ tags:
   - community
   - idea
 links:
-  - "[[Initiatives/Builders Lounge/README]]"
-  - "[[AI/Private Meetings/Gobi/2026-05-28 Gobi Weekly Sync]]"
+  - "[README](<../README.md>)"
+  - "[2026-05-28 Gobi Weekly Sync](<../../../Private Meetings/Gobi/2026-05-28 Gobi Weekly Sync.md>)"
 ---
 
 ## 개요
@@ -111,5 +111,5 @@ AI가 정기 모임의 전 과정을 자동으로 보조한다.
 
 > "Builders Lounge AI는 기록을 읽고 답하는 것에서 시작해, 멤버들이 서로의 성장을 가속시키는 연결 엔진이 된다."
 
-*관련 문서: [[Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge 2회 준비 브레인덤프]]*
-*관련 문서: [[Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT]]*
+*관련 문서: [2026-05-24 Builders Lounge 2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md>)*
+*관련 문서: [2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT](<2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>)*

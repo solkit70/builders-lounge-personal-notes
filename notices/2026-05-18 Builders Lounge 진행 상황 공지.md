@@ -2,7 +2,7 @@
 title: "Builders Lounge 진행 상황 공지"
 source: "Changbal Slack #club-sg-ai"
 author:
-  - "[[Topics/Changbal|창발 (Changbal)]]"
+  - "[창발 (Changbal)](<../../../../Topics/Changbal.md>)"
 created: 2026-05-18 00:00:00
 tags:
   - builders-lounge

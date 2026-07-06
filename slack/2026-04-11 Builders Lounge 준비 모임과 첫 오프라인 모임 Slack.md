@@ -28,7 +28,7 @@ tags:
 - 주요 논의: 커뮤니티 이름, 장소 섭외, Gobi Space 활용, GOBI hands-on
 - 핵심 전환: AI 스터디 그룹에서 **실전 빌더 커뮤니티**로 확장
 
-→ **이전 맥락**: [[AI/Initiatives/Builders Lounge/slack/2026-04-09 Builders Lounge 모임 준비 Slack#요약|4/9 모임 준비 Slack]]에서 오프라인 모임의 필요성과 온라인 사전 미팅 제안이 나왔습니다.
+→ **이전 맥락**: [4/9 모임 준비 Slack](<2026-04-09 Builders Lounge 모임 준비 Slack.md#요약>)에서 오프라인 모임의 필요성과 온라인 사전 미팅 제안이 나왔습니다.
 
 ## 4월 11일: 온라인 준비 미팅 안내
 
@@ -421,4 +421,4 @@ YouTube 링크 미리보기:
 - [ ] Product Feedback 제안을 Custom Homepage의 Feedback Request / Review Template 기능과 연결한다.
 - [ ] 5/1 공동 지식 축적 논의를 공동 기록 저장소 설계의 근거로 연결한다.
 - [ ] Gobi Space hands-on과 ai4pkm 볼트 셋업을 5/7 첫 정식 모임 기록과 연결한다.
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT#기능 우선순위 정리|Custom Homepage 기능 우선순위]]와 연결해 Product Showcase / Review / Journey Log 요구사항으로 반영한다.
+- [ ] [Custom Homepage 기능 우선순위](<../ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md#기능 우선순위 정리>)와 연결해 Product Showcase / Review / Journey Log 요구사항으로 반영한다.

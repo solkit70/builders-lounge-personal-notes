@@ -13,9 +13,9 @@ tags:
   - youtube
 video_id: "AoOhKZ4LoKs"
 links:
-  - "[[AI/Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript|Transcript]]"
-  - "[[AI/Initiatives/Builders Lounge/slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack#5월 7일: GOBI 링크와 개인 홈페이지 공유|5/7 GOBI 링크 공유]]"
-  - "[[AI/Initiatives/Builders Lounge/slack/2026-05-09 Builders Lounge 1회 후속 Slack#5월 9일: 1회 오프라인 모임 결과 공지|1회 모임 결과 공지]]"
+  - "[Transcript](<2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript.md>)"
+  - "[5/7 GOBI 링크 공유](<../slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack.md#5월 7일: GOBI 링크와 개인 홈페이지 공유>)"
+  - "[1회 모임 결과 공지](<../slack/2026-05-09 Builders Lounge 1회 후속 Slack.md#5월 9일: 1회 오프라인 모임 결과 공지>)"
 ---
 
 ## 요약
@@ -26,7 +26,7 @@ links:
 - **기록 가치**: Builders Lounge가 GOBI Space를 공동 지식 축적 공간으로 검토한 이유를 보여주는 첫 영상 기록입니다.
 - **품질 참고**: 별도 마이크를 사용하지 않아 음질은 좋지 않습니다.
 
-→ **Transcript**: [[AI/Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript|자동 생성 transcript]]는 YouTube 한국어 자동 자막을 받아 저장했습니다. 자동 자막이라 `GOBI`, `Space`, `Desktop`, `PKM` 같은 고유명사가 일부 부정확하게 전사되어 있습니다.
+→ **Transcript**: [자동 생성 transcript](<2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript.md>)는 YouTube 한국어 자동 자막을 받아 저장했습니다. 자동 자막이라 `GOBI`, `Space`, `Desktop`, `PKM` 같은 고유명사가 일부 부정확하게 전사되어 있습니다.
 
 ## 영상 기본 정보
 
@@ -39,7 +39,7 @@ links:
 | 장소 | Bellevue City Hall 1E-120 |
 | 주요 발표자 | MinSuk Kang |
 | 주제 | GOBI Space / GOBI Desktop hands-on |
-| Transcript | [[AI/Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript|저장됨]] |
+| Transcript | [저장됨](<2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript.md>) |
 
 ## 핵심 내용
 
@@ -94,11 +94,11 @@ links:
 - [ ] Product Feedback을 GOBI Space 포스트와 댓글 구조로 구현할 수 있는지 검토
 - [ ] 개인 Agent와 Space Agent 개념을 Custom Homepage 기능 요구사항에 반영
 - [ ] 영상 링크를 Builders Lounge 공유용 GitHub 자료 목록에 포함
-- [ ] [[AI/Initiatives/Builders Lounge/ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT#기능 우선순위 정리|Custom Homepage 기능 우선순위]]와 연결해 Product Showcase / Review Template / Journey Log 설계에 반영
+- [ ] [Custom Homepage 기능 우선순위](<../ideas/2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md#기능 우선순위 정리>)와 연결해 Product Showcase / Review Template / Journey Log 설계에 반영
 
 ## Source Notes
 
 - YouTube 영상: https://youtu.be/AoOhKZ4LoKs
-- Transcript: [[AI/Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript]]
-- 첫 정식 모임 Slack 기록: [[AI/Initiatives/Builders Lounge/slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack]]
-- 1회 후속 Slack 기록: [[AI/Initiatives/Builders Lounge/slack/2026-05-09 Builders Lounge 1회 후속 Slack]]
+- Transcript: [2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript](<2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript.md>)
+- 첫 정식 모임 Slack 기록: [2026-05-07 Builders Lounge 첫 정식 모임 Slack](<../slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack.md>)
+- 1회 후속 Slack 기록: [2026-05-09 Builders Lounge 1회 후속 Slack](<../slack/2026-05-09 Builders Lounge 1회 후속 Slack.md>)

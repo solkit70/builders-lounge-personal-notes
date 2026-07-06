@@ -25,7 +25,7 @@ tags:
 - MinSuk Kang: Gobi Space Agent "Dreaming" 프로세스 개발 중
 - 슬랙 대화 자동 md 변환 기능 아이디어 제안
 
-→ **GobiSpace 안내 글**: [[AI/Initiatives/Builders Lounge/notices/2026-05-25 Builders Lounge GobiSpace Changbal 안내 글|Changbal Space 안내 글]], [[AI/Initiatives/Builders Lounge/notices/2026-05-25 Builders Lounge GobiSpace Global 안내 글|Global 안내 글]]
+→ **GobiSpace 안내 글**: [Changbal Space 안내 글](<../notices/2026-05-25 Builders Lounge GobiSpace Changbal 안내 글.md>), [Global 안내 글](<../notices/2026-05-25 Builders Lounge GobiSpace Global 안내 글.md>)
 
 ## 관련 링크
 
@@ -89,7 +89,7 @@ tags:
 >
 > builders-lounge-personal-notes/ideas/2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅.md
 
-→ [[AI/Initiatives/Builders Lounge/ideas/2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅|2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅]]
+→ [2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅](<../ideas/2026-05-25 Builders Lounge 공유용 아이디어 메모 - 김성진님 미팅.md>)
 
 ### MinSuk Kang — 2026-05-25 14:54
 
