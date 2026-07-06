@@ -12,6 +12,11 @@ links:
   - "[2026-05-25 Weekly Planning](<../../../Roundup/2026-05-25 - Weekly Progress and Planning.md#2. 진행 중 및 할 일 (In-Progress & To-Do)>)"
 ---
 
+## 관련 문서
+
+- [Builders Lounge 진행 상황 공지](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#요약>)
+- [2026-05-25 Weekly Planning](<../../../Roundup/2026-05-25 - Weekly Progress and Planning.md#2. 진행 중 및 할 일 (In-Progress & To-Do)>)
+
 ## 요약
 
 Builders Lounge 2회 준비의 핵심은 아래 두 가지입니다.

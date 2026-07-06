@@ -23,6 +23,17 @@ external:
   - "https://github.com/revfactory/webtoon-harness"
 ---
 
+## 관련 문서
+
+- [README](<../README.md>)
+- [2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT](<2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>)
+- [2026-05-30 Builders Lounge AI 코디네이터 구상](<2026-05-30 Builders Lounge AI 코디네이터 구상.md>)
+- [2026-06-29 - Weekly Progress and Planning](<../../../Roundup/2026-06-29 - Weekly Progress and Planning.md>)
+- [2026-06-29 - Live17 Weekly Rundown](<../../../Roundup/2026-06-29 - Live17 Weekly Rundown.md>)
+- [2026-06-29 - Weekly Dashboard.canvas](<../../../Roundup/2026-06-29 - Weekly Dashboard.canvas>)
+- [2026-06-29 Build with AI source note](<../builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note.md>)
+- [20260628_M1_Bila-AI-Agent](<../../../../Ingest/CatchUpAI_VL/Topics/Bila-AI-Agent/vl_worklog/20260628_M1_Bila-AI-Agent.md>)
+
 ## 요약
 
 AI가 보급되면서 직접 product, app, agent, workflow를 만드는 Builder들이 빠르게 늘어나고 있습니다. 그런데 이들이 만든 product가 소개되고, 실제 사용자에게 소비되고, 피드백을 받고, 다른 Builder와 연결되는 플랫폼은 아직 부족합니다. 이 문서는 Catch Up AI, Builders Lounge, Bila AI Agent를 연결해 **Builder들이 만든 product를 발견하고 소비하고 피드백하는 플랫폼**으로 발전시키는 초기 구상입니다.

@@ -12,6 +12,11 @@ links:
   - "[2026-05-28 Gobi Weekly Sync](<../../../Private Meetings/Gobi/2026-05-28 Gobi Weekly Sync.md>)"
 ---
 
+## 관련 문서
+
+- [README](<../README.md>)
+- [2026-05-28 Gobi Weekly Sync](<../../../Private Meetings/Gobi/2026-05-28 Gobi Weekly Sync.md>)
+
 ## 개요
 
 Builders Lounge를 GobiSpace 안에서 AI가 운영을 보조하는 커뮤니티로 만들고 싶다. CMDS x GOBI Cohort에서 이미 구현된 "기록 기반 Q&A" 모델에서 출발해, 더 나아가 멤버 간 협업을 자동으로 조율하는 **커뮤니티 코디네이터 AI**로 발전시키는 것이 목표다.

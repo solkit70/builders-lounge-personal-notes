@@ -15,6 +15,10 @@ external:
   - "https://www.instagram.com/reel/DaUsYl0BjhP/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
 ---
 
+## 관련 문서
+
+- [2026-07-04 Park Jun - Mark](<2026-07-04 Park Jun - Mark.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

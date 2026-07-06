@@ -13,6 +13,11 @@ links:
   - "[Builders Lounge Product 소개 형식](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#🚀 다음 단계 — 내 Product 소개하기>)"
 ---
 
+## 관련 문서
+
+- [Builders Lounge 2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md#Gobi Space Custom Homepage 아이디어>)
+- [Builders Lounge Product 소개 형식](<../notices/2026-05-18 Builders Lounge 진행 상황 공지.md#🚀 다음 단계 — 내 Product 소개하기>)
+
 ## Live #12 영상에서 정리된 핵심 비전 (2026-05-31)
 
 AI in Action Live #12 요약 영상에서 홈페이지 비전이 아래 4단계 순환 구조로 정리됐습니다.

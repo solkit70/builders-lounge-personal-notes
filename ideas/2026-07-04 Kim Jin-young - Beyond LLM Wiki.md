@@ -16,6 +16,11 @@ external:
   - "https://www.youtube.com/watch?v=FEQ-yqD0pvs"
 ---
 
+## 관련 문서
+
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+- [2026-07-04 Yohan Koo - MacPilot & CMDS-bio](<2026-07-04 Yohan Koo - MacPilot & CMDS-bio.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

@@ -18,6 +18,12 @@ links:
   - "[1회 모임 결과 공지](<../slack/2026-05-09 Builders Lounge 1회 후속 Slack.md#5월 9일: 1회 오프라인 모임 결과 공지>)"
 ---
 
+## 관련 문서
+
+- [Transcript](<2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript.md>)
+- [5/7 GOBI 링크 공유](<../slack/2026-05-07 Builders Lounge 첫 정식 모임 Slack.md#5월 7일: GOBI 링크와 개인 홈페이지 공유>)
+- [1회 모임 결과 공지](<../slack/2026-05-09 Builders Lounge 1회 후속 Slack.md#5월 9일: 1회 오프라인 모임 결과 공지>)
+
 ## 요약
 
 - **영상 성격**: Builders Lounge 첫 정식 모임에서 강민석님이 진행하신 GOBI Space / GOBI Desktop hands-on 세션 녹화본입니다.

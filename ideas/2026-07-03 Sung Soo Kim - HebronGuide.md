@@ -14,6 +14,11 @@ external:
   - "https://www.hebronguide.com"
 ---
 
+## 관련 문서
+
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+- [README](<../README.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

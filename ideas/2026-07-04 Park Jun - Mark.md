@@ -13,6 +13,10 @@ external:
   - "https://loomm.ai/mark"
 ---
 
+## 관련 문서
+
+- [2026-07-04 Yohan Koo - MacPilot & CMDS-bio](<2026-07-04 Yohan Koo - MacPilot & CMDS-bio.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

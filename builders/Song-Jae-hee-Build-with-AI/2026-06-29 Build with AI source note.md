@@ -18,6 +18,14 @@ external:
   - "https://buildwithai.clearlyreqs.com/ko/"
 ---
 
+## 관련 문서
+
+- [build-with-ai-complete-ko.pdf](<materials/build-with-ai-complete-ko.pdf>)
+- [build-with-ai-complete-ko.epub](<materials/build-with-ai-complete-ko.epub>)
+- [2026-06-29 - Live17 Weekly Rundown](<../../../../Roundup/2026-06-29 - Live17 Weekly Rundown.md>)
+- [2026-06-29 - Weekly Progress and Planning](<../../../../Roundup/2026-06-29 - Weekly Progress and Planning.md>)
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<../../ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+
 ## Summary
 
 Build with AI는 송재희님이 공개한 비개발자 창업자, 운영 관리자, 컨설턴트, 도메인 전문가를 위한 12부작 무료 가이드다. 이번 주 Live #17 실험 중 하나로 이 자료를 공부하고, 데모 이후 실제 서비스로 넘어가지 못하는 병목을 Catch Up AI 영상 콘텐츠로 발전시킬 후보로 관리한다.

@@ -24,6 +24,11 @@ external:
   - "https://github.com/solkit70/BeYouLifeUpWithUs"
 ---
 
+## 관련 문서
+
+- [AI4PKM](<../../../../Topics/AI4PKM.md>)
+- [2026-07-04 Kim Jin-young - Beyond LLM Wiki](<../ideas/2026-07-04 Kim Jin-young - Beyond LLM Wiki.md>)
+
 ## 한 줄 요약
 
 김진영님이 만드신 ai4pkm-vault를 2026년 2월 13일부터 약 5개월간 사용하며 실사용 데이터를 분석했다. 원본 코어 파이프라인(Ingest → Roundup → Topics)은 그대로 유지하면서, 그 위에 라이브 방송·VibeLearn AI 학습 시스템·영상 제작·커뮤니티 운영이라는 독자 영역을 얹어 확장했다. 이 문서는 Builders Lounge의 "서로의 Product를 사용해 보고 피드백을 주는" 활동의 일환으로, 실제 활용 데이터를 근거로 정리한 피드백이자 원저자에게 조언을 구하는 질문지다.

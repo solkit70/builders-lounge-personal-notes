@@ -13,6 +13,12 @@ links:
   - "[2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack](<../slack/2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack.md>)"
 ---
 
+## 관련 문서
+
+- [README](<../README.md>)
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<../ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+- [2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack](<../slack/2026-06-23 Builders Lounge 창발 발표 커피챗 확정 Build with AI 공유 Slack.md>)
+
 ## 문서 정보
 
 첫 번째 Builders Lounge 주간 활동 공유 이메일 초안이다. 매주 모임 차원에서 이루어진 일과 멤버들의 활동을 정리해 메일링 리스트로 발송하는 것이 목표이며, 이 문서에서 구조를 다듬은 뒤 확정되면 멤버들에게 발송한다.

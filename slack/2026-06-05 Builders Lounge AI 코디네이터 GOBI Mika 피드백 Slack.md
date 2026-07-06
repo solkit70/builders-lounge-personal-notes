@@ -12,6 +12,10 @@ links:
   - "../ideas/2026-05-30 Builders Lounge AI 코디네이터 구상.md"
 ---
 
+## 관련 문서
+
+- [2026-05-30 Builders Lounge AI 코디네이터 구상](<../ideas/2026-05-30 Builders Lounge AI 코디네이터 구상.md>)
+
 ## 배경
 
 2026-06-04 GOBI Team 미팅에서 박창수가 Builders Lounge AI 코디네이터 구상 (Phase 1~3)을 공유했다. 다음 날 GOBI 개발자 Mika가 Slack으로 각 Phase의 기술적 구현 가능성과 방향을 정리해 보내왔다.

@@ -15,6 +15,11 @@ external:
   - "https://www.linkedin.com/posts/nathanscho_interviewing-communication-productmanagement-share-7478447354132525056-OR-g/"
 ---
 
+## 관련 문서
+
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+- [README](<../README.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

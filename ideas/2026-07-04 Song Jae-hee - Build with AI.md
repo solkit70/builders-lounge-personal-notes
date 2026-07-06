@@ -15,6 +15,11 @@ external:
   - "https://buildwithai.clearlyreqs.com/ko/"
 ---
 
+## 관련 문서
+
+- [2026-06-29 Build with AI source note](<../builders/Song-Jae-hee-Build-with-AI/2026-06-29 Build with AI source note.md>)
+- [2026-06-29 Builders Lounge Product Discovery Platform 구상](<2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
+
 ## 인물 정보
 
 | 항목 | 내용 |

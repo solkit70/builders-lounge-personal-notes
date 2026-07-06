@@ -13,6 +13,12 @@ links:
   - "[Custom Homepage 기능 구상](<2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>)"
 ---
 
+## 관련 문서
+
+- [Builders Lounge README](<../README.md>)
+- [2회 준비 브레인덤프](<2026-05-24 Builders Lounge 2회 준비 브레인덤프.md>)
+- [Custom Homepage 기능 구상](<2026-05-24 Builders Lounge Custom Homepage 기능 구상 - ChatGPT.md>)
+
 ## 요약
 
 2026년 5월 24일 김성진님과 온라인으로 이야기하면서 Builders Lounge 운영과 관련된 아이디어도 함께 나누었습니다. 멤버분들과 함께 검토해 보면 좋을 운영 아이디어만 간단히 정리합니다.
