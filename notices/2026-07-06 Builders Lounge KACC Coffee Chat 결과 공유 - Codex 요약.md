@@ -16,6 +16,8 @@ tags:
 
 ## 요약
 
+![[images/KACC_CoffeeChat.JPEG]]
+
 이 문서는 2026년 7월 7일 Codex가 화자 구분 완료 transcript를 바탕으로 Builders Lounge 멤버 공유와 AI Agent 컨텍스트 활용을 위해 요약한 문서다.
 
 2026년 7월 6일 월요일, Bellevue의 워싱턴주 한인상공회의소 사무실에서 Builders Lounge와 KACC Coffee Chat이 진행됐다. 참석자는 오명규 회장님, 강민석님(GOBI), 이은석님(TecAce), 김성수님(HebronGuide), 박창수(Catch Up AI / Builders Lounge)였고, 원래 참석 예정이던 Daniel Kang님은 참석하지 못한 것으로 보인다.
