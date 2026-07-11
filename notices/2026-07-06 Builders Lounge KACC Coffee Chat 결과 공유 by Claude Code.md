@@ -16,7 +16,7 @@ tags:
 
 ## 요약
 
-![[images/KACC_CoffeeChat.JPEG]]
+![KACC Coffee Chat 단체 사진](images/KACC_CoffeeChat.JPEG)
 
 이 문서는 2026년 7월 7일 Claude Code가 화자 구분이 끝난 transcript 전체(2시간 15분)를 직접 읽고 작성한 요약본이다. Builders Lounge 멤버 공유와, 이후 AI Agent가 이 대화를 컨텍스트로 활용할 때 참고할 수 있도록 작성했다.
 

@@ -16,7 +16,7 @@ tags:
 
 ## 요약
 
-![[images/KACC_CoffeeChat.JPEG]]
+![KACC Coffee Chat 단체 사진](images/KACC_CoffeeChat.JPEG)
 
 이 문서는 2026년 7월 7일 Codex가 화자 구분 완료 transcript를 바탕으로 Builders Lounge 멤버 공유와 AI Agent 컨텍스트 활용을 위해 요약한 문서다.
 
