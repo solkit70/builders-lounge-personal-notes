@@ -207,6 +207,9 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 | Eunsil Ha | `haysil@naver.com` | — | — | — | Bila 멤버, 2차 모임 일정 착오로 불참 |
 | 여상호 | `sangho.yeo@gmail.com` | — | — | — | 참석 시도, 사정상 불참 |
 | 이은석 | `howsgoing7@gmail.com` | — | — | — | TecAce 그래픽 디자이너, 7/6 KACC 커피챗 참석 |
+| James H Kim (김종서) | `jameshughkim@gmail.com` | — | — | — | 4/23 준비 모임·1차 모임 참석 |
+| Jake Lim | `jake.lim@me.com` | — | — | — | 4/16·4/23 준비 모임 참석 |
+| 남승현 | `fair3gh@gmail.com` | — | — | — | 1차 모임 참석 |
 
 > Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 [AllStay](https://allstay.ai/)를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
 
