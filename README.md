@@ -1,24 +1,56 @@
-# Builders Lounge 개인 기록 저장소
+# Builders Lounge 기록 저장소
 
-이 저장소는 Changsoo가 개인적으로 정리하고 있는 Builders Lounge 기록 공간입니다. 공식 Builders Lounge repository는 아니지만, 멤버분들이 모임의 시작 배경과 현재 논의 흐름을 빠르게 파악하실 수 있도록 공개 가능한 자료만 모아 두었습니다.
+이 저장소는 Builders Lounge의 활동 기록 공간입니다. 모임의 시작 배경과 현재 논의 흐름을 멤버분들과 모임에 관심을 가져주시는 분들이 빠르게 파악하실 수 있도록 공개 가능한 자료를 모아 두었습니다.
 
-이 문서들과 저장소 구조는 Changsoo가 정리한 Slack 대화, 모임 기록, 운영 아이디어를 바탕으로 **VS Code + Codex**를 사용해 작성했습니다.
+Builders Lounge는 모든 과정이 기록되고, 그 기록이 **Bila AI Agent**의 Context가 되어 멤버와 모임에 관심을 가지시는 분들이 필요할 때 AI로부터 가이드를 받을 수 있도록 하는 것을 지향합니다. 이 기능은 현재 개발 중입니다.
+
+지금은 대부분의 기록을 개인이 수동으로 작성하고 있지만, 점차 기록이 자동화되고 구성원들이 기록에 참여할 수 있는 기능이 추가되면서 공식 저장소로 이동할 계획입니다.
 
 ## 한눈에 보기
 
 - **목적**: Builders Lounge의 시작 배경, 논의 흐름, 모임 기록, 운영 아이디어 정리
-- **현재 상태**: 1회 공식 모임 완료, 2차 모임 완료 (2026-06-08 월, 벨뷰 시청 온/오프 하이브리드)
+- **현재 상태**:
+  - 1차 공식 모임 완료 (2026-05-07, Bellevue City Hall)
+  - 2차 모임 완료 (2026-06-08 월, 벨뷰 시청 온/오프 하이브리드)
+  - 3차 KACC(워싱턴주 한인상공회의소) 커피챗 완료 (2026-07-06)
 - **핵심 방향**: Product demo, 첫 사용자 feedback, 기록 기반 collective intelligence
 - **활용 방법**: 이 repo를 clone한 뒤 AI에게 폴더 전체를 읽히고 질문
-- **주의 사항**: 개인 기록 저장소이며, 공식 결정사항은 별도 공지 기준으로 확인
+- **주의 사항**: 공식 결정사항은 모임 공지 기준으로 확인
 
 ## Builders Lounge 개요
 
 Builders Lounge는 AI를 활용해 Product, app, agent, workflow를 만드는 분들이 서로의 작업을 소개하고, 직접 사용해 보고, 피드백을 주고받으며 함께 성장하는 builder community입니다.
 
-> "모두가 Builder이고, 동시에 서로의 사용자다" — Catch Up AI · Builders Lounge 비전 *(AI in Action Live #12, 2026-05-31)*
+> "이론 공부를 넘어, 각자 만든 것을 나누고 피드백을 주고받는 실전 빌더 커뮤니티로" — *2026-04-23 준비 모임에서 합의된 방향*
+
+### 어떻게 시작됐나
+
+Builders Lounge는 시애틀 지역 IT 커뮤니티 창발(Changbal)의 AI 스터디 그룹에서 시작됐습니다. 2026년 4월, 오랜만에 다시 모인 멤버들은 서로가 이미 '공부하는 사람'을 넘어 각자 AI 애플리케이션과 실험 결과물을 만들고 있는 '빌더'가 되어 있다는 것을 확인했고, **이론 스터디에서 실전 빌더 커뮤니티로** 방향을 전환하기로 합의했습니다. 이후 이름 공모와 투표를 거쳐 2026년 5월 7일 첫 공식 모임에서 **Builders Lounge**라는 이름이 확정됐습니다.
+
+### 누구를 위한 모임인가
+
+시애틀 지역에서 시작했지만 지역에 국한되지 않고, IT Engineer에만 국한하지 않고, **Vibe Coding으로 Build를 하시는 모든 분들**이 대상입니다. 특히 IT Engineer가 아닌 분들을 더 환영합니다. 그런 분들의 새로운 도전 과정은 오히려 모두에게 더 도움이 되는 소중한 경험이 되고, 그 과정에서 필요한 기술적인 부분은 IT Engineer 멤버들의 경험과 지식이 도움이 될 것입니다. AI 시대에 Builder의 저변이 넓어지고, 서로 도움을 주고받으며 시너지를 만들고 함께 발전하는 것 — 그것이 Builders Lounge가 지향하는 가장 중요한 목적 중 하나입니다.
+
+### 무엇을 하나
 
 핵심은 단순 발표가 아니라 **서로의 첫 번째 사용자가 되어 드리는 것**입니다. 제품을 직접 써보고, 첫 화면이 이해되는지, 실제로 사용할 이유가 있는지, 어디서 막히는지, 다음에 무엇을 개선하면 좋을지 구체적으로 나누는 흐름을 지향합니다.
+
+그리고 모임의 모든 과정을 기록으로 남깁니다. Slack 대화, 모임 transcript, Product demo, 피드백이 이 저장소와 Gobi Space에 쌓이고, 이 기록은 Bila AI Agent의 Context가 되어 멤버와 모임에 관심 있는 분들이 언제든 AI로부터 모임에 대한 안내를 받을 수 있는 기반이 됩니다.
+
+수집된 기록은 AI가 1차로 검증·요약하고, 2차로 사람의 검증을 거쳐 민감한 개인 정보 등이 공개 기록에 포함되지 않도록 관리하고 있습니다.
+
+현재 한 달에 한 번 정도 오프라인 모임이 자연스럽게 이어지고 있으며, 모임의 내용과 형식은 구성원들의 의견이 모이면서 함께 만들어가고 있습니다. 참여에 관심 있으신 분은 언제든 환영합니다.
+
+### 어떻게 멤버가 되나
+
+AI를 활용해서 뭔가를 만드시거나 만들고 싶으신 모든 분들이 멤버가 되실 수 있습니다. 모임에 참석하거나 자신의 Product를 소개하면서 자연스럽게 멤버가 되시면 됩니다. 현재는 초기 단계라서 별도의 멤버 가입 기준은 없습니다.
+
+### 어디서 소통하나
+
+온라인 소통 공간은 두 곳입니다.
+
+- **Gobi Space — [Changbal Space](https://www.gobispace.com/spaces/changbal)**: 모임 공지, Product 소개, 지식 공유가 쌓이는 공간으로, **누구나 보실 수 있습니다**. Apple 또는 Google 계정으로 인증하신 후 이용하시면 됩니다.
+- **창발 Slack — `#club-sg-ai` 채널**: 창발에 가입하신 멤버분들이 이용하실 수 있는 실시간 소통 공간입니다.
 
 ## 5가지 방향성
 
@@ -80,12 +112,13 @@ Demo 계획: 무엇을 보여주고 싶은가 (예상 시간)
 ```text
 builders-lounge-personal-notes/
 ├─ README.md
-├─ slack/      Slack 대화와 논의 흐름
-├─ notices/    멤버 공지와 진행 상황 공유
-├─ videos/     공식 모임 영상 정리와 transcript
-├─ ideas/      운영 아이디어와 다음 모임 준비
-├─ feedback/   멤버 Product review와 방향성 feedback
-└─ assets/     이미지 자료
+├─ slack/        Slack 대화와 논의 흐름
+├─ notices/      멤버 공지와 진행 상황 공유
+├─ newsletters/  멤버와 외부 관심자에게 발송하는 뉴스레터
+├─ videos/       공식 모임 영상 정리와 transcript
+├─ ideas/        운영 아이디어와 다음 모임 준비
+├─ feedback/     멤버 Product review와 방향성 feedback
+└─ assets/       이미지 자료
 ```
 
 | 폴더 | 설명 |
@@ -93,6 +126,7 @@ builders-lounge-personal-notes/
 | `README.md` | 저장소 목적, 현재 상태, 참여 방법, 주요 문서 링크 |
 | `slack/` | Builders Lounge가 논의되고 준비되는 과정의 Slack 기록 |
 | `notices/` | 멤버분들께 공유한 진행 상황 공지와 운영 안내 |
+| `newsletters/` | 멤버와 외부 관심자에게 발송하는 뉴스레터 — 활동 보고, 다음 모임 예고 |
 | `videos/` | 공식 모임 녹화 영상 정리와 transcript |
 | `ideas/` | 2회 모임 준비, Custom Homepage, 공동 기록 저장소 아이디어 |
 | `feedback/` | 멤버들이 서로의 Product, app, agent, workflow에 대해 남긴 review와 방향성 feedback |
@@ -126,21 +160,9 @@ builders-lounge-personal-notes/
 | [2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack.md](slack/2026-05-26%20Builders%20Lounge%20%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%9D%B4%EB%A6%84%20%EB%B0%8F%20AI%20%EC%9D%B4%EB%A6%84%20%EB%85%BC%EC%9D%98%20Slack.md) | MinSuk Kang과 DM — 창발 Space 이름 변경, Builders Lounge 독립성, 커뮤니티 AI 이름(Bila 후보), Dreaming 프로세스 |
 | [2026-06-05 Builders Lounge AI 코디네이터 GOBI Mika 피드백 Slack.md](slack/2026-06-05%20Builders%20Lounge%20AI%20%EC%BD%94%EB%94%94%EB%84%A4%EC%9D%B4%ED%84%B0%20GOBI%20Mika%20%ED%94%BC%EB%93%9C%EB%B0%B1%20Slack.md) | GOBI 개발자 Mika — Phase 1~3 기술 검토: QnA 즉시 가능, Phase 3는 웹훅 트리거 구조, Phase 2는 Cron 방식 |
 
-## Custom Homepage 아이디어
+## 모임 운영에 도움이 되는 Product, 언제든 환영합니다
 
-첫 버전에서 중요한 기능은 아래 세 가지입니다.
-
-1. **Product Showcase**: 멤버분들이 자신의 Product를 등록하고 설명하는 공간
-2. **Feedback Request**: 지금 받고 싶은 feedback을 명확하게 요청하는 공간
-3. **Review Template**: 일정한 품질의 피드백을 남기도록 돕는 구조
-
-추가 후보:
-
-- Demo Day page
-- Member Profile
-- Product Journey Log
-- Review Credit System
-- Dashboard
+Builders Lounge는 빌더들의 모임입니다. Builders Lounge 홈페이지, 멤버들의 Product를 등록하고 공유할 수 있는 프로덕트 등 — 누구든지 모임 운영에 도움이 되는 Product를 Build해서 나눠 주시는 것은 언제든지 환영입니다.
 
 ## 공동 기록 저장소 아이디어
 
@@ -167,6 +189,8 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 
 ## 멤버 목록
 
+> 멤버 목록은 현재 업데이트 중입니다.
+
 | 멤버 | 이메일 | Product | URL | 상태 | 비고 |
 | --- | --- | --- | --- | --- | --- |
 | Minsuk Kang (강민석) | `gpminsuk@gmail.com` | Gobi Space | [gobispace.com](https://www.gobispace.com/) | 서비스 중 | AI-native social space, Bila 플랫폼 |
@@ -181,20 +205,32 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 | 박세진 | `davidsejinpark@gmail.com` | — | — | — | 2차 모임 온라인 참석 |
 | 손민수 | `commercial209@gmail.com` | 시스템 장애 대응 에이전트 | — | 아이디어/MVP | 2차 모임 온라인 참석, 샌프란시스코 거주 |
 | Eunsil Ha | `haysil@naver.com` | — | — | — | Bila 멤버, 2차 모임 일정 착오로 불참 |
-| 여상호 | `sangho.yeo@gmail.com` | — | — | — | 참석 시도, 일정 불일치로 불참 |
+| 여상호 | `sangho.yeo@gmail.com` | — | — | — | 참석 시도, 사정상 불참 |
+| 이은석 | `howsgoing7@gmail.com` | — | — | — | TecAce 그래픽 디자이너, 7/6 KACC 커피챗 참석 |
 
-> Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 AllStay를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
+> Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 [AllStay](https://allstay.ai/)를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
 
 ## 관련 링크
 
+### 모임 공간
 - Gobi Space: https://www.gobispace.com/
 - Changbal Space: https://www.gobispace.com/spaces/changbal
-- Gobi CLI: https://github.com/gobi-ai/gobi-cli
-- Builders Lounge personal notes GitHub repo: https://github.com/solkit70/builders-lounge-personal-notes
+- Builders Lounge 기록 저장소: https://github.com/solkit70/builders-lounge-personal-notes
 - Builders Lounge #1 GOBI Hands-on video: https://youtu.be/AoOhKZ4LoKs
-- Brain Training Board Games: http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/
+
+### 멤버 Product
+- Gobi Space (강민석): https://www.gobispace.com/
+- Brain Training Board Games (김성진): http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/
+- AI4PKM Vault (김진영): https://github.com/jykim/ai4pkm-vault
+- Washington State Leisure Map / Trails (김진영): https://trails.aiforbetter.me/
 - AllStay.ai (Daniel Kang): https://allstay.ai/
-- Washington State Leisure Map / Trails: https://trails.aiforbetter.me/
+- HebronGuide (김성수): https://www.hebronguide.com/
+- Catch Up AI (박창수): https://catchupai.net/ · [YouTube 채널](https://www.youtube.com/@catchupai)
+- Job Search Co-pilot (Nate Cho): https://github.com/nathanscho/jobsearch-copilot
+- Build with AI (송재희): https://buildwithai.clearlyreqs.com/ko
+
+### 참고 자료
+- Gobi CLI: https://github.com/gobi-ai/gobi-cli
 - The Washington State Hiking Podcast: https://podcasts.apple.com/us/podcast/the-washington-state-hiking-podcast/id1734650082
 - SkillOpt Explained: https://medium.com/@linafaik/skillopt-explained-from-prompt-engineering-to-skill-training-7ca8439cef73
 
@@ -221,6 +257,6 @@ YYYY-MM-DD Builders Lounge [주제].md
 
 ## 현재 기준 안내
 
-- 이 저장소는 공식 Builders Lounge repository가 아니라 Changsoo의 개인 기록입니다.
 - 멤버분들이 참고하고 기여하실 수 있도록 공개 가능한 형태로 정리하고 있습니다.
-- 추후 공식 repository나 Gobi Space 내 전용 기능이 생기면 이 기록을 그쪽으로 옮기거나 연결할 수 있습니다.
+- 공식 결정사항은 모임 공지 기준으로 확인해 주세요.
+- 기록 자동화와 구성원 참여 기능이 갖춰지는 대로 공식 저장소로 이동할 계획입니다.

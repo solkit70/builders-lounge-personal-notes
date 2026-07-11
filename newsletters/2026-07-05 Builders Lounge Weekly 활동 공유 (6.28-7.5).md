@@ -1,7 +1,7 @@
 ---
 title: "Builders Lounge Weekly 활동 공유 — 2026-06-28 ~ 07-05"
 created: 2026-07-04 22:30:00
-status: 초안 (발송 전)
+status: 발송 완료 (2026-07-07)
 period: 2026-06-28 ~ 2026-07-05
 tags:
   - builders-lounge
