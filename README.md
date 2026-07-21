@@ -191,25 +191,25 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 
 > 멤버 목록은 현재 업데이트 중입니다.
 
-| 멤버 | 이메일 | Product | URL | 상태 | 비고 |
-| --- | --- | --- | --- | --- | --- |
-| Minsuk Kang (강민석) | `gpminsuk@gmail.com` | Gobi Space | [gobispace.com](https://www.gobispace.com/) | 서비스 중 | AI-native social space, Bila 플랫폼 |
-| Sung-Jin Kim (김성진) | `jamessungjin.kim@gmail.com` | Brain Training Board Games | [링크](http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/) | 배포 완료 | AI 시대 두뇌 훈련 보드게임 웹앱 |
-| 김진영 | `myleo.jerry@gmail.com` | AI4PKM | [jykim/ai4pkm-vault](https://github.com/jykim/ai4pkm-vault) | 개발 중 | Beyond LLM Wiki 발표자 (CMDS, 7/2), 사이드: Washington State Leisure Map |
-| Daniel Kang | `fromdj2k@gmail.com` | AllStay.ai | [allstay.ai](https://allstay.ai/) | GTM 중 | AI 기반 Short-Term Rental 운영 자동화 |
-| Sung Soo Kim (김성수) | `hebronplatform@gmail.com` | HebronGuide | [hebronguide.com](https://www.hebronguide.com/) | 운영 중 | 재외 한인 75개 도시 정착 커뮤니티 플랫폼 |
-| Changsoo Park (박창수) | `solkit70@gmail.com` | CatchUp AI | [catchupai.net](https://catchupai.net) | 운영 중 | AI 활용법 콘텐츠·커뮤니티, 운영자 |
-| Nate Cho | `nate.cho.nyc@gmail.com` | Job Search Co-pilot | [GitHub](https://github.com/nathanscho/jobsearch-copilot) | 초기 테스트 중 | Claude Cowork Plugin 기반 취업 준비 도구, MIT 오픈소스 |
-| 송재희 | `jsong@seattlepartners.us` | Build with AI | [buildwithai.clearlyreqs.com/ko](https://buildwithai.clearlyreqs.com/ko) | 공개 완료 | 비개발자를 위한 무료 12부작 AI Builder 가이드 |
-| Dokyu Lee (이도규) | `mickeyfromsd@gmail.com` | — | — | — | 2차 모임 오프라인 참석 |
-| 박세진 | `davidsejinpark@gmail.com` | — | — | — | 2차 모임 온라인 참석 |
-| 손민수 | `commercial209@gmail.com` | 시스템 장애 대응 에이전트 | — | 아이디어/MVP | 2차 모임 온라인 참석, 샌프란시스코 거주 |
-| Eunsil Ha | `haysil@naver.com` | — | — | — | Bila 멤버, 2차 모임 일정 착오로 불참 |
-| 여상호 | `sangho.yeo@gmail.com` | — | — | — | 참석 시도, 사정상 불참 |
-| 이은석 | `howsgoing7@gmail.com` | — | — | — | TecAce 그래픽 디자이너, 7/6 KACC 커피챗 참석 |
-| James H Kim (김종서) | `jameshughkim@gmail.com` | — | — | — | 4/23 준비 모임·1차 모임 참석 |
-| Jake Lim | `jake.lim@me.com` | — | — | — | 4/16·4/23 준비 모임 참석 |
-| 남승현 | `fair3gh@gmail.com` | — | — | — | 1차 모임 참석 |
+| 멤버                  | 이메일                          | Product                    | URL                                                                                                 | 상태       | 비고                                                                 |
+| ------------------- | ---------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------ |
+| Minsuk Kang (강민석)   | `gpminsuk@gmail.com`         | Gobi Space                 | [gobispace.com](https://www.gobispace.com/)                                                         | 서비스 중    | AI-native social space, Bila 플랫폼                                   |
+| Sung-Jin Kim (김성진)  | `jamessungjin.kim@gmail.com` | Brain Training Board Games | [링크](http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/) | 배포 완료    | AI 시대 두뇌 훈련 보드게임 웹앱                                                |
+| 김진영                 | `myleo.jerry@gmail.com`      | AI4PKM                     | [jykim/ai4pkm-vault](https://github.com/jykim/ai4pkm-vault)                                         | 개발 중     | Beyond LLM Wiki 발표자 (CMDS, 7/2), 사이드: Washington State Leisure Map |
+| Daniel Kang         | `fromdj2k@gmail.com`         | AllStay.ai                 | [allstay.ai](https://allstay.ai/)                                                                   | GTM 중    | AI 기반 Short-Term Rental 운영 자동화                                     |
+| Sung Soo Kim (김성수)  | `hebronplatform@gmail.com`   | HebronGuide                | [hebronguide.com](https://www.hebronguide.com/)                                                     | 운영 중     | 재외 한인 75개 도시 정착 커뮤니티 플랫폼                                           |
+| Changsoo Park (박창수) | `solkit70@gmail.com`         | CatchUp AI                 | [catchupai.net](https://catchupai.net)                                                              | 운영 중     | AI 활용법 콘텐츠·커뮤니티, 운영자                                               |
+| Nate Cho            | `nate.cho.nyc@gmail.com`     | Job Search Co-pilot        | [GitHub](https://github.com/nathanscho/jobsearch-copilot)                                           | 초기 테스트 중 | Claude Cowork Plugin 기반 취업 준비 도구, MIT 오픈소스                         |
+| 송재희                 | `jsong@seattlepartners.us`   | Build with AI              | [buildwithai.clearlyreqs.com/ko](https://buildwithai.clearlyreqs.com/ko)                            | 공개 완료    | 비개발자를 위한 무료 12부작 AI Builder 가이드                                    |
+| Dokyu Lee (이도규)     | `mickeyfromsd@gmail.com`     | —                          | —                                                                                                   | —        | 2차 모임 오프라인 참석                                                      |
+| 박세진                 | `davidsejinpark@gmail.com`   | —                          | —                                                                                                   | —        | 2차 모임 온라인 참석                                                       |
+| 손민수                 | `commercial209@gmail.com`    | 시스템 장애 대응 에이전트             | —                                                                                                   | 아이디어/MVP | 2차 모임 온라인 참석, 샌프란시스코 거주                                            |
+| Eunsil Ha           | `haysil@naver.com`           | —                          | —                                                                                                   | —        | Bila 멤버, 2차 모임 일정 착오로 불참                                           |
+| 여상호                 | `sangho.yeo@gmail.com`       | —                          | —                                                                                                   | —        | 참석 시도, 사정상 불참                                                      |
+| 이은석                 | `howsgoing7@gmail.com`       | —                          | —                                                                                                   | —        | TecAce 그래픽 디자이너, 7/6 KACC 커피챗 참석                                   |
+| James H Kim (김종서)   | `jameshughkim@gmail.com`     | —                          | —                                                                                                   | —        | 4/23 준비 모임·1차 모임 참석                                                |
+| Jake Lim            | `jake.lim@me.com`            | —                          | —                                                                                                   | —        | 4/16·4/23 준비 모임 참석                                                 |
+| 남승현                 | `fair3gh@gmail.com`          | —                          | —                                                                                                   | —        | 1차 모임 참석                                                           |
 
 > Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 [AllStay](https://allstay.ai/)를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
 
