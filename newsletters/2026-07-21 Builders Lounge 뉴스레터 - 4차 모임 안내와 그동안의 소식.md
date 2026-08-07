@@ -1,7 +1,7 @@
 ---
 title: "Builders Lounge 뉴스레터 — 4차 모임 안내와 그동안의 소식"
 created: 2026-07-21 00:00:00
-status: 작성 중 (리뷰 후 발송 예정)
+status: 발송 완료
 tags:
   - builders-lounge
   - newsletter
@@ -18,10 +18,10 @@ links:
 | --- | --- |
 | 목적 | 2차 모임 영상 공개 등 그동안의 소식 + 8월 6일 4차 모임 참석 정보(발표자·장소·온라인 참석) 안내 |
 | 수신자 | Builders Lounge 멤버 + 외부 관심자 (두 번째 뉴스레터) |
-| 발송일 | (리뷰 후 확정) |
-| 상태 | 📝 초안 — 사용자 리뷰 대기 |
+| 발송일 | **2026-07-21 (실제 발송 완료, Gmail 확인)** |
+| 상태 | ✅ 발송 완료 |
 
-## 이메일 본문
+## 이메일 본문 (실제 발송본)
 
 **제목**: [Builders Lounge News Letter] 8월 6일 4차 모임 안내와 그동안의 소식
 
@@ -78,12 +78,14 @@ Builders Lounge는 AI를 활용해 Product, app, agent, workflow를 만드는 �
 
 📚 [Builders Lounge 기록 저장소](https://github.com/solkit70/builders-lounge-personal-notes)
 
-## 발송 전 체크리스트
+## 발송 기록 (Gmail 확인, 2026-08-03)
 
-- [ ] 발표자 목록 최종 확인 (추가 접수 여부)
-- [ ] 새로 추가된 메일링 리스트 3명 발송 대상에 포함 확인
-- [ ] 발송 방법 확정 — 멤버는 To, 비멤버는 CC (1차 뉴스레터와 동일 방식 예정)
-- [ ] 수신자 목록 최종 확인
-- [ ] 발송일 확정
+- **발송 일시**: 2026-07-21T07:50:04Z (message id `19f83a741d9e0bd4`)
+- **받는 사람(To, 16명)**: gpminsuk@gmail.com, jamessungjin.kim@gmail.com, myleo.jerry@gmail.com, fromdj2k@gmail.com, hebronplatform@gmail.com, nate.cho.nyc@gmail.com, jsong@seattlepartners.us, mickeyfromsd@gmail.com, davidsejinpark@gmail.com, commercial209@gmail.com, haysil@naver.com, sangho.yeo@gmail.com, howsgoing7@gmail.com, jameshughkim@gmail.com, jake.lim@me.com, fair3gh@gmail.com
+- **참조(Cc, 13명, 외부 관심자)**: davidoh.glad@gmail.com, nick@bighug.org, seattlekdaily@gmail.com, goo.lee@apawood.org, harry.jung@kscseattle.org, bonkoo1960@gmail.com, healthwealth2054@gmail.com, anhyesun@gmail.com, bettyrow@dareesoft.com, davidyh.oh@gmail.com, jlee@buckleylaw.net, bin065025@gmail.com, hansoo@tecace.com
+- **발송 방식**: 멤버는 To, 외부 관심자는 Cc — 1차 뉴스레터와 동일 방식으로 실제 적용됨 확인
+- **후속 반응**: 김성수님이 7/24 발표 홍보 포스터를 이메일로 전달, 사용자가 페이스북 게시 승인 (같은 스레드)
 
-*2026-07-21 작성. 🤖 Claude Code로 초안 작성. 사용자 리뷰 후 발송.*
+> ⚠️ 이 문서는 2026-08-03에 "아직 미발송 초안"으로 잘못 표시되어 있던 것을 Gmail 대조 후 실제 발송 완료 상태로 정정함. 8/6 모임을 앞두고 준비한 후속 업데이트(포스터, Main Speaker 시간 "20분+α", 음식 미제공 안내 등)는 **3차 뉴스레터**로 별도 작성 → [[Initiatives/Builders Lounge/newsletters/2026-08-03 Builders Lounge 뉴스레터 - 4차 모임 최종 안내|2026-08-03 3차 뉴스레터]]
+
+*2026-07-21 작성 및 발송. 🤖 Claude Code로 초안 작성, 사용자 리뷰 후 발송.*
