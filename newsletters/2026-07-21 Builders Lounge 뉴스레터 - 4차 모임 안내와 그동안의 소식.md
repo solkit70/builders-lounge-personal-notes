@@ -81,8 +81,8 @@ Builders Lounge는 AI를 활용해 Product, app, agent, workflow를 만드는 �
 ## 발송 기록 (Gmail 확인, 2026-08-03)
 
 - **발송 일시**: 2026-07-21T07:50:04Z (message id `19f83a741d9e0bd4`)
-- **받는 사람(To, 16명)**: gpminsuk@gmail.com, jamessungjin.kim@gmail.com, myleo.jerry@gmail.com, fromdj2k@gmail.com, hebronplatform@gmail.com, nate.cho.nyc@gmail.com, jsong@seattlepartners.us, mickeyfromsd@gmail.com, davidsejinpark@gmail.com, commercial209@gmail.com, haysil@naver.com, sangho.yeo@gmail.com, howsgoing7@gmail.com, jameshughkim@gmail.com, jake.lim@me.com, fair3gh@gmail.com
-- **참조(Cc, 13명, 외부 관심자)**: davidoh.glad@gmail.com, nick@bighug.org, seattlekdaily@gmail.com, goo.lee@apawood.org, harry.jung@kscseattle.org, bonkoo1960@gmail.com, healthwealth2054@gmail.com, anhyesun@gmail.com, bettyrow@dareesoft.com, davidyh.oh@gmail.com, jlee@buckleylaw.net, bin065025@gmail.com, hansoo@tecace.com
+- **받는 사람(To, 16명)**: 수신자 명단은 별도 관리 (레포지토리에는 미포함)
+- **참조(Cc, 13명, 외부 관심자)**: 수신자 명단은 별도 관리 (레포지토리에는 미포함)
 - **발송 방식**: 멤버는 To, 외부 관심자는 Cc — 1차 뉴스레터와 동일 방식으로 실제 적용됨 확인
 - **후속 반응**: 김성수님이 7/24 발표 홍보 포스터를 이메일로 전달, 사용자가 페이스북 게시 승인 (같은 스레드)
 

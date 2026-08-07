@@ -90,11 +90,7 @@ links:
 
 ## 수신자 명단 (최종)
 
-**To (멤버, 16명)**
-gpminsuk@gmail.com, jamessungjin.kim@gmail.com, myleo.jerry@gmail.com, fromdj2k@gmail.com, hebronplatform@gmail.com, nate.cho.nyc@gmail.com, jsong@seattlepartners.us, mickeyfromsd@gmail.com, davidsejinpark@gmail.com, commercial209@gmail.com, haysil@naver.com, sangho.yeo@gmail.com, howsgoing7@gmail.com, jameshughkim@gmail.com, jake.lim@me.com, fair3gh@gmail.com
-
-**Cc (비멤버/외부 관심자, 14명)**
-davidoh.glad@gmail.com, nick@bighug.org, seattlekdaily@gmail.com, goo.lee@apawood.org, harry.jung@kscseattle.org, bonkoo1960@gmail.com, healthwealth2054@gmail.com, anhyesun@gmail.com, bettyrow@dareesoft.com, davidyh.oh@gmail.com, jlee@buckleylaw.net, bin065025@gmail.com, hansoo@tecace.com, steveha@tecace.com
+수신자 명단은 별도 관리 (레포지토리에는 미포함)
 
 ## 메모
 

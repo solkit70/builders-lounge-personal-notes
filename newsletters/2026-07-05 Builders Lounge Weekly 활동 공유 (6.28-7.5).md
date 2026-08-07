@@ -30,17 +30,7 @@ links:
 | 수신자 후보 | Builders Lounge 멤버 전원 (메일링 리스트 구축 필요) |
 | 상태 | 초안 — 사용자 리뷰 대기 |
 
-### 확보된 멤버 이메일
-
-| 멤버 | 이메일 |
-| --- | --- |
-| 강민석 | gpminsuk@gmail.com |
-| 김성수 | hebronplatform@gmail.com |
-| Daniel Kang | fromdj2k@gmail.com |
-| 이은석 | howsgoing7@gmail.com |
-| 박창수 | solkit70@gmail.com |
-
-> 나머지 멤버(김성진, 김진영, 송재희, 이도규, 박세진, 손민수, Eunsil Ha, 여상호)의 이메일은 확인 후 추가 필요.
+> 수신자 명단은 별도 관리 (레포지토리에는 미포함).
 
 ## 이메일 본문 (초안)
 

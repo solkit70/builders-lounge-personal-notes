@@ -15,9 +15,9 @@ tags:
 
 | 항목 | 내용 |
 | --- | --- |
-| From | Changsoo Park `<solkit70@gmail.com>` |
-| To | Oh David `<davidoh.glad@gmail.com>`; Sung Soo Kim `<hebronplatform@gmail.com>`; `gpminsuk@gmail.com`; `howsgoing7@gmail.com`; `fromdj2k@gmail.com` |
-| Bcc | `jamessungjin.kim@gmail.com`; `myleo.jerry@gmail.com`; `nate.cho.nyc@gmail.com`; `jsong@seattlepartners.us`; `mickeyfromsd@gmail.com`; `davidsejinpark@gmail.com`; Minsu S `<commercial209@gmail.com>`; `haysil@naver.com`; `sangho.yeo@gmail.com` |
+| From | Changsoo Park |
+| To | 수신자 명단은 별도 관리 (레포지토리에는 미포함) |
+| Bcc | 수신자 명단은 별도 관리 (레포지토리에는 미포함) |
 | Date | Jul 7, 2026, 10:20 PM |
 | Subject | 7/6 KACC × Builders Lounge 커피챗 요약 공유드립니다 |
 | Mailed by | gmail.com |
