@@ -32,7 +32,7 @@ tags: [builder, gobi, bila-ai, ai-native-social, wearable, startup-founder]
 
 4차 모임에서는 **개회 진행을 Bila AI에게 맡겼다.** 시작 직후 할루시네이션이 발생해 즉석에서 지적받았는데, 이를 숨기지 않고 그대로 노출했다. 완성 후 공개가 아니라 **미완성 상태로 사용자 앞에 세우는** 방식이다.
 
-4차 모임에서 **모바일 앱 출시 소식**까지 나왔다.
+**모바일 앱은 4차 모임 이후에 나왔다.** 2026-08 기준 **iOS 앱 출시 완료**, **안드로이드는 심사 중**이다. 앱을 내려받고 Builders Lounge 채널로 들어오는 방법은 4차 ④편(손민수 · Conductor AI) 영상 마지막에 화면으로 안내돼 있다.
 
 ### 안경형 웨어러블 (개발 중)
 
@@ -45,7 +45,7 @@ tags: [builder, gobi, bila-ai, ai-native-social, wearable, startup-founder]
 | 1차 | 2026-05-15 | **GOBI Space / Desktop hands-on 진행** (주요 발표자) |
 | 2차 | 2026-06-08 | Gobi Space 데모 — AI-native social space, Space Agent, 외부 연동 구조 |
 | 3차 | 2026-07-06 | KACC Coffee Chat 참석. 웨어러블 CRM 하드웨어 소개 |
-| 4차 | 2026-08-06 | **Bila AI Agent 개발 업데이트** + 모바일 앱 출시 |
+| 4차 | 2026-08-06 | **Bila AI Agent 개발 업데이트.** 개회 진행을 Bila AI에게 맡김 · 저장소 공개 이유 설명 · Gobi Space 데모 |
 
 ## 영상
 
