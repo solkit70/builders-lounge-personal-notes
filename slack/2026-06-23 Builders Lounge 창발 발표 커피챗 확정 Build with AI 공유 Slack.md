@@ -74,16 +74,16 @@ Changsoo Park은 워싱턴주 한인 상공회의소 회장님 주선으로 IT/A
 
 공지에는 현재 참석 확정자가 5명으로 정리되었다. 강민석님은 Gobi Space, Daniel Kang님은 AllStay.ai, Changsoo Park은 CatchUp AI로 소개되었고, 김성수님과 이은석님도 참석 확정자에 포함되었다.
 
-상공회의소 쪽 연락 대상은 워싱턴주 한인 상공회의소 회장 오명규님이며, 이메일은 `davidoh.glad@gmail.com`으로 정리했다.
+상공회의소 쪽 연락 대상은 워싱턴주 한인 상공회의소 회장 오명규님이다. (연락처는 레포지토리에 포함하지 않는다)
 
-| 참석자 | 이메일 | Product | 링크 | 소개 |
-| --- | --- | --- | --- | --- |
-| 강민석 | `gpminsuk@gmail.com` | GOBI / Gobi Space | gobihq.com · gobispace.com | AI-native Social Space |
-| 김성수 | `hebronplatform@gmail.com` | HebronGuide | hebronguide.com | 글로벌 환대 커뮤니티 플랫폼, Bila 멤버 |
-| Daniel Kang | `fromdj2k@gmail.com` | AllStay.ai | allstay.ai | AI 기반 Short-Term Rental 운영 플랫폼 |
-| 이은석 | `howsgoing7@gmail.com` | 미확인 | — | 그래픽 디자이너로 Product를 개발하는 Builder |
-| 박창수 | `solkit70@gmail.com` | CatchUp AI | catchupai.net | AI 활용법 콘텐츠와 커뮤니티 |
-| 오명규 (회장) | `davidoh.glad@gmail.com` | — | — | 워싱턴주 한인 상공회의소 회장 |
+| 참석자 | Product | 링크 | 소개 |
+| --- | --- | --- | --- |
+| 강민석 | GOBI / Gobi Space | gobihq.com · gobispace.com | AI-native Social Space |
+| 김성수 | HebronGuide | hebronguide.com | 글로벌 환대 커뮤니티 플랫폼, Bila 멤버 |
+| Daniel Kang | AllStay.ai | allstay.ai | AI 기반 Short-Term Rental 운영 플랫폼 |
+| 이은석 | 미확인 | — | 그래픽 디자이너로 Product를 개발하는 Builder |
+| 박창수 | CatchUp AI | catchupai.net | AI 활용법 콘텐츠와 커뮤니티 |
+| 오명규 (회장) | — | — | 워싱턴주 한인 상공회의소 회장 |
 
 이 공지는 Builders Lounge가 내부 demo와 feedback 중심의 커뮤니티에서 지역 startup 네트워크와 기관 연결로 확장되는 장면이다. 특히 상공회의소 측의 사전 준비가 필요하다고 명시했기 때문에, 단순 모임 참여가 아니라 각 참여자의 product와 startup context를 미리 정리해 전달해야 하는 운영 단계로 들어갔다.
 
@@ -113,7 +113,7 @@ Changsoo Park은 송재희님이 비개발자 바이브 코딩 강의와 멘토�
 
 ### 2026-06-30 — Changsoo Park → 오명규·참석자들: 참석 예정자 정보 사전 공유 (1차)
 
-커피챗 확정 후 오명규 회장님(`davidoh.glad@gmail.com`)과 참석자들(강민석, 김성수, Daniel Kang)에게 행사 정보와 참석 예정자 명단을 이메일로 사전 공유했다. 당시 이은석님 이메일은 확인 중이어서 미포함.
+커피챗 확정 후 오명규 회장님과 참석자들(강민석, 김성수, Daniel Kang)에게 행사 정보와 참석 예정자 명단을 이메일로 사전 공유했다. 당시 이은석님 이메일은 확인 중이어서 미포함.
 
 > 7월 6일 월요일 오후 6시에 예정된 워싱턴주 한인 상공회의소와의 커피챗과 관련해서, 현재 참석 예정자 정보를 미리 공유드립니다.
 >
@@ -156,9 +156,7 @@ Product 미확인이었던 김성수님이 HebronGuide를 직접 공유. 글로�
 
 ### 2026-07-04 — Changsoo Park → 스레드 전체: 이은석님 이메일 추가
 
-이은석님의 이메일(`howsgoing7@gmail.com`)이 확인되어 기존 스레드에 CC 추가.
-
-> ++ howsgoing7@gmail.com
+이은석님의 이메일이 확인되어 기존 스레드에 CC 추가.
 
 이로써 5명 참석자 전원의 이메일이 이메일 스레드에 포함되었다.
 
@@ -178,7 +176,7 @@ Product 미확인이었던 김성수님이 HebronGuide를 직접 공유. 글로�
 | 오명규 회장님께 참석자 정보 이메일 발송 | ✅ 완료 | 2026-06-30 1차·2차 이메일 발송 완료 |
 | 오명규 회장님 참석 확인 | ✅ 완료 | 2026-07-03 "7/6 오후6시에 뵙겠습니다" 응답 수신 |
 | 김성수님 Product 확인 | ✅ 완료 | HebronGuide (www.hebronguide.com) 확인 |
-| 이은석님 이메일 스레드 추가 | ✅ 완료 | 2026-07-04 howsgoing7@gmail.com CC 추가 |
+| 이은석님 이메일 스레드 추가 | ✅ 완료 | 2026-07-04 이메일 스레드에 CC 추가 |
 | 7/6 커피챗 당일 준비 | ⏳ 진행 중 | 라이브 방송 내 커피챗 소개 슬라이드 작성 필요 |
 | 참석자 소개 자료 | ⏳ 진행 중 | Builders Lounge 내 profile 파일 생성 중 |
 | Build with AI 인사이트 | ⏳ 진행 중 | Live #17 실험 ④로 반영 예정 |
