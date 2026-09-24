@@ -118,6 +118,8 @@ builders-lounge-personal-notes/
 ├─ videos/       공식 모임 영상 정리와 transcript
 ├─ ideas/        운영 아이디어와 다음 모임 준비
 ├─ feedback/     멤버 Product review와 방향성 feedback
+├─ builders/     발표한 빌더와 제품을 사람별로 정리
+├─ network/      외부 관계자 — 뉴스레터 수신자·관심자의 활동 기록
 └─ assets/       이미지 자료
 ```
 
@@ -130,6 +132,8 @@ builders-lounge-personal-notes/
 | `videos/` | 공식 모임 녹화 영상 정리와 transcript |
 | `ideas/` | 2회 모임 준비, Custom Homepage, 공동 기록 저장소 아이디어 |
 | `feedback/` | 멤버들이 서로의 Product, app, agent, workflow에 대해 남긴 review와 방향성 feedback |
+| `builders/` | 모임에서 발표한 빌더와 그 제품을 사람별로 정리 — "이 사람이 무엇을 만들고 있나" |
+| `network/` | 모임 밖 관계자 — 뉴스레터를 받아 보시거나 모임에 관심을 가진 분들의 소식·활동 기록 |
 | `assets/` | README나 문서에서 사용할 이미지 자료 |
 
 ## 주요 문서
@@ -210,6 +214,7 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 | James H Kim (김종서)   | —                          | —                                                                                                   | —        | 4/23 준비 모임·1차 모임 참석                                                |
 | Jake Lim            | —                          | —                                                                                                   | —        | 4/16·4/23 준비 모임 참석                                                 |
 | 남승현                 | —                          | —                                                                                                   | —        | 1차 모임 참석                                                           |
+| 조윤상                 | —                          | —                                                                                                   | —        | Ichi Bento Teriyaki(Shoreline) 운영 · 5차 모임 참석 · 바이브 코딩 1:1 온보딩(9/15)  |
 
 > Daniel Kang — 2026-06-04 Slack 소개: "AI를 활용한 Short-Term Rental 운영 플랫폼 [AllStay](https://allstay.ai/)를 만들고 있습니다. 플랫폼 개발은 상당 부분 진행된 상태입니다. 이제 가장 중요한 고객 확보와 Go-to-Market 단계에 집중하고 있어, Sales/Business Development에 관심 있는 분을 찾고 있습니다." — 벨뷰 지역 활동
 

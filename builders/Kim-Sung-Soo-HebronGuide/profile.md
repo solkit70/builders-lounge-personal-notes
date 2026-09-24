@@ -87,6 +87,7 @@ tags: [builder, hebronguide, vibe-coding, non-developer]
 | --- | --- | --- |
 | 3차 | 2026-07-06 | KACC Coffee Chat 참석. HebronGuide(당시 75개 도시) 소개, **'환대'를 커뮤니티 운영 철학으로 제안** |
 | 4차 | 2026-08-06 | **메인 발표.** "바이브 코딩 이후의 시대, 기술과 세계관의 연합으로 탄생한 HebronGuide" |
+| 5차 | 2026-09-16 | 불참. 논문 준비·학교 공부·지역 교수 활동으로 일정 확인이 늦었음을 9/17 이메일로 알림. → [[2026-09-18 Builders Lounge 5차 모임 후속 연락|후속 이메일]] |
 
 > 📌 **3차에서 만난 사람이 4차 메인 발표자가 됐다.** 모임이 발표자를 외부에서 섭외하는 것이 아니라 커뮤니티 안에서 만들어내고 있다는 사례다.
 
@@ -105,5 +106,6 @@ https://youtu.be/vXPCbt47rok
 
 - [4차 모임 정리](../../videos/2026-08-06%20Builders%20Lounge%204%EC%B0%A8%20%EB%AA%A8%EC%9E%84%20%EC%A0%95%EB%A6%AC.md)
 - [4차 모임 FAQ](../../videos/2026-08-06%20Builders%20Lounge%204%EC%B0%A8%20%EB%AA%A8%EC%9E%84%20FAQ.md)
+- [[2026-09-18 Builders Lounge 5차 모임 후속 연락|5차 모임 후속 이메일]]
 - [3차 KACC Coffee Chat 결과 공유](../../notices/2026-07-06%20Builders%20Lounge%20KACC%20Coffee%20Chat%20%EA%B2%B0%EA%B3%BC%20%EA%B3%B5%EC%9C%A0%20by%20Claude%20Code.md)
 - [제품 아이디어 노트](../../ideas/2026-07-03%20Sung%20Soo%20Kim%20-%20HebronGuide.md)

@@ -1,1 +1,9 @@
+# 개인정보(이름·이메일)가 든 메일링 리스트 — 절대 커밋하지 않는다
 newsletters/Builders Lounge 메일링 리스트.md
+newsletters/*메일링 리스트.md
+
+# Zoom 접속 정보(Meeting ID·Passcode)가 든 공지·기록
+notices/*City Hall 신청 접수 기록.md
+
+# 사적인 DM·이메일·슬랙 대화 원문
+builders/**/*후속 연락.md
