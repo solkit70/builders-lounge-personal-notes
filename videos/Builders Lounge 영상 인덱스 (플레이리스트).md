@@ -37,12 +37,12 @@ https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
 
 ## 회차별 — 무엇을 보면 되나
 
-### 1차 모임 (2026-05-15) — GOBI Space Hands-on
+### 1차 모임 (2026-05-07) — GOBI Space Hands-on
 
 **[Builders Lounge] #1 — An AI agent posting for me? GOBI Space / Desktop Hands-on** (25:09)
 https://youtu.be/AoOhKZ4LoKs
 
-첫 공식 모임. **강민석 님의 GOBI Space / Desktop 핸즈온**이 중심이었다. AI 에이전트가 나를 대신해 글을 올린다는 개념을 실제로 시연했다.
+첫 공식 모임(2026-05-07). **모임 이름을 Builders Lounge 로 정했고**, **강민석 님의 GOBI Space / Desktop 핸즈온**으로 사용법을 익혔다. 플레이리스트의 **맨 첫 영상**이다. AI 에이전트가 나를 대신해 글을 올린다는 개념을 실제로 시연했다.
 
 → 정리 문서: [[Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on 영상 정리|1차 영상 정리]] · 전사본: [[Initiatives/Builders Lounge/videos/2026-05-15 Builders Lounge 1 GOBI Hands-on Transcript|1차 Transcript]]
 

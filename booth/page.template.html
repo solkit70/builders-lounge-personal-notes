@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Builders Lounge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --bg:#F1F3F1;
+    --surface:#FFFFFF;
+    --surface-2:#E7ECE8;
+    --surface-3:#DCE5DF;
+    --line:#D2DBD5;
+    --line-strong:#B7C4BC;
+    --ink:#12201A;
+    --ink-dim:#46564C;
+    --ink-faint:#75897E;
+    --accent:#2F7D5A;
+    --accent-ink:#FFFFFF;
+    --accent-soft:#DCEEE3;
+    --accent2:#3159C7;
+    --accent2-ink:#FFFFFF;
+    --accent2-soft:#E1E7FB;
+    --warn:#8A5A16;
+    --warn-soft:#F7ECD9;
+    --shadow: 0 1px 2px rgba(18,32,26,.06), 0 10px 28px -14px rgba(18,32,26,.22);
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 9px;
+    --font-display:'Noto Serif KR','Noto Serif',serif;
+    --font-body:'Noto Sans KR','Noto Sans',-apple-system,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1613; --surface:#152019; --surface-2:#1C2A22; --surface-3:#24352B;
+      --line:#2B3D33; --line-strong:#37503F;
+      --ink:#E9F2EC; --ink-dim:#A9C0B3; --ink-faint:#78907F;
+      --accent:#57C98C; --accent-ink:#082014; --accent-soft:#173826;
+      --accent2:#93A9FF; --accent2-ink:#0B1230; --accent2-soft:#1C2657;
+      --warn:#E8B96A; --warn-soft:#33270F;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.65);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1613; --surface:#152019; --surface-2:#1C2A22; --surface-3:#24352B;
+    --line:#2B3D33; --line-strong:#37503F;
+    --ink:#E9F2EC; --ink-dim:#A9C0B3; --ink-faint:#78907F;
+    --accent:#57C98C; --accent-ink:#082014; --accent-soft:#173826;
+    --accent2:#93A9FF; --accent2-ink:#0B1230; --accent2-soft:#1C2657;
+    --warn:#E8B96A; --warn-soft:#33270F;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.65);
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-body); font-size:16px; line-height:1.65;
+    word-break:keep-all; overflow-wrap:break-word;
+  }
+  h1,h2,h3{ font-family:var(--font-display); font-weight:700; text-wrap:balance; margin:0; color:var(--ink); }
+  p{ margin:0; }
+  a{ color:inherit; }
+  ::selection{ background:var(--accent-soft); }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:4px; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none!important; transition:none!important; } }
+
+  .wrap{ max-width:760px; margin:0 auto; padding:0 22px 64px; }
+
+  /* Topbar */
+  .topbar{
+    position:sticky; top:0; z-index:30;
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    padding:13px 22px; background:color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .brand{ display:flex; align-items:center; gap:10px; min-width:0; }
+  .brand-mark{ flex:none; width:30px; height:30px; }
+  .brand-text{ font-family:var(--font-mono); font-weight:600; font-size:12.5px; letter-spacing:.02em; color:var(--ink-dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .lang-toggle{ flex:none; display:flex; background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:3px; gap:2px; }
+  .lang-toggle button{
+    font-family:var(--font-mono); font-size:12px; font-weight:600; letter-spacing:.04em;
+    border:none; background:transparent; color:var(--ink-faint); padding:6px 13px; border-radius:999px; cursor:pointer;
+  }
+  .lang-toggle button.active{ background:var(--accent); color:var(--accent-ink); }
+
+  /* Hero */
+  .hero{ padding:44px 0 30px; }
+  .eyebrow{
+    font-family:var(--font-mono); font-size:12px; font-weight:600; letter-spacing:.12em;
+    color:var(--accent); text-transform:uppercase; margin-bottom:14px; display:block;
+  }
+  .hero h1{ font-size:clamp(26px,4.4vw,36px); line-height:1.24; margin-bottom:16px; }
+  .hero .sub{ font-size:16px; color:var(--ink-dim); max-width:58ch; margin-bottom:26px; }
+
+  /* Entry block: link + QR */
+  .entry{
+    display:flex; gap:26px; align-items:center; flex-wrap:wrap;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:22px 24px;
+  }
+  .entry-main{ flex:1 1 300px; min-width:0; }
+  .cta-label{ font-size:12.5px; color:var(--ink-faint); font-weight:600; display:block; margin-bottom:10px; }
+  .cta-link{
+    display:inline-flex; align-items:center; gap:9px; max-width:100%;
+    background:var(--ink); color:var(--bg); font-family:var(--font-mono); font-size:12.5px; font-weight:600;
+    padding:11px 16px; border-radius:999px; text-decoration:none;
+    transition:transform .12s ease; word-break:break-all;
+  }
+  .cta-link:hover{ transform:translateY(-1px); }
+  .cta-link svg{ width:14px; height:14px; flex:none; }
+  .entry-hint{ font-size:13px; color:var(--ink-faint); margin-top:11px; }
+  .qr-box{ flex:none; text-align:center; }
+  .qr-card{
+    background:#FFFFFF; padding:10px; border-radius:var(--radius-md);
+    border:1px solid var(--line-strong); line-height:0;
+  }
+  .qr-card img{ display:block; width:132px; height:132px; }
+  .qr-cap{ font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); margin-top:8px; letter-spacing:.03em; }
+
+  /* Device switch */
+  .devices{ margin-top:44px; }
+  .device-tabs{ display:flex; gap:8px; background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:4px; }
+  .device-tabs button{
+    flex:1; display:flex; align-items:center; justify-content:center; gap:8px;
+    font-family:var(--font-body); font-size:14.5px; font-weight:600;
+    border:none; background:transparent; color:var(--ink-faint);
+    padding:11px 14px; border-radius:999px; cursor:pointer; transition:background .15s ease, color .15s ease;
+  }
+  .device-tabs button.active{ background:var(--surface); color:var(--ink); box-shadow:var(--shadow); }
+  .device-tabs svg{ width:17px; height:17px; flex:none; }
+  .device-note{ font-size:13.5px; color:var(--ink-faint); margin-top:12px; text-align:center; }
+
+  /* Tracks */
+  .track{ margin-top:40px; }
+  .track-head{ margin-bottom:22px; }
+  .track-chip{
+    display:inline-block; font-family:var(--font-mono); font-size:11.5px; font-weight:600; letter-spacing:.1em;
+    padding:4px 10px; border-radius:999px; margin-bottom:12px;
+  }
+  .track-a .track-chip{ background:var(--accent-soft); color:var(--accent); }
+  .track-b .track-chip{ background:var(--accent2-soft); color:var(--accent2); }
+  .track-head h2{ font-size:22px; margin-bottom:8px; }
+  .track-scope{ font-size:14px; color:var(--ink-faint); max-width:56ch; }
+
+  .steps{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px; }
+  .step{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:20px 20px 22px;
+  }
+  .step-head{ display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+  .step-num{
+    flex:none; width:30px; height:30px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono); font-weight:700; font-size:13.5px;
+  }
+  .track-a .step-num{ background:var(--accent); color:var(--accent-ink); }
+  .track-b .step-num{ background:var(--accent2); color:var(--accent2-ink); }
+  .step-title{ font-family:var(--font-display); font-weight:700; font-size:17px; }
+  .step-body{ font-size:14.5px; color:var(--ink-dim); margin:0 0 14px; max-width:60ch; }
+  .step-body:last-child{ margin-bottom:0; }
+  .step-shot{
+    border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden;
+    background:var(--surface-2); line-height:0;
+  }
+  .step-shot img{ display:block; width:100%; height:auto; }
+  /* phone screenshots stay phone-sized */
+  .step-shot.phone{ max-width:250px; margin:0 auto; border-radius:22px; }
+
+  /* Callouts */
+  .note{
+    margin-top:24px; display:flex; gap:14px; align-items:flex-start;
+    background:var(--surface-2); border:1px solid var(--line); border-radius:var(--radius-lg);
+    padding:18px 20px;
+  }
+  .note.warn{ background:var(--warn-soft); border-color:color-mix(in srgb, var(--warn) 35%, transparent); }
+  .note-icon{
+    flex:none; width:26px; height:26px; border-radius:50%; background:var(--surface-3);
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:12px; color:var(--ink-dim);
+    margin-top:2px;
+  }
+  .note.warn .note-icon{ background:color-mix(in srgb, var(--warn) 22%, transparent); color:var(--warn); }
+  .note-title{ font-weight:700; font-size:14.5px; margin-bottom:5px; }
+  .note-body{ font-size:14px; color:var(--ink-dim); }
+
+  .quote{
+    margin-top:28px; padding:18px 22px; border-left:3px solid var(--line-strong);
+    font-family:var(--font-display); font-style:italic; font-size:14.5px; color:var(--ink-dim); line-height:1.7;
+  }
+  .quote cite{ display:block; margin-top:10px; font-family:var(--font-mono); font-style:normal; font-size:11.5px; color:var(--ink-faint); letter-spacing:.03em; }
+
+  .closing{ margin-top:52px; text-align:center; }
+  .closing p{ font-family:var(--font-display); font-size:19px; margin-bottom:20px; }
+
+  @media (max-width:480px){
+    .wrap{ padding:0 16px 48px; }
+    .hero{ padding:32px 0 24px; }
+    .step{ padding:16px 16px 18px; }
+    .entry{ padding:18px; gap:18px; }
+    .qr-box{ margin:0 auto; }
+    .device-tabs button{ font-size:13.5px; padding:10px 8px; }
+  }
+
+  /* ===== 2026-09-25 CTS 부스용 홍보 섹션 ===== */
+  img{ max-width:100%; }
+  [hidden]:not([hidden=until-found]){ display:none!important; }
+  html{ scroll-behavior:smooth; }
+  section[id]{ scroll-margin-top:72px; }
+
+  .hero-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:26px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+    font-family:var(--font-body); font-size:14.5px; font-weight:700;
+    padding:12px 20px; border-radius:999px; border:1px solid var(--line-strong);
+    background:var(--surface); color:var(--ink); transition:transform .12s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn.primary{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
+  .btn svg{ width:15px; height:15px; flex:none; }
+
+  .facts{ display:flex; flex-wrap:wrap; gap:8px; }
+  .fact{
+    font-family:var(--font-mono); font-size:12px; font-weight:600; letter-spacing:.03em;
+    color:var(--ink-dim); background:var(--surface-2); border:1px solid var(--line);
+    padding:6px 12px; border-radius:999px;
+  }
+
+  .toc{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:6px 0 8px;
+  }
+  .toc a{
+    display:flex; flex-direction:column; gap:2px; text-decoration:none;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md);
+    padding:12px 14px; transition:border-color .15s ease;
+  }
+  .toc a:hover{ border-color:var(--accent); }
+  .toc-num{ font-family:var(--font-mono); font-size:12px; font-weight:700; color:var(--accent); }
+  .toc-label{ font-size:13.5px; font-weight:600; color:var(--ink); line-height:1.35; }
+
+  .block{ margin-top:64px; }
+  .block-head{ margin-bottom:22px; }
+  .block-num{
+    display:inline-block; font-family:var(--font-mono); font-size:11.5px; font-weight:600; letter-spacing:.1em;
+    padding:4px 10px; border-radius:999px; margin-bottom:12px;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .block-head h2{ font-size:clamp(22px,3.4vw,27px); line-height:1.3; margin-bottom:10px; }
+  .block-lead{ font-size:15.5px; color:var(--ink-dim); max-width:60ch; }
+
+  .gets{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  .get{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:20px 20px 22px; position:relative;
+  }
+  .get-icon{
+    width:38px; height:38px; border-radius:12px; margin-bottom:14px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .get-icon svg{ width:20px; height:20px; }
+  .get.future .get-icon{ background:var(--accent2-soft); color:var(--accent2); }
+  .get h3{ font-size:17px; line-height:1.4; margin-bottom:8px; }
+  .get p{ font-size:14.5px; color:var(--ink-dim); }
+  .tag-soon{
+    position:absolute; top:18px; right:18px;
+    font-family:var(--font-mono); font-size:10.5px; font-weight:700; letter-spacing:.08em;
+    padding:3px 8px; border-radius:999px; background:var(--accent2-soft); color:var(--accent2);
+  }
+  .vision{
+    margin-top:22px; padding:20px 22px; border-radius:var(--radius-lg);
+    background:linear-gradient(135deg, var(--accent-soft), var(--accent2-soft));
+    font-family:var(--font-display); font-size:16.5px; line-height:1.7; color:var(--ink);
+  }
+
+  .timeline{ list-style:none; margin:26px 0 0; padding:0; border-left:2px solid var(--line-strong); }
+  .timeline li{ position:relative; padding:0 0 16px 20px; }
+  .timeline li:last-child{ padding-bottom:0; }
+  .timeline li::before{
+    content:""; position:absolute; left:-7px; top:7px; width:12px; height:12px; border-radius:50%;
+    background:var(--surface); border:2px solid var(--accent);
+  }
+  .tl-when{ font-family:var(--font-mono); font-size:12px; font-weight:600; color:var(--accent); letter-spacing:.03em; }
+  .tl-what{ font-size:14.5px; color:var(--ink-dim); }
+  .tl-what a{ color:var(--accent); font-weight:600; text-decoration:none; white-space:nowrap; }
+  .sub-h{ font-size:17px; margin-top:34px; }
+
+  .talks{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+  .talk{
+    display:flex; flex-direction:column; gap:8px; text-decoration:none;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    padding:18px; transition:border-color .15s ease, transform .12s ease;
+  }
+  .talk:hover{ border-color:var(--accent); transform:translateY(-1px); }
+  .talk-meta{ display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:11.5px; font-weight:600; color:var(--ink-faint); }
+  .talk-meta .play{
+    width:22px; height:22px; border-radius:50%; background:#E0302A; color:#fff;
+    display:flex; align-items:center; justify-content:center; flex:none;
+  }
+  .talk-meta .play svg{ width:9px; height:9px; margin-left:1px; }
+  .talk-title{ font-family:var(--font-display); font-weight:700; font-size:15.5px; line-height:1.45; color:var(--ink); }
+  .links-row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+
+  .event{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  .event-top{ padding:22px 24px 20px; border-bottom:1px dashed var(--line-strong); }
+  .event-badges{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+  .badge{
+    font-family:var(--font-mono); font-size:11.5px; font-weight:700; letter-spacing:.05em;
+    padding:4px 10px; border-radius:999px; background:var(--surface-2); color:var(--ink-dim);
+  }
+  .badge.hot{ background:var(--warn-soft); color:var(--warn); }
+  .event h3{ font-size:20px; line-height:1.4; margin-bottom:10px; }
+  .event-desc{ font-size:14.5px; color:var(--ink-dim); max-width:60ch; }
+  .event-grid{ display:grid; grid-template-columns:repeat(2,1fr); }
+  .event-cell{ padding:14px 24px; border-bottom:1px solid var(--line); }
+  .event-cell:nth-child(odd){ border-right:1px solid var(--line); }
+  .event-k{ font-family:var(--font-mono); font-size:11px; font-weight:600; letter-spacing:.08em; color:var(--ink-faint); text-transform:uppercase; }
+  .event-v{ font-size:14.5px; font-weight:600; color:var(--ink); }
+  .event-speaker{ padding:18px 24px; background:var(--surface-2); font-size:14px; color:var(--ink-dim); }
+  .event-speaker b{ color:var(--ink); }
+  .speaker-k{ display:block; font-family:var(--font-mono); font-size:11px; font-weight:600; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:4px; }
+  .speaker-name{ display:block; font-family:var(--font-display); font-size:17px; margin-bottom:6px; }
+  .event-foot{ padding:18px 24px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+
+  .join-block .entry{ margin-top:4px; }
+
+  @media (max-width:640px){
+    .toc{ grid-template-columns:repeat(2,1fr); }
+    .gets, .talks{ grid-template-columns:1fr; }
+  }
+  @media (max-width:480px){
+    .block{ margin-top:52px; }
+    .event-top, .event-cell, .event-speaker, .event-foot{ padding-left:18px; padding-right:18px; }
+    .event-grid{ grid-template-columns:1fr; }
+    .event-cell:nth-child(odd){ border-right:none; }
+    .btn{ flex:1 1 auto; justify-content:center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 32 32" role="img" aria-label="Changbal emergence mark">
+      <circle cx="8" cy="22" r="2.6" fill="var(--accent)"/>
+      <circle cx="16" cy="25" r="2.6" fill="var(--accent)"/>
+      <circle cx="24" cy="21" r="2.6" fill="var(--accent2)"/>
+      <circle cx="19" cy="12" r="2.6" fill="var(--accent2)"/>
+      <circle cx="10" cy="10" r="2.6" fill="var(--accent)"/>
+      <circle cx="16" cy="16.5" r="4.6" fill="none" stroke="var(--ink)" stroke-width="1.3" opacity=".55"/>
+    </svg>
+    <span class="brand-text" data-i18n="brand"></span>
+  </div>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button type="button" data-lang="ko">KO</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow" data-i18n="eyebrow"></span>
+    <h1 data-i18n="h1"></h1>
+    <p class="sub" data-i18n="sub"></p>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#join"><span data-i18n="btn_join"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="btn" href="#talks"><span data-i18n="btn_talks"></span></a>
+    </div>
+
+    <div class="facts">
+      <span class="fact" data-i18n="fact1"></span>
+      <span class="fact" data-i18n="fact2"></span>
+      <span class="fact" data-i18n="fact3"></span>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#about"><span class="toc-num">01</span><span class="toc-label" data-i18n="toc1"></span></a>
+    <a href="#talks"><span class="toc-num">02</span><span class="toc-label" data-i18n="toc2"></span></a>
+    <a href="#next"><span class="toc-num">03</span><span class="toc-label" data-i18n="toc3"></span></a>
+    <a href="#join"><span class="toc-num">04</span><span class="toc-label" data-i18n="toc4"></span></a>
+  </nav>
+
+  <!-- ============ ① Builders Lounge 란 ============ -->
+  <section class="block" id="about">
+    <div class="block-head">
+      <span class="block-num">01</span>
+      <h2 data-i18n="about_h2"></h2>
+      <p class="block-lead" data-i18n="about_lead"></p>
+    </div>
+
+    <div class="gets">
+      <div class="get">
+        <div class="get-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/><polyline points="9 10 11 12 15 8"/></svg></div>
+        <h3 data-i18n="get1_h"></h3>
+        <p data-i18n="get1_p"></p>
+      </div>
+      <div class="get">
+        <div class="get-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg></div>
+        <h3 data-i18n="get2_h"></h3>
+        <p data-i18n="get2_p"></p>
+      </div>
+      <div class="get">
+        <div class="get-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <h3 data-i18n="get3_h"></h3>
+        <p data-i18n="get3_p"></p>
+      </div>
+      <div class="get future">
+        <span class="tag-soon" data-i18n="soon"></span>
+        <div class="get-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><line x1="7.3" y1="11" x2="16.7" y2="7"/><line x1="7.3" y1="13" x2="16.7" y2="17"/></svg></div>
+        <h3 data-i18n="get4_h"></h3>
+        <p data-i18n="get4_p"></p>
+      </div>
+    </div>
+
+    <p class="vision" data-i18n="vision"></p>
+
+    <h3 class="sub-h" data-i18n="history_h"></h3>
+    <ol class="timeline">
+      <li><div class="tl-when" data-i18n="tl1_when"></div><div class="tl-what" data-i18n-html="tl1_what"></div></li>
+      <li><div class="tl-when" data-i18n="tl2_when"></div><div class="tl-what" data-i18n="tl2_what"></div></li>
+      <li><div class="tl-when" data-i18n="tl3_when"></div><div class="tl-what" data-i18n="tl3_what"></div></li>
+      <li><div class="tl-when" data-i18n="tl4_when"></div><div class="tl-what" data-i18n="tl4_what"></div></li>
+      <li><div class="tl-when" data-i18n="tl5_when"></div><div class="tl-what" data-i18n="tl5_what"></div></li>
+    </ol>
+  </section>
+
+  <!-- ============ ② 지난 발표 보기 ============ -->
+  <section class="block" id="talks">
+    <div class="block-head">
+      <span class="block-num">02</span>
+      <h2 data-i18n="talks_h2"></h2>
+      <p class="block-lead" data-i18n="talks_lead"></p>
+    </div>
+
+    <div class="talks">
+      <a class="talk" href="https://youtu.be/nypuwYuyMJQ" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t1_meta"></span></span>
+        <span class="talk-title" data-i18n="t1"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/vXPCbt47rok" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t2_meta"></span></span>
+        <span class="talk-title" data-i18n="t2"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/e9iMkxUGXfM" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t3_meta"></span></span>
+        <span class="talk-title" data-i18n="t3"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/dsl7CZCCAh4" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t4_meta"></span></span>
+        <span class="talk-title" data-i18n="t4"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/5nlVyb6HBR0" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t5_meta"></span></span>
+        <span class="talk-title" data-i18n="t5"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/Racs4wG3BtA" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t6_meta"></span></span>
+        <span class="talk-title" data-i18n="t6"></span>
+      </a>
+    </div>
+
+    <div class="links-row">
+      <a class="btn primary" href="https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT" target="_blank" rel="noopener"><span data-i18n="btn_playlist"></span></a>
+      <a class="btn" href="https://github.com/solkit70/builders-lounge-personal-notes" target="_blank" rel="noopener"><span data-i18n="btn_github"></span></a>
+    </div>
+
+    <div class="note">
+      <div class="note-icon">@</div>
+      <div>
+        <div class="note-title" data-i18n="bila_title"></div>
+        <div class="note-body" data-i18n="bila_body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ③ 다음 모임 ============ -->
+  <section class="block" id="next">
+    <div class="block-head">
+      <span class="block-num">03</span>
+      <h2 data-i18n="next_h2"></h2>
+    </div>
+
+    <div class="event">
+      <div class="event-top">
+        <div class="event-badges">
+          <span class="badge hot" data-i18n="ev_badge_date"></span>
+          <span class="badge" data-i18n="ev_badge_online"></span>
+          <span class="badge" data-i18n="ev_badge_open"></span>
+        </div>
+        <h3 data-i18n="ev_title"></h3>
+        <p class="event-desc" data-i18n="ev_desc"></p>
+      </div>
+      <div class="event-grid">
+        <div class="event-cell"><div class="event-k" data-i18n="ev_k_when"></div><div class="event-v" data-i18n="ev_v_when"></div></div>
+        <div class="event-cell"><div class="event-k" data-i18n="ev_k_time"></div><div class="event-v" data-i18n="ev_v_time"></div></div>
+        <div class="event-cell"><div class="event-k" data-i18n="ev_k_format"></div><div class="event-v" data-i18n="ev_v_format"></div></div>
+        <div class="event-cell"><div class="event-k" data-i18n="ev_k_who"></div><div class="event-v" data-i18n="ev_v_who"></div></div>
+      </div>
+      <div class="event-speaker" data-i18n-html="ev_speaker"></div>
+      <div class="event-foot">
+        <a class="btn primary" href="#join"><span data-i18n="ev_cta"></span></a>
+        <a class="btn" href="https://youtu.be/jkXtL5J4rUM" target="_blank" rel="noopener"><span data-i18n="ev_video"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ④ 참여하기 (기존 입장 안내) ============ -->
+  <section class="block join-block" id="join">
+    <div class="block-head">
+      <span class="block-num">04</span>
+      <h2 data-i18n="join_h2"></h2>
+      <p class="block-lead" data-i18n="join_lead"></p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-main">
+        <span class="cta-label" data-i18n="cta_label"></span>
+        <a class="cta-link" href="https://www.gobispace.com/join/1nw53yDTqCDxiqV8e-BGSEboMjRTRLJV" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          gobispace.com/join/1nw53yDTqCDxiqV8e-BGSEboMjRTRLJV
+        </a>
+        <p class="entry-hint" data-i18n="entry_hint"></p>
+      </div>
+      <div class="qr-box">
+        <div class="qr-card"><img src="DATAURI" data-i18n-alt="qr_alt"></div>
+        <div class="qr-cap" data-i18n="qr_cap"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="devices">
+    <div class="device-tabs" role="tablist" aria-label="Device">
+      <button type="button" role="tab" data-device="desktop" aria-controls="panel-desktop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span data-i18n="tab_desktop"></span>
+      </button>
+      <button type="button" role="tab" data-device="mobile" aria-controls="panel-mobile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><line x1="11" y1="18.5" x2="13" y2="18.5"/></svg>
+        <span data-i18n="tab_mobile"></span>
+      </button>
+    </div>
+    <p class="device-note" data-i18n="device_note"></p>
+  </section>
+
+  <!-- ============ DESKTOP ============ -->
+  <div id="panel-desktop" role="tabpanel">
+    <section class="track track-a">
+      <div class="track-head">
+        <span class="track-chip">PART 1</span>
+        <h2 data-i18n="part1_h2"></h2>
+        <p class="track-scope" data-i18n="part1_scope"></p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step-head"><div class="step-num">1</div><div class="step-title" data-i18n="dA1_title"></div></div>
+          <p class="step-body" data-i18n="dA1_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dA1_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">2</div><div class="step-title" data-i18n="dA2_title"></div></div>
+          <p class="step-body" data-i18n="dA2_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dA2_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">3</div><div class="step-title" data-i18n="dA3_title"></div></div>
+          <p class="step-body" data-i18n="dA3_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dA3_alt"></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="track track-b">
+      <div class="track-head">
+        <span class="track-chip">PART 2</span>
+        <h2 data-i18n="part2_h2"></h2>
+        <p class="track-scope" data-i18n="part2_scope"></p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step-head"><div class="step-num">1</div><div class="step-title" data-i18n="dB1_title"></div></div>
+          <p class="step-body" data-i18n="dB1_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dB1_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">2</div><div class="step-title" data-i18n="dB2_title"></div></div>
+          <p class="step-body" data-i18n="dB2_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dB2_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">3</div><div class="step-title" data-i18n="dB3_title"></div></div>
+          <p class="step-body" data-i18n="dB3_body"></p>
+          <div class="step-shot"><img src="DATAURI" data-i18n-alt="dB3_alt"></div>
+        </li>
+      </ol>
+    </section>
+  </div>
+
+  <!-- ============ MOBILE ============ -->
+  <div id="panel-mobile" role="tabpanel" hidden>
+    <div class="note">
+      <div class="note-icon">i</div>
+      <div>
+        <div class="note-title" data-i18n="ios_title"></div>
+        <div class="note-body" data-i18n="ios_body"></div>
+      </div>
+    </div>
+
+    <section class="track track-b">
+      <div class="track-head">
+        <span class="track-chip">iOS · ANDROID</span>
+        <h2 data-i18n="part3_h2"></h2>
+        <p class="track-scope" data-i18n="part3_scope"></p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step-head"><div class="step-num">1</div><div class="step-title" data-i18n="m1_title"></div></div>
+          <p class="step-body" data-i18n="m1_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m1_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">2</div><div class="step-title" data-i18n="m2_title"></div></div>
+          <p class="step-body" data-i18n="m2_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m2_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">3</div><div class="step-title" data-i18n="m3_title"></div></div>
+          <p class="step-body" data-i18n="m3_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m3_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">4</div><div class="step-title" data-i18n="m4_title"></div></div>
+          <p class="step-body" data-i18n="m4_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m4_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">5</div><div class="step-title" data-i18n="m5_title"></div></div>
+          <p class="step-body" data-i18n="m5_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m5_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">6</div><div class="step-title" data-i18n="m6_title"></div></div>
+          <p class="step-body" data-i18n="m6_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m6_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">7</div><div class="step-title" data-i18n="m7_title"></div></div>
+          <p class="step-body" data-i18n="m7_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m7_alt"></div>
+        </li>
+        <li class="step">
+          <div class="step-head"><div class="step-num">8</div><div class="step-title" data-i18n="m8_title"></div></div>
+          <p class="step-body" data-i18n="m8_body"></p>
+          <div class="step-shot phone"><img src="DATAURI" data-i18n-alt="m8_alt"></div>
+        </li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="note">
+    <div class="note-icon">i</div>
+    <div>
+      <div class="note-title" data-i18n="note_title"></div>
+      <div class="note-body" data-i18n="note_body"></div>
+    </div>
+  </div>
+
+  <blockquote class="quote">
+    &ldquo;Changbal is a community of IT professionals in the Seattle area in the United States. The word &lsquo;Changbal&rsquo; means &lsquo;creativity and invention&rsquo; of the members, and also means &lsquo;emergence&rsquo;, which means creating a value greater than the sum of its parts.&rdquo;
+    <cite data-i18n="quote_caption"></cite>
+  </blockquote>
+
+  <div class="closing">
+    <p data-i18n="closing"></p>
+    <a class="cta-link" href="https://www.gobispace.com/join/1nw53yDTqCDxiqV8e-BGSEboMjRTRLJV" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      <span data-i18n="closing_cta"></span>
+    </a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var STR = {
+    /* ---- 2026-09-25 홍보 섹션 (KO·EN. en 이 비면 ko 로 표시) ---- */
+    brand: { ko:"창발 · Builders Lounge", en:"Changbal · Builders Lounge" },
+    eyebrow: { ko:"BUILDERS LOUNGE", en:"BUILDERS LOUNGE" },
+    h1: { ko:"AI 시대, 누구나 Builder 가 됩니다. 그 Builder 들이 만나는 곳", en:"In the AI era, anyone can be a builder. This is where builders meet." },
+    sub: { ko:"Builder 가 많아지고, 그보다 더 많은 Product 가 만들어지고 있습니다. Builders Lounge 는 이런 사람들의 네트워킹 공간입니다. 지역이나 국가에 관계없이 누구에게나 열려 있습니다.", en:"There are more builders than ever, and even more products being built. Builders Lounge is a networking space for these people — open to everyone, wherever you live." },
+    btn_join: { ko:"온라인 공간 참여하기", en:"Join the online space" },
+    btn_talks: { ko:"지난 발표 보기", en:"Watch past talks" },
+    fact1: { ko:"지금까지 모임 5회", en:"5 meetups so far" },
+    fact2: { ko:"온라인 · 오프라인", en:"Online · In person" },
+    fact3: { ko:"개발자 · 비개발자 모두", en:"Developers & non-developers" },
+
+    toc1: { ko:"Builders Lounge 란", en:"What is Builders Lounge" },
+    toc2: { ko:"지난 발표 보기", en:"Past talks" },
+    toc3: { ko:"다음 모임", en:"Next meetup" },
+    toc4: { ko:"참여하기", en:"Join" },
+
+    about_h2: { ko:"여기 오시면 이런 것을 얻습니다", en:"What you get here" },
+    about_lead: { ko:"Builders Lounge 는 시애틀 지역 IT 커뮤니티 창발(Changbal)의 AI 스터디 그룹에서 시작했습니다. 공부하던 사람들이 어느새 각자 무언가를 만드는 Builder 가 되어 있었고, 그래서 이론 스터디를 넘어 만든 것을 나누는 모임이 되었습니다.", en:"Builders Lounge began as the AI study group of Changbal (창발), an IT community in the Seattle area. The people who came to study had quietly become builders, each making something of their own — so the group moved beyond theory to sharing what we build." },
+    get1_h: { ko:"내가 만든 Product 를 소개하고 Feedback 을 받습니다", en:"Show what you built and get feedback" },
+    get1_p: { ko:"온·오프라인 모임에서 내가 Build 한 Product 를 사람들에게 보여 주고, 다른 Builder 들에게 직접 Feedback 을 받습니다. 서로의 첫 번째 사용자가 되어 줍니다.", en:"Present the product you built at our online and in-person meetups, and get feedback directly from other builders. We become each other’s first users." },
+    get2_h: { ko:"다른 Builder 의 아이디어와 경험담을 듣습니다", en:"Hear other builders’ ideas and stories" },
+    get2_p: { ko:"다른 사람들이 무엇을 어떤 아이디어로 만들었는지, 어디서 막혔고 어떻게 넘었는지 듣고 이야기합니다. 그렇게 다양한 Builder 들과 네트워킹을 합니다.", en:"Hear what others built and the ideas behind it — where they got stuck and how they got through — and talk it over. That’s how you network with builders from many backgrounds." },
+    get3_h: { ko:"모든 이야기가 기록되고, @Bila AI 가 답합니다", en:"Everything is recorded, and @Bila AI answers" },
+    get3_p: { ko:"모임의 내용은 모두 기록됩니다. 이 기록이 Builders Lounge 의 AI Agent @Bila AI 의 Context 가 되어, 누구나 @Bila AI 에게 모임에 대해 물어보면 답을 받을 수 있습니다.", en:"Everything from our meetups is recorded. Those records become the context for @Bila AI, the Builders Lounge AI agent — so anyone can ask @Bila AI about the group and get an answer." },
+    get4_h: { ko:"@Bila AI 가 사람을 이어 주고 길을 안내합니다", en:"@Bila AI connects people and guides your build" },
+    get4_p: { ko:"쌓이는 기록을 바탕으로 @Bila AI 가 서로 도움이 될 멤버들을 이어 주고, 내가 Build 하는 과정을 지켜보며 다른 사람들의 경험을 바탕으로 가이드해 주도록 만들어 가고 있습니다.", en:"Building on these growing records, we’re making @Bila AI match members who can help each other, and follow along as you build — guiding you with what other builders have learned." },
+    soon: { ko:"준비 중", en:"COMING" },
+    vision: { ko:"Builders Lounge 는 AI 시대 Builder 들의 네트워킹 공간이자, 그 네트워킹 기록을 바탕으로 AI Agent 가 내가 하는 일에 조언을 주고 사람을 소개해 주는 곳이 되려 합니다.", en:"Builders Lounge aims to be a networking space for builders in the AI era — and, drawing on those networking records, a place where an AI agent advises you on your work and introduces you to the right people." },
+
+    history_h: { ko:"지금까지의 모임", en:"Our meetups so far" },
+    tl1_when: { ko:"2026년 5월 7일 · 1차", en:"May 7, 2026 · #1" },
+    tl1_what: { ko:"첫 공식 모임. 모임 이름을 Builders Lounge 로 정하고, AI 에이전트가 나 대신 글을 올리는 GOBI Space 사용법을 함께 익혔습니다. <a href=\"https://youtu.be/AoOhKZ4LoKs\" target=\"_blank\" rel=\"noopener\">영상 보기 ↗</a>", en:"Our first official meetup. We named the group Builders Lounge and learned GOBI Space together — an AI agent that posts on your behalf. <a href=\"https://youtu.be/AoOhKZ4LoKs\" target=\"_blank\" rel=\"noopener\">Watch ↗</a>" },
+    tl2_when: { ko:"6월 · 2차", en:"June · #2" },
+    tl2_what: { ko:"개발자와 비개발자 다섯 명이 각자 만든 AI Product 를 소개했습니다. 온·오프라인 하이브리드로 진행했습니다.", en:"Five developers and non-developers each presented an AI product they built. Held as an online/in-person hybrid." },
+    tl3_when: { ko:"7월 · 3차", en:"July · #3" },
+    tl3_what: { ko:"워싱턴주 한인상공회의소(KACC)와 커피챗. 지역 스타트업 네트워크와 연결되는 길을 이야기했습니다.", en:"A coffee chat with the Korean American Chamber of Commerce of Washington (KACC) about connecting with the local startup network." },
+    tl4_when: { ko:"8월 · 4차", en:"August · #4" },
+    tl4_what: { ko:"11명이 모여 발표 4편. 이주민 정착 앱, 서버 장애를 고치는 AI 에이전트, 투자 분석 에이전트, 모임을 기억하는 AI 멤버.", en:"Eleven people, four talks: a newcomer-settlement app, AI agents that fix server outages, an investment-analysis agent, and an AI member that remembers the group." },
+    tl5_when: { ko:"9월 · 5차", en:"September · #5" },
+    tl5_what: { ko:"실제 업무에 투입된 Multi-Agent AI 시스템의 개발기와 시행착오, 그리고 이어진 보안 토론.", en:"The build story of a multi-agent AI system used in real work — its mistakes and lessons — followed by a security discussion." },
+
+    talks_h2: { ko:"지난 발표는 모두 영상과 기록으로 남아 있습니다", en:"Every past talk lives on as video and notes" },
+    talks_lead: { ko:"모임에 오지 못하셨어도 괜찮습니다. 발표 영상은 유튜브에서, 모임 기록은 GitHub 에서 누구나 보실 수 있습니다.", en:"Missed a meetup? No problem. Talk videos are on YouTube and meeting notes are on GitHub — open to everyone. Most talks are in Korean, many with English subtitles." },
+    t1_meta: { ko:"5차 · 37분", en:"#5 · 37 min" },
+    t1: { ko:"샌프란시스코 공무원의 Multi-Agent AI 시스템 실전 개발기 — 그리고 「이걸 해킹에 쓰면?」", en:"A San Francisco civil servant’s multi-agent AI system, built for real — and then: “What if we used it for hacking?”" },
+    t2_meta: { ko:"4차 · 38분", en:"#4 · 38 min" },
+    t2: { ko:"코드를 모르던 목회자가 바이브 코딩으로 만든 이주민 정착 앱, 86개 도시로 퍼지다", en:"A pastor who couldn’t code vibe-coded an app for newcomers — and it spread to 86 cities" },
+    t3_meta: { ko:"4차 · 20분", en:"#4 · 20 min" },
+    t3: { ko:"새벽 3시의 서버 장애 — AI 에이전트들이 서로 대화하며 고친다", en:"A 3 a.m. server outage — AI agents talk it out and fix it" },
+    t4_meta: { ko:"4차 · 16분", en:"#4 · 16 min" },
+    t4: { ko:"퇴근 후 만든 투자 분석 AI 가 「왜 규칙을 어겼냐」고 되묻는다", en:"An investment AI built after work asks, “Why did you break your own rules?”" },
+    t5_meta: { ko:"4차 · 19분", en:"#4 · 19 min" },
+    t5: { ko:"새로 온 멤버가 모임의 모든 것을 알고 있다 — AI 멤버 Bila AI", en:"The new member knows everything about us — Bila AI, our AI member" },
+    t6_meta: { ko:"2차 · 1시간 28분", en:"#2 · 1 hr 28 min" },
+    t6: { ko:"코딩 없이도 — 개발자와 비개발자가 만든 AI Product 다섯 가지", en:"No coding needed — five AI products built by developers and non-developers" },
+    btn_playlist: { ko:"유튜브 플레이리스트 전체 보기", en:"Watch the full YouTube playlist" },
+    btn_github: { ko:"GitHub 모임 기록 보기", en:"Read our notes on GitHub" },
+    bila_title: { ko:"궁금한 건 @Bila AI 에게 물어보세요", en:"Have a question? Ask @Bila AI" },
+    bila_body: { ko:"Builders Lounge 채널에서 @Bila AI 를 부르고 질문하면, 지난 모임 기록을 바탕으로 답해 줍니다. 예: 「@Bila AI 지난 모임에서 멀티 에이전트 이야기 한 영상 있어요?」", en:"Mention @Bila AI in the Builders Lounge channel and ask — it answers from our past meeting records. For example: “@Bila AI, is there a video from a past meetup about multi-agent systems?”" },
+
+    next_h2: { ko:"다음 모임 — 온라인 특강", en:"Next meetup — online lecture" },
+    ev_badge_date: { ko:"날짜 곧 공개", en:"Date coming soon" },
+    ev_badge_online: { ko:"온라인", en:"Online" },
+    ev_badge_open: { ko:"인원 제한 없음", en:"No attendance limit" },
+    ev_title: { ko:"바이브 코딩으로 만들기는 쉬워졌는데, 왜 아무도 안 쓸까?", en:"Vibe coding made building easy. So why does nobody use what I built?" },
+    ev_desc: { ko:"코딩부터 배포까지 쉬워진 시대에도 제품의 승부는 여전히 코딩 전에 갈립니다. 누구의 어떤 문제를 왜 풀 것인가 — 만들기 전에 생각해야 할 것들을 비개발자의 눈높이에서 이야기합니다. 바이브 코딩을 하시면서 궁금했던 것, 나누고 싶었던 이야기를 가지고 오세요.", en:"Even now that coding and deployment are easy, a product is still won or lost before the coding starts. Whose problem, which problem, and why this way — we’ll talk about what to think through before you build, from a non-developer’s point of view. Bring the questions you’ve had while vibe coding, and the stories you’ve wanted to share." },
+    ev_k_when: { ko:"시기", en:"When" },
+    ev_v_when: { ko:"2026년 10월 중순~말", en:"Mid-to-late October 2026" },
+    ev_k_time: { ko:"시간", en:"Time" },
+    ev_v_time: { ko:"저녁 8시 이후 (시애틀 시간)", en:"After 8 p.m. (Seattle time)" },
+    ev_k_format: { ko:"구성", en:"Format" },
+    ev_v_format: { ko:"강의 1시간 + Q&A 30분", en:"1-hour lecture + 30-min Q&A" },
+    ev_k_who: { ko:"대상", en:"For" },
+    ev_v_who: { ko:"IT 경력과 관계없이 누구나", en:"Everyone, with or without an IT background" },
+    // 강사 소개는 박창수가 준 문구 그대로 (2026-09-25) — 고치지 말 것
+    ev_speaker: { ko:"<span class=\"speaker-k\">강사</span><b class=\"speaker-name\">송재희</b>포춘 500대 기업을 위한 데이터 시스템을 구축한 20년 이상의 경력을 가진 엔터프라이즈 데이터 플랫폼 아키텍트. 바이브 코딩과 AI 개발을 수백 명의 학생에게 가르친 AI 개발 교육자. 한국 기술 스타트업이 미국 시장을 navigating하도록 돕는 Seattle Partners의 창립자.", en:"<span class=\"speaker-k\">Speaker</span><b class=\"speaker-name\">Jaehee Song</b>An enterprise data platform architect with more than 20 years of experience building data systems for Fortune 500 companies. An AI development educator who has taught vibe coding and AI development to hundreds of students. Founder of Seattle Partners, which helps Korean tech startups navigate the U.S. market." },
+    ev_cta: { ko:"날짜 공지 받기 — 채널 참여", en:"Get the date — join the channel" },
+    ev_video: { ko:"이 특강의 출발점이 된 5분 영상", en:"The 5-minute video that started this talk" },
+
+    join_h2: { ko:"Builders Lounge 온라인 모임 공간, 이렇게 들어오세요", en:"How to Join the Builders Lounge Online Space" },
+    join_lead: { ko:"Builders Lounge는 Gobi Space 안에 있는 창발(Changbal) 스페이스의 채널입니다. 아래 링크나 QR 코드로 시작하시면 몇 분 안에 들어오실 수 있습니다. 모임 공지와 특강 날짜도 이 채널에서 가장 먼저 알려 드립니다.", en:"Builders Lounge is a channel inside the Changbal space on Gobi Space. Start from the link or QR code below and you’ll be in within a few minutes. Meetup announcements and the lecture date are posted here first." },
+    cta_label: { ko:"초대 링크 — 여기서 시작하세요", en:"Invite link — start here" },
+    entry_hint: { ko:"컴퓨터와 휴대폰에서 같은 링크를 쓰지만, 열리는 화면이 서로 다릅니다. 아래에서 쓰시는 기기를 골라 주세요.", en:"The same link works on computer and phone, but each opens a different screen. Pick your device below." },
+    qr_cap: { ko:"휴대폰으로 스캔", en:"Scan with your phone" },
+    qr_alt: { ko:"창발 스페이스 초대 링크 QR 코드", en:"QR code for the Changbal space invite link" },
+
+    tab_desktop: { ko:"컴퓨터 (Windows · Mac)", en:"Computer (Windows · Mac)" },
+    tab_mobile: { ko:"휴대폰 (iOS · Android)", en:"Phone (iOS · Android)" },
+    device_note: { ko:"처음이시라면 컴퓨터에서 먼저 가입하시는 편이 수월합니다.", en:"If this is your first time, joining on a computer first is the easier path." },
+
+    part1_h2: { ko:"창발(Changbal) 스페이스 가입하기", en:"Join the Changbal Space" },
+    part1_scope: { ko:"Gobi Space 계정이 없거나 창발 스페이스에 처음 오신 분만 진행하세요. 이미 가입하셨다면 Part 2로 건너뛰세요.", en:"Do this only if you don’t have a Gobi Space account yet, or have never joined Changbal before. Already a member? Skip to Part 2." },
+
+    dA1_title: { ko:"“Sign up to join Changbal (창발)” 클릭", en:"Click “Sign up to join Changbal (창발)”" },
+    dA1_body: { ko:"위 초대 링크를 열면 창발 스페이스 소개 화면이 나옵니다. 아래쪽 파란색 “Sign up to join Changbal (창발)” 버튼을 클릭합니다.", en:"Opening the invite link shows the Changbal space introduction. Click the blue “Sign up to join Changbal (창발)” button near the bottom." },
+    dA1_alt: { ko:"창발 스페이스 초대 화면과 파란색 가입 버튼", en:"Changbal space invite screen with the blue sign-up button" },
+
+    dA2_title: { ko:"Google 또는 Apple 계정으로 인증", en:"Sign in with Google or Apple" },
+    dA2_body: { ko:"평소 쓰시는 Gmail 계정이나 Apple 계정을 선택해 인증합니다. 따로 작성할 회원가입 양식은 없습니다.", en:"Choose your usual Gmail or Apple account. There’s no separate sign-up form to fill in." },
+    dA2_alt: { ko:"Gobi Space 로그인 화면 — Continue with Google, Continue with Apple 버튼", en:"Gobi Space sign-in screen with Continue with Google and Continue with Apple buttons" },
+
+    dA3_title: { ko:"가입 완료 — 창발 스페이스 화면", en:"Done — you’re inside Changbal" },
+    dA3_body: { ko:"인증이 끝나면 곧바로 창발 스페이스에 가입되어 이 화면을 보시게 됩니다. 여기까지가 Part 1입니다.", en:"As soon as you’re authenticated you’re a member, and this is the screen you land on. That completes Part 1." },
+    dA3_alt: { ko:"가입 직후 창발 스페이스 피드 화면", en:"The Changbal space feed right after joining" },
+
+    part2_h2: { ko:"Builders Lounge 채널 들어가기", en:"Enter the Builders Lounge Channel" },
+    part2_scope: { ko:"창발 스페이스에 이미 가입하신 분은 여기서부터 시작하시면 됩니다.", en:"If you’re already a Changbal member, start here." },
+
+    dB1_title: { ko:"채널 검색 아이콘 클릭", en:"Click the channel search icon" },
+    dB1_body: { ko:"창발 스페이스 안에서 왼쪽 “Channels” 옆에 있는 돋보기 아이콘을 클릭합니다. (아래 화면에서 노란 화살표가 가리키는 곳입니다.)", en:"Inside the Changbal space, click the magnifying-glass icon next to “Channels” in the left sidebar — where the yellow arrow points below." },
+    dB1_alt: { ko:"창발 스페이스 왼쪽 사이드바, Channels 옆 검색 아이콘을 가리키는 노란 화살표", en:"Changbal space left sidebar with a yellow arrow pointing to the search icon next to Channels" },
+
+    dB2_title: { ko:"Builders Lounge 옆 “Join” 클릭", en:"Click “Join” next to Builders Lounge" },
+    dB2_body: { ko:"열리는 “Browse channels” 목록에서 Builders Lounge 옆의 “Join” 버튼을 누르면 채널에 들어오게 됩니다.", en:"In the “Browse channels” list that opens, click the “Join” button next to Builders Lounge." },
+    dB2_alt: { ko:"Browse channels 목록, Builders Lounge 옆 Join 버튼", en:"Browse channels list showing the Join button next to Builders Lounge" },
+
+    dB3_title: { ko:"완료 — # Builders Lounge 채널 확인", en:"Done — find # Builders Lounge" },
+    dB3_body: { ko:"이제부터 창발 스페이스에 들어오면 왼쪽 메뉴에서 “# Builders Lounge” 채널을 바로 보실 수 있습니다. 이 채널에서 Builders Lounge 활동에 참여하시면 됩니다.", en:"From now on, whenever you open the Changbal space, you’ll see “# Builders Lounge” right in the left sidebar. Click it to take part in Builders Lounge." },
+    dB3_alt: { ko:"창발 스페이스 왼쪽 사이드바에 추가된 Builders Lounge 채널을 가리키는 노란 화살표", en:"Changbal space left sidebar with a yellow arrow pointing to the newly added Builders Lounge channel" },
+
+    ios_title: { ko:"iOS · Android 모두 앱이 있습니다", en:"Available on both iOS and Android" },
+    ios_body: { ko:"아래 화면은 iPhone 기준입니다. 안드로이드 휴대폰도 같은 순서로 진행하시면 되고, App Store 대신 Google Play 에서 Gobi 앱을 받으시면 됩니다.", en:"The screens below are from an iPhone. On Android the steps are the same — just get the Gobi app from Google Play instead of the App Store." },
+
+    part3_h2: { ko:"휴대폰에서 들어가기", en:"Joining from your phone" },
+    part3_scope: { ko:"위 링크를 누르거나 QR 코드를 스캔하면 시작됩니다. 컴퓨터에서 이미 가입하셨다면 훨씬 빨리 끝납니다.", en:"Tap the link above or scan the QR code to begin. If you already joined on a computer, this goes much faster." },
+
+    m1_title: { ko:"“Open in the Gobi app” 누르기", en:"Tap “Open in the Gobi app”" },
+    m1_body: { ko:"링크나 QR 코드로 들어오면 창발 스페이스 소개 화면이 나옵니다. 파란색 “Open in the Gobi app” 버튼을 누릅니다.", en:"The link or QR code opens the Changbal space introduction. Tap the blue “Open in the Gobi app” button." },
+    m1_alt: { ko:"휴대폰에서 본 창발 스페이스 화면과 Open in the Gobi app 버튼", en:"Changbal space on a phone with the Open in the Gobi app button" },
+
+    m2_title: { ko:"App Store 또는 Google Play 에서 Gobi 앱 받기", en:"Get the Gobi app from the App Store or Google Play" },
+    m2_body: { ko:"앱이 설치되어 있지 않으면 앱 스토어로 이동합니다. iPhone 은 App Store, 안드로이드는 Google Play 에서 Gobi 앱을 내려받으세요. (아래는 App Store 의 “Gobi: In-Person Capture” 화면입니다.)", en:"If the app isn’t installed yet you’ll land in your app store. Download the Gobi app from the App Store on iPhone, or from Google Play on Android. (Shown below: “Gobi: In-Person Capture” in the App Store.)" },
+    m2_alt: { ko:"App Store의 Gobi: In-Person Capture 앱 페이지", en:"The Gobi: In-Person Capture page in the App Store" },
+
+    m3_title: { ko:"앱을 열고 계정으로 로그인", en:"Open the app and sign in" },
+    m3_body: { ko:"다운로드가 끝나면 “Open”을 눌러 앱을 엽니다. Gmail 계정이나 Apple 계정으로 로그인하세요.", en:"When the download finishes, tap “Open”. Sign in with your Gmail or Apple account." },
+    m3_alt: { ko:"Gobi 앱 로그인 화면 — Continue with Google, Continue with Apple", en:"Gobi app sign-in screen with Continue with Google and Continue with Apple" },
+
+    m4_title: { ko:"로그인 완료 — Home 화면", en:"Signed in — the Home screen" },
+    m4_body: { ko:"가입 절차가 끝나면 이 화면이 나옵니다. 왼쪽 위의 “Home”을 누릅니다.", en:"Once you’re through, this is the screen you see. Tap “Home” at the top left." },
+    m4_alt: { ko:"Gobi 앱 Home 화면", en:"The Gobi app Home screen" },
+
+    m5_title: { ko:"Spaces 목록에서 Changbal 선택", en:"Pick Changbal from your Spaces" },
+    m5_body: { ko:"가입한 스페이스 목록이 열립니다. 여기서 “Changbal (창발)”을 선택하세요.", en:"Your list of spaces opens. Choose “Changbal (창발)”." },
+    m5_alt: { ko:"Gobi 앱 Spaces 목록에 표시된 Changbal (창발)", en:"Changbal (창발) shown in the Gobi app Spaces list" },
+
+    m6_title: { ko:"Channels 아래를 확인", en:"Check under Channels" },
+    m6_body: { ko:"컴퓨터에서 이미 Builders Lounge에 가입하셨다면 “Channels” 아래에 # Builders Lounge가 보입니다. 보이면 눌러서 바로 들어가시면 됩니다. 아직 안 보이면 아래 “Browse channels”를 누르세요.", en:"If you already joined Builders Lounge on a computer, “# Builders Lounge” appears under “Channels” — tap it and you’re in. If it isn’t there yet, tap “Browse channels” below." },
+    m6_alt: { ko:"Changbal 스페이스의 Channels 목록과 Browse channels 항목", en:"The Changbal space Channels list with the Browse channels item" },
+
+    m7_title: { ko:"Browse channels에서 Builders Lounge 선택", en:"Choose Builders Lounge in Browse channels" },
+    m7_body: { ko:"열리는 목록에서 “Builders Lounge”를 선택합니다.", en:"Select “Builders Lounge” from the list that opens." },
+    m7_alt: { ko:"Browse channels 목록에 표시된 Builders Lounge", en:"Builders Lounge shown in the Browse channels list" },
+
+    m8_title: { ko:"완료 — Builders Lounge 채널", en:"Done — the Builders Lounge channel" },
+    m8_body: { ko:"Builders Lounge 채널에 들어오셨습니다. 모임 공지와 발표 영상을 여기서 보실 수 있습니다.", en:"You’re in the Builders Lounge channel. Meeting announcements and session recordings live here." },
+    m8_alt: { ko:"휴대폰에서 본 Builders Lounge 채널 화면", en:"The Builders Lounge channel on a phone" },
+
+    note_title: { ko:"참고 — General과 Catch up의 차이", en:"Note — General vs. Catch up" },
+    note_body: { ko:"General은 창발 스페이스 전체에 올라온 글을 보는 곳이고, Catch up은 창발 스페이스의 글과 함께 내가 속한 채널(예: Builders Lounge)의 글까지 한 번에 모아 보는 곳입니다.", en:"General shows every post made in the whole Changbal space. Catch up shows those same posts plus everything from the channels you’ve joined, like Builders Lounge, in one feed." },
+
+    quote_caption: { ko:"— 창발(Changbal) 스페이스 소개 원문", en:"— Changbal space description" },
+    closing: { ko:"곧 Builders Lounge 채널에서 뵙겠습니다.", en:"See you soon in the Builders Lounge channel." },
+    closing_cta: { ko:"초대 링크 열기", en:"Open the invite link" }
+  };
+
+  function detectLang(){
+    try{
+      var saved = localStorage.getItem("bl-guide-lang");
+      if (saved === "ko" || saved === "en") return saved;
+    }catch(e){}
+    var nav = (navigator.language || "en").toLowerCase();
+    return nav.indexOf("ko") === 0 ? "ko" : "en";
+  }
+
+  function applyLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var key = el.getAttribute("data-i18n");
+      if (STR[key]) el.textContent = STR[key][lang] || STR[key].ko;
+    });
+    // 페이지 작성자가 넣은 고정 문구만 쓴다 (외부 입력 없음)
+    document.querySelectorAll("[data-i18n-html]").forEach(function(el){
+      var key = el.getAttribute("data-i18n-html");
+      if (STR[key]) el.innerHTML = STR[key][lang] || STR[key].ko;
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function(el){
+      var key = el.getAttribute("data-i18n-alt");
+      if (STR[key]) el.setAttribute("alt", STR[key][lang] || STR[key].ko);
+    });
+    document.querySelectorAll(".lang-toggle button").forEach(function(btn){
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
+    try{ localStorage.setItem("bl-guide-lang", lang); }catch(e){}
+  }
+
+  function detectDevice(){
+    try{
+      var saved = localStorage.getItem("bl-guide-device");
+      if (saved === "desktop" || saved === "mobile") return saved;
+    }catch(e){}
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? "mobile" : "desktop";
+  }
+
+  function applyDevice(dev){
+    document.getElementById("panel-desktop").hidden = (dev !== "desktop");
+    document.getElementById("panel-mobile").hidden  = (dev !== "mobile");
+    document.querySelectorAll(".device-tabs button").forEach(function(btn){
+      var on = btn.getAttribute("data-device") === dev;
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    try{ localStorage.setItem("bl-guide-device", dev); }catch(e){}
+  }
+
+  document.querySelectorAll(".lang-toggle button").forEach(function(btn){
+    btn.addEventListener("click", function(){ applyLang(btn.getAttribute("data-lang")); });
+  });
+  document.querySelectorAll(".device-tabs button").forEach(function(btn){
+    btn.addEventListener("click", function(){ applyDevice(btn.getAttribute("data-device")); });
+  });
+
+  applyLang(detectLang());
+  applyDevice(detectDevice());
+})();
+</script>
+
+</body></html>
