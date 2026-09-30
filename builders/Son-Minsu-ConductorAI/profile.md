@@ -59,7 +59,7 @@ Go 1.21+ · Next.js 14 · Gorilla WebSocket · client-go(Kubernetes) · PostgreS
 | --- | --- | --- |
 | 2차 | 2026-06-08 | **개발 1주차 MVP**로 첫 소개. GateKeeper·Specialist·Judge 세 단계 구조만 있는 아이디어 수준 |
 | 4차 | 2026-08-06 | **동작하는 시스템으로 복귀.** 라이브 데모 — **Dev Server** 메모리를 90% 이상으로 올려 비상 상황을 만들고 에이전트들이 대응하는 과정을 보여줌 (Root Cause 탐지 → 승인 → 복구) |
-| 5차 | 미정 | **메인 스피커 예정.** 멀티 에이전트 구현 방법을 20~30분간 공유 |
+| 5차 | 2026-09-16 | **Multi-Agent AI 시스템 메인 발표.** 시스템 장애 대응 자동화를 다시 설계하며 겪은 시행착오와 구현을 공유 |
 
 > 📌 **두 달 만의 변화가 이 모임의 성격을 잘 보여준다.** 6월에 컨셉만 있던 것이 8월에 라이브 데모가 됐다. 모임이 일회성 발표가 아니라 **진행 상황을 되짚는 자리**로 기능하고 있다.
 
@@ -69,6 +69,11 @@ Go 1.21+ · Next.js 14 · Gorilla WebSocket · client-go(Kubernetes) · PostgreS
 https://youtu.be/e9iMkxUGXfM
 
 > 영어 자막은 재생기의 **CC 버튼**을 켜야 보인다. 한국어 자막도 선택 가능.
+
+**Builders Lounge 5차 — Multi-Agent AI 시스템: 시스템 장애 대응 자동화를 위한 아키텍처 심층 분석** (37:41)
+https://youtu.be/nypuwYuyMJQ
+
+5차 발표 영상은 본편 36:51에 Remotion 아웃트로를 붙인 최종본이다. 전사와 상세 발표 기록은 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 모임 정리|5차 모임 정리]] 및 [[Ingest/Transcripts/Builders_Lounge/2026-09-16 Builders Lounge 5th Meeting - 손민수 Multi-Agent AI - transcript|한·영 전사본]]을 참조한다.
 
 ## 관련 기록
 

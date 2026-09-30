@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Builders Lounge 청사진</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --bg:#F1F3F1; --surface:#FFFFFF; --surface-2:#E7ECE8; --surface-3:#DCE5DF;
+    --line:#D2DBD5; --line-strong:#B7C4BC;
+    --ink:#12201A; --ink-dim:#46564C; --ink-faint:#75897E;
+    --accent:#2F7D5A; --accent-ink:#FFFFFF; --accent-soft:#DCEEE3;
+    --accent2:#3159C7; --accent2-ink:#FFFFFF; --accent2-soft:#E1E7FB;
+    --warn:#8A5A16; --warn-soft:#F7ECD9;
+    --shadow:0 1px 2px rgba(18,32,26,.06), 0 10px 28px -14px rgba(18,32,26,.22);
+    --radius-lg:18px; --radius-md:12px;
+    --font-display:'Noto Serif KR','Noto Serif',serif;
+    --font-body:'Noto Sans KR','Noto Sans',-apple-system,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1613; --surface:#152019; --surface-2:#1C2A22; --surface-3:#24352B;
+      --line:#2B3D33; --line-strong:#37503F;
+      --ink:#E9F2EC; --ink-dim:#A9C0B3; --ink-faint:#78907F;
+      --accent:#57C98C; --accent-ink:#082014; --accent-soft:#173826;
+      --accent2:#93A9FF; --accent2-ink:#0B1230; --accent2-soft:#1C2657;
+      --warn:#E8B96A; --warn-soft:#33270F;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.65);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1613; --surface:#152019; --surface-2:#1C2A22; --surface-3:#24352B;
+    --line:#2B3D33; --line-strong:#37503F;
+    --ink:#E9F2EC; --ink-dim:#A9C0B3; --ink-faint:#78907F;
+    --accent:#57C98C; --accent-ink:#082014; --accent-soft:#173826;
+    --accent2:#93A9FF; --accent2-ink:#0B1230; --accent2-soft:#1C2657;
+    --warn:#E8B96A; --warn-soft:#33270F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.65);
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-body); font-size:16px; line-height:1.7;
+    word-break:keep-all; overflow-wrap:break-word;
+  }
+  h1,h2,h3,h4{ font-family:var(--font-display); font-weight:700; margin:0; text-wrap:balance; }
+  p{ margin:0 0 12px; } p:last-child{ margin-bottom:0; }
+  a{ color:var(--accent); }
+  b, strong{ color:var(--ink); }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:4px; }
+
+  .layout{ max-width:1180px; margin:0 auto; padding:0 22px 80px; display:grid; grid-template-columns:220px minmax(0,1fr); gap:48px; }
+  nav.side{ position:sticky; top:0; align-self:start; padding-top:40px; max-height:100vh; overflow:auto; }
+  nav.side .brand{ font-family:var(--font-mono); font-size:12px; font-weight:600; color:var(--accent); letter-spacing:.1em; margin-bottom:16px; }
+  nav.side ol{ list-style:none; margin:0; padding:0; border-left:2px solid var(--line); }
+  nav.side li a{ display:block; padding:6px 0 6px 14px; margin-left:-2px; border-left:2px solid transparent; color:var(--ink-dim); text-decoration:none; font-size:14px; line-height:1.4; }
+  nav.side li a:hover{ color:var(--ink); border-left-color:var(--line-strong); }
+  nav.side li a.on{ color:var(--accent); border-left-color:var(--accent); font-weight:600; }
+  nav.side .n{ font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); margin-right:6px; }
+  .side-tools{ margin-top:22px; display:flex; flex-direction:column; gap:8px; }
+  .side-tools button{ font:600 12.5px var(--font-body); border:1px solid var(--line-strong); background:var(--surface); color:var(--ink-dim); padding:8px 12px; border-radius:999px; cursor:pointer; }
+  .side-tools button:hover{ color:var(--ink); }
+
+  main{ min-width:0; padding-top:40px; }
+  header.cover{ padding:8px 0 30px; border-bottom:1px solid var(--line); margin-bottom:10px; }
+  .eyebrow{ font-family:var(--font-mono); font-size:12px; font-weight:600; letter-spacing:.12em; color:var(--accent); text-transform:uppercase; }
+  header.cover h1{ font-size:clamp(28px,4.6vw,42px); line-height:1.2; margin:12px 0 14px; }
+  header.cover .lead{ font-size:17px; color:var(--ink-dim); max-width:62ch; }
+  .meta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+  .chip{ font-family:var(--font-mono); font-size:12px; font-weight:600; color:var(--ink-dim); background:var(--surface-2); border:1px solid var(--line); padding:5px 11px; border-radius:999px; }
+
+  section.part{ padding:54px 0 6px; scroll-margin-top:10px; }
+  .part-num{ font-family:var(--font-mono); font-size:12px; font-weight:600; letter-spacing:.1em; color:var(--accent); background:var(--accent-soft); display:inline-block; padding:3px 10px; border-radius:999px; margin-bottom:12px; }
+  section.part > h2{ font-size:clamp(23px,3.2vw,29px); line-height:1.3; margin-bottom:14px; }
+  .intro{ font-size:16px; color:var(--ink-dim); max-width:66ch; margin-bottom:22px; }
+  h3.sub{ font-size:18px; margin:30px 0 12px; }
+
+  .card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow); padding:20px 22px; }
+  .grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .card h4{ font-size:16.5px; line-height:1.45; margin-bottom:8px; }
+  .card p, .card li{ font-size:14.5px; color:var(--ink-dim); }
+  .card ul{ margin:6px 0 0; padding-left:18px; }
+  .tag{ display:inline-block; font-family:var(--font-mono); font-size:10.5px; font-weight:700; letter-spacing:.06em; padding:2px 8px; border-radius:999px; margin-bottom:10px; }
+  .tag.now{ background:var(--accent-soft); color:var(--accent); }
+  .tag.next{ background:var(--accent2-soft); color:var(--accent2); }
+  .tag.idea{ background:var(--warn-soft); color:var(--warn); }
+
+  .big-quote{ margin:0 0 22px; padding:26px 28px; border-radius:var(--radius-lg); background:linear-gradient(135deg,var(--accent-soft),var(--accent2-soft)); font-family:var(--font-display); font-size:clamp(18px,2.4vw,22px); line-height:1.6; }
+  blockquote{ margin:14px 0; padding:12px 18px; border-left:3px solid var(--accent); background:var(--surface); border-radius:0 var(--radius-md) var(--radius-md) 0; font-size:15px; color:var(--ink-dim); }
+  blockquote cite{ display:block; margin-top:6px; font-family:var(--font-mono); font-style:normal; font-size:11.5px; color:var(--ink-faint); }
+
+  .src{ font-family:var(--font-mono); font-size:11.5px; color:var(--ink-faint); margin-top:12px; line-height:1.6; }
+  .src::before{ content:"출처 · "; font-weight:600; }
+
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden; }
+  th, td{ text-align:left; vertical-align:top; padding:11px 14px; border-bottom:1px solid var(--line); }
+  th{ background:var(--surface-2); font-weight:700; font-size:13.5px; color:var(--ink); }
+  td{ color:var(--ink-dim); }
+  tr:last-child td{ border-bottom:none; }
+  .table-wrap{ overflow-x:auto; border-radius:var(--radius-md); }
+
+  .timeline{ list-style:none; margin:0; padding:0; border-left:2px solid var(--line-strong); }
+  .timeline li{ position:relative; padding:0 0 18px 22px; }
+  .timeline li:last-child{ padding-bottom:0; }
+  .timeline li::before{ content:""; position:absolute; left:-7px; top:8px; width:12px; height:12px; border-radius:50%; background:var(--surface); border:2px solid var(--accent); }
+  .timeline li.future::before{ border-color:var(--accent2); border-style:dashed; }
+  .tl-when{ font-family:var(--font-mono); font-size:12px; font-weight:600; color:var(--accent); }
+  .timeline li.future .tl-when{ color:var(--accent2); }
+  .tl-what{ font-size:15px; color:var(--ink-dim); }
+  .tl-what b{ color:var(--ink); }
+
+  .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:20px; }
+  .stat{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); padding:16px 16px 14px; }
+  .stat .v{ font-family:var(--font-display); font-weight:900; font-size:28px; line-height:1.1; color:var(--ink); }
+  .stat .k{ font-size:13px; color:var(--ink-faint); margin-top:6px; }
+
+  .callout{ display:flex; gap:14px; align-items:flex-start; margin:18px 0; padding:16px 18px; border-radius:var(--radius-lg); background:var(--warn-soft); border:1px solid color-mix(in srgb,var(--warn) 30%,transparent); }
+  .callout .ic{ flex:none; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:13px; background:color-mix(in srgb,var(--warn) 22%,transparent); color:var(--warn); }
+  .callout p{ font-size:14.5px; color:var(--ink-dim); }
+
+  /* 세 축 도식 */
+  .axes{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; position:relative; }
+  .axis{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:18px; box-shadow:var(--shadow); }
+  .axis .role{ font-family:var(--font-mono); font-size:11px; font-weight:700; letter-spacing:.08em; color:var(--accent2); margin-bottom:6px; }
+  .axis h4{ font-size:17px; margin-bottom:8px; }
+  .axis p{ font-size:14px; color:var(--ink-dim); }
+  .axis-base{ margin-top:12px; padding:14px 18px; border-radius:var(--radius-md); border:1px dashed var(--line-strong); background:var(--surface-2); font-size:14px; color:var(--ink-dim); text-align:center; }
+  .axis-base b{ color:var(--ink); }
+
+  /* 선순환 */
+  .cycle{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:6px 0 4px; }
+  .cycle .step{ background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-size:14px; font-weight:600; color:var(--ink); }
+  .cycle .arr{ color:var(--accent); font-weight:700; }
+  .cycle .back{ font-family:var(--font-mono); font-size:12px; color:var(--ink-faint); }
+
+  /* Bila phase */
+  .phases{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; background:var(--surface); }
+  .phase{ padding:18px 18px 20px; border-right:1px solid var(--line); }
+  .phase:last-child{ border-right:none; }
+  .phase .pn{ font-family:var(--font-mono); font-size:11.5px; font-weight:700; color:var(--ink-faint); }
+  .phase h4{ font-size:16px; margin:4px 0 8px; }
+  .phase p, .phase li{ font-size:14px; color:var(--ink-dim); }
+  .phase ul{ margin:0; padding-left:18px; }
+  .phase.cur{ background:var(--accent-soft); }
+
+  /* 논의 항목 */
+  .discuss{ counter-reset:q; display:flex; flex-direction:column; gap:16px; }
+  .q{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow); padding:20px 22px; }
+  .q-head{ display:flex; gap:12px; align-items:baseline; margin-bottom:10px; }
+  .q-head .qn{ flex:none; font-family:var(--font-mono); font-weight:700; font-size:13px; color:var(--accent-ink); background:var(--accent); border-radius:999px; padding:2px 10px; }
+  .q-head h4{ font-size:17.5px; line-height:1.45; }
+  .q .who{ font-family:var(--font-mono); font-size:11.5px; color:var(--ink-faint); margin-bottom:8px; }
+  .q .mine{ font-size:14.5px; color:var(--ink-dim); background:var(--surface-2); border-radius:var(--radius-md); padding:12px 14px; margin:10px 0; }
+  .q .mine::before{ content:"박창수 생각 — "; font-weight:700; color:var(--ink); }
+  .q ol, .q ul{ margin:6px 0 0; padding-left:20px; font-size:14.5px; color:var(--ink-dim); }
+  .q li{ margin-bottom:4px; }
+  .notes{ margin-top:14px; }
+  .notes label{ display:block; font-family:var(--font-mono); font-size:11px; font-weight:600; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:6px; }
+  .notes textarea{ width:100%; min-height:70px; resize:vertical; font:15px/1.6 var(--font-body); color:var(--ink); background:var(--bg); border:1px solid var(--line-strong); border-radius:var(--radius-md); padding:10px 12px; }
+  .notes textarea:focus{ outline:2px solid var(--accent); outline-offset:0; }
+  .saved{ font-family:var(--font-mono); font-size:11px; color:var(--accent); margin-left:8px; opacity:0; transition:opacity .2s; }
+  .saved.show{ opacity:1; }
+
+  .roles td:nth-child(3){ min-width:120px; }
+  .roles td.blank{ color:var(--ink-faint); font-style:italic; }
+
+  footer{ margin-top:60px; padding-top:22px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink-faint); }
+  footer ul{ margin:8px 0 0; padding-left:18px; font-family:var(--font-mono); font-size:12px; line-height:1.8; }
+
+  @media (max-width:960px){
+    .layout{ grid-template-columns:1fr; gap:0; }
+    nav.side{ position:static; max-height:none; padding-top:24px; }
+    nav.side ol{ display:flex; flex-wrap:wrap; gap:6px; border-left:none; }
+    nav.side li a{ border:1px solid var(--line); border-radius:999px; padding:5px 12px; margin:0; background:var(--surface); font-size:13px; }
+    .side-tools{ flex-direction:row; flex-wrap:wrap; }
+  }
+  @media (max-width:720px){
+    .grid2, .grid3, .axes, .phases{ grid-template-columns:1fr; }
+    .phase{ border-right:none; border-bottom:1px solid var(--line); }
+    .phase:last-child{ border-bottom:none; }
+    .stats{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width:480px){
+    .layout{ padding:0 16px 60px; }
+    .card, .q{ padding:16px; }
+    th, td{ padding:9px 10px; }
+  }
+  @media print{
+    nav.side, .side-tools{ display:none; }
+    .layout{ display:block; max-width:none; }
+    .q, .card, .axis{ box-shadow:none; break-inside:avoid; }
+    section.part{ padding-top:28px; }
+    body{ background:#fff; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<nav class="side" aria-label="목차">
+  <div class="brand">BUILDERS LOUNGE · 청사진</div>
+  <ol>
+    <li><a href="#p1"><span class="n">01</span>한 문장과 원칙</a></li>
+    <li><a href="#p2"><span class="n">02</span>지금까지 5개월</a></li>
+    <li><a href="#p3"><span class="n">03</span>무엇을 하고, 무엇을 주나</a></li>
+    <li><a href="#p4"><span class="n">04</span>세 축 구조</a></li>
+    <li><a href="#p5"><span class="n">05</span>@Bila AI 로드맵</a></li>
+    <li><a href="#p6"><span class="n">06</span>교집합을 함께 키운다</a></li>
+    <li><a href="#p7"><span class="n">07</span>가까운 일정</a></li>
+    <li><a href="#p8"><span class="n">08</span>모임을 넓히는 법</a></li>
+    <li><a href="#p9"><span class="n">09</span>같이 정할 것</a></li>
+    <li><a href="#p10"><span class="n">10</span>역할 분담</a></li>
+  </ol>
+  <div class="side-tools">
+    <button type="button" id="btn-print">인쇄 / PDF</button>
+    <button type="button" id="btn-clear">메모 지우기</button>
+  </div>
+</nav>
+
+<main>
+  <header class="cover">
+    <span class="eyebrow">Builders Lounge Blueprint</span>
+    <h1>Builders Lounge 는 어떤 모임이 되어 갈까</h1>
+    <p class="lead">5개월 동안 쌓인 기록과 아이디어를 한곳에 모았습니다. 앞부분은 제가 그동안 생각해 온 청사진이고, 뒷부분(09·10)은 셋이 함께 정해야 할 것들입니다. 논의 항목마다 메모 칸이 있어서, 이야기하면서 바로 적을 수 있습니다.</p>
+    <div class="meta">
+      <span class="chip">v1 · 2026-09-25 · 계속 고쳐 나가는 문서</span>
+      <span class="chip">박창수 정리</span>
+      <span class="chip">김진영 · 강민석 · 박창수 논의용</span>
+      <span class="chip">메모는 이 브라우저에 저장됩니다</span>
+    </div>
+  </header>
+
+  <!-- 01 -->
+  <section class="part" id="p1">
+    <span class="part-num">01</span>
+    <h2>한 문장과, 방향을 잡는 원칙</h2>
+    <p class="big-quote">Builders Lounge 는 AI 시대 Builder 들의 네트워킹 공간이자, 그 네트워킹 기록을 바탕으로 AI Agent 가 내가 하는 일에 조언을 주고 사람을 소개해 주는 곳이 되려 합니다.</p>
+    <p class="intro">모임이 커지면서 선택의 순간이 계속 올 것입니다. 그때마다 기준으로 삼으면 좋겠다고 생각해 온 원칙들입니다. 모두 지난 기록에서 제가 했던 말들이고, 셋이 이 원칙에 동의하는지부터 확인하고 싶습니다.</p>
+    <div class="grid2">
+      <div class="card">
+        <h4>① 모임보다 멤버가 먼저다</h4>
+        <p>모임을 키우려 하기 전에 멤버의 성장을 돕는다. 그러면 모임은 저절로 커진다. 영상 썸네일에 Builders Lounge 가 아니라 발표자를 앞세운 것도 이 생각에서였습니다.</p>
+        <p class="src">Journal 2026-08-22 「모임보다 멤버가 먼저다」</p>
+      </div>
+      <div class="card">
+        <h4>② 서로의 첫 번째 사용자가 된다</h4>
+        <p>발표하고 끝나는 모임이 아니라, 만든 것을 직접 써 보고 첫 화면이 이해되는지, 어디서 막히는지 구체적으로 피드백하는 모임. 처음부터 지금까지 가장 중요한 방향입니다.</p>
+        <p class="src">ideas/2026-05-24 2회 준비 브레인덤프 · README 「무엇을 하나」</p>
+      </div>
+      <div class="card">
+        <h4>③ 우리만의 정보가 AI 시대의 가치다</h4>
+        <p>누구나 아는 정보를 AI 에게 주면 누구나 같은 답을 얻습니다. 우리 그룹만의 기록이 Context 가 될 때 AI 는 다른 곳에서 얻을 수 없는 답을 줍니다. 그래서 모든 과정을 기록합니다.</p>
+        <p class="src">ideas/2026-06-29 Product Discovery Platform 구상 「왜 내 주변 Builder 인가」</p>
+      </div>
+      <div class="card">
+        <h4>④ 누구에게나 열려 있다</h4>
+        <p>시애틀에서 시작했지만 지역·국가·IT 경력에 묶이지 않는다. 특히 IT 비경력자를 더 환영한다. 그들의 도전이 모두에게 더 소중한 경험이 되고, 기술적인 부분은 엔지니어 멤버들이 돕는다.</p>
+        <p class="src">README 「누구를 위한 모임인가」 · ideas/2026-05-25 김성진님 미팅 메모</p>
+      </div>
+      <div class="card">
+        <h4>⑤ 만드는 것보다 쓰이게 하는 게 어렵다</h4>
+        <p>AI 로 앱을 뚝딱 만드는 건 쉬워졌지만, 다른 사람이 쓰게 하려면 기획·백엔드·데이터·테스트·배포·홍보까지 넘어야 합니다. 혼자서는 어려운 그 구간을 함께 넘는 곳이 Builders Lounge 입니다.</p>
+        <p class="src">Journal 2026-09-19 「CoMC 앱과 개인용 MVP의 한계」 · 송재희 「코딩 전 기획 가이드」</p>
+      </div>
+      <div class="card">
+        <h4>⑥ 교집합을 찾아 함께 키운다</h4>
+        <p>모임과 멤버, 멤버와 멤버 사이의 비지니스 교집합을 찾아 키우면 서로 성장한다. 그 과정을 기록하면 다른 멤버에게도 도움이 된다. (06 에서 자세히)</p>
+        <p class="src">Journal 2026-09-25 · ideas/2026-09-25 교집합 성장 구상</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="part" id="p2">
+    <span class="part-num">02</span>
+    <h2>지금까지 5개월 — 해 온 것과 부족한 것</h2>
+    <div class="stats">
+      <div class="stat"><div class="v">5회</div><div class="k">모임 (5/7 ~ 9/16)</div></div>
+      <div class="stat"><div class="v">7편</div><div class="k">공개된 모임 발표 영상</div></div>
+      <div class="stat"><div class="v">18명</div><div class="k">README 멤버 목록</div></div>
+      <div class="stat"><div class="v">6 ~ 11명</div><div class="k">회차별 참석 (2차 8 · 4차 11 · 5차 6)</div></div>
+    </div>
+    <ol class="timeline">
+      <li><div class="tl-when">2026-04 · 준비 모임</div><div class="tl-what">창발 AI 스터디 그룹 멤버들이 이미 각자 무언가를 만드는 Builder 가 되어 있음을 확인. <b>이론 스터디 → 실전 빌더 커뮤니티</b>로 전환 합의.</div></li>
+      <li><div class="tl-when">5/7 · 1차</div><div class="tl-what">Bellevue City Hall. 이름을 <b>Builders Lounge</b> 로 확정, 강민석님의 GOBI Space / Desktop 핸즈온.</div></li>
+      <li><div class="tl-when">6/8 · 2차</div><div class="tl-what">온·오프 하이브리드 8명. 개발자·비개발자 다섯 명의 Product 데모와 피드백. 커뮤니티 AI 이름 <b>Bila</b> (강민석님 제안).</div></li>
+      <li><div class="tl-when">7/6 · 3차</div><div class="tl-what">워싱턴주 한인상공회의소(KACC) 커피챗. 11월 프로그램에서 <b>한국 스타트업과 현지 Builder 가 서로의 제품을 써 보고 블라인드 비평</b>하는 방안 제안.</div></li>
+      <li><div class="tl-when">8/6 · 4차</div><div class="tl-what">11명, 발표 4편(영상 4편 공개). Bila AI 가 모임 기록을 아는 AI 멤버로 첫 시연.</div></li>
+      <li><div class="tl-when">9/16 · 5차</div><div class="tl-what">온·오프 6명. 손민수님의 Multi-Agent AI 발표와 김진영님의 「AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현」 영상이 공개됨. <a href="https://youtu.be/FdWigceb1pk">김진영님 발표 영상</a>.</div></li>
+    </ol>
+    <div class="callout">
+      <div class="ic">!</div>
+      <div>
+        <p><b>솔직한 현황 — 절대수가 부족합니다.</b> 진영님이 짚으신 대로 모임이 굴러가려면 사람이 더 필요합니다. 5차는 6명이었습니다. 다만 영상과 기록은 모임에 오지 않은 사람에게도 닿고 있고, 이것이 모임을 넓힐 가장 큰 자산이라고 봅니다. 모임을 넓히는 방법은 08 에 모았습니다.</p>
+        <p class="src">Journal 2026-09-16 「5차 모임 결과」 · CTS 부스 문서 「멤버 논의 — 창발 슬랙」</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="part" id="p3">
+    <span class="part-num">03</span>
+    <h2>무엇을 하고, 무엇을 주는 모임인가</h2>
+    <p class="intro">민석님이 말씀하신 「Builders Lounge 가 줄 수 있는 것들」을 CTS 부스 페이지에 네 가지로 정리했습니다. 그 뒤에는 처음 모임을 만들 때 정한 다섯 가지 방향성이 있습니다.</p>
+    <h3 class="sub">여기 오면 얻는 것 (CTS 부스 페이지)</h3>
+    <div class="grid2">
+      <div class="card"><span class="tag now">지금</span><h4>내가 만든 Product 를 소개하고 Feedback 을 받는다</h4><p>온·오프라인 모임에서 보여 주고, 다른 Builder 에게 직접 피드백을 받는다.</p></div>
+      <div class="card"><span class="tag now">지금</span><h4>다른 Builder 의 아이디어와 경험담을 듣는다</h4><p>무엇을, 어떤 아이디어로, 어디서 막히고 어떻게 넘었는지. 그렇게 네트워킹한다.</p></div>
+      <div class="card"><span class="tag now">지금</span><h4>모든 이야기가 기록되고 @Bila AI 가 답한다</h4><p>모임 기록이 @Bila AI 의 Context 가 되어 누구나 모임에 대해 물어볼 수 있다.</p></div>
+      <div class="card"><span class="tag next">만들어 가는 중</span><h4>@Bila AI 가 사람을 이어 주고 길을 안내한다</h4><p>서로 도움이 될 멤버를 매칭하고, Build 과정을 지켜보며 다른 멤버의 경험으로 가이드한다.</p></div>
+    </div>
+    <h3 class="sub">다섯 가지 방향성 (2026-05 첫 모임)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방향성</th><th>의미</th></tr></thead>
+        <tbody>
+          <tr><td><b>Practical Build</b></td><td>개발 경험과 관계없이, 이론이 아니라 실제로 만들고 실험한 경험을 공유</td></tr>
+          <tr><td><b>Builder for Builders</b></td><td>서로의 첫 번째 고객이 되어 피드백과 경험을 나누고, 필요하면 협업</td></tr>
+          <tr><td><b>Workflow Sharing</b></td><td>AI 와 협업하며 얻은 workflow, 시행착오, 도구 활용법 공유</td></tr>
+          <tr><td><b>Collective Intelligence</b></td><td>Slack·Gobi Space·모임·데모 기록을 AI 가 쓸 수 있는 지식 자산으로 축적</td></tr>
+          <tr><td><b>Open Ecosystem</b></td><td>Bellevue 에서 시작해 지역과 소속을 넘어 어디서든 함께하는 열린 커뮤니티</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src">README 「5가지 방향성」 · booth/index.html (CTS 부스 페이지 01 섹션)</p>
+  </section>
+
+  <!-- 04 -->
+  <section class="part" id="p4">
+    <span class="part-num">04</span>
+    <h2>세 축 구조 — 소개하고, 써 보고, 이어 준다</h2>
+    <p class="intro">AI 덕분에 Builder 는 늘었는데, 그들이 만든 Product 가 소개되고 실제로 쓰이는 곳은 부족합니다. 그래서 Builders Lounge 를 하나의 모임이 아니라, 세 축이 함께 돌아가는 <b>Product Discovery 네트워크</b>로 그려 왔습니다.</p>
+    <div class="axes">
+      <div class="axis"><div class="role">확성기</div><h4>Catch Up AI (YouTube)</h4><p>Builder 와 Product 를 영상으로 소개하고 인터뷰한다. 모임에 오지 않은 사람에게도 닿는다. 모임 발표 영상도 여기서 나간다.</p></div>
+      <div class="axis"><div class="role">현장</div><h4>Builders Lounge 모임</h4><p>Product 데모, 핸즈온, 첫 사용자 피드백, 네트워킹. 정보가 실제 협업과 피드백으로 바뀌는 곳.</p></div>
+      <div class="axis"><div class="role">엔진</div><h4>@Bila AI Agent</h4><p>쌓인 기록을 Context 로 멤버들의 Product 와 니즈를 파악하고, 관계되는 Builder 와 Product 를 매칭한다.</p></div>
+    </div>
+    <div class="axis-base">이 셋을 받치는 바닥 — <b>GOBI Changbal Space 의 Builders Lounge 채널</b>(대화·공지) + <b>GitHub 기록 저장소</b>(모임 기록, @Bila AI 의 Context)</div>
+    <h3 class="sub">기록이 만드는 선순환</h3>
+    <div class="cycle">
+      <span class="step">공유</span><span class="arr">→</span>
+      <span class="step">협업 · 피드백 · 서로 홍보</span><span class="arr">→</span>
+      <span class="step">기록</span><span class="arr">→</span>
+      <span class="step">@Bila AI 의 Context</span><span class="arr">→</span>
+      <span class="step">그룹과 멤버가 강해진다</span>
+      <span class="back">↺ 다시 공유로</span>
+    </div>
+    <p class="src">ideas/2026-06-29 Product Discovery Platform 구상 「플랫폼 비전」 · 「인포그래픽 자료」 (7/6 KACC 커피챗 공유)</p>
+  </section>
+
+  <!-- 05 -->
+  <section class="part" id="p5">
+    <span class="part-num">05</span>
+    <h2>@Bila AI 로드맵 — 답하는 AI 에서 이어 주는 AI 로</h2>
+    <p class="intro">「Builders Lounge AI 는 기록을 읽고 답하는 것에서 시작해, 멤버들이 서로의 성장을 가속시키는 연결 엔진이 된다.」 5월에 세운 구상이고, 6월에 GOBI 개발자 Mika 님이 단계별로 기술 검토를 해 주셨습니다.</p>
+    <div class="phases">
+      <div class="phase cur">
+        <div class="pn">PHASE 1 · 지금</div>
+        <h4>기록 기반 Q&amp;A</h4>
+        <p>GitHub 기록 저장소를 Context 로 멤버 질문에 답한다. 4차 모임에서 시연.</p>
+        <ul><li>「지난 모임 영상 어디서 봐요?」</li><li>「누가 ○○ 를 만들고 있어요?」</li></ul>
+        <p class="src">Mika: 지금 기능으로 가능. 프롬프트와 데이터 정제가 관건</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 2 · 다음</div>
+        <h4>Product 모니터링 &amp; 매칭</h4>
+        <ul><li>「API 연동이 막혔다」 → 같은 경험을 한 멤버에게 알림</li><li>A 의 Product 와 B 의 니즈가 겹치면 연결</li><li>이미 해결한 멤버의 기록을 바로 전달</li></ul>
+        <p class="src">Mika: Cron 트리거 방식으로 구현 가능</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 3 · 그다음</div>
+        <h4>모임 코디네이터</h4>
+        <ul><li>모임 전: 안건·참석 설문·공지</li><li>모임 중: transcript → 회의록 초안</li><li>모임 후: 결정사항·action item 추적</li></ul>
+        <p class="src">Mika: Google Meet → Gemini 노트 → 웹훅 트리거 구조</p>
+      </div>
+    </div>
+    <h3 class="sub">Phase 2 로 가려면 풀어야 할 두 가지</h3>
+    <div class="grid2">
+      <div class="card">
+        <span class="tag idea">열린 문제</span>
+        <h4>Context 데이터를 어떻게 관리할까</h4>
+        <p>지금은 GOBI 서버가 GitHub 저장소를 통째로 내려받아 참조합니다. 매칭을 하려면 멤버 각자의 저장소까지 봐야 하는데, 멤버 수만큼 내려받으면 저장 공간과 동기화 부담이 커집니다. GitHub 이 인덱싱한 Context 를 API 로 쓰게 해 달라는 제안(소비자 의견 또는 공동 개발)을 구상한 적이 있습니다.</p>
+        <p class="src">ideas/2026-07-29 Bila AI Context 데이터 관리 문제와 GitHub 제안 구상</p>
+      </div>
+      <div class="card">
+        <span class="tag idea">제안</span>
+        <h4>@Bila AI 의 역할과 Guardrail 을 같이 만든다</h4>
+        <p>@Bila AI 의 역할·임무·Guardrail 을 담은 프롬프트를 Space 에 공개하고, 운영진과 주요 멤버가 함께 고쳐 나가는 「Open Harness」. 가장 작은 시작은 프롬프트 공동 관리입니다.</p>
+        <p class="src">feedback/2026-06-18 GOBI Space Open Harness 제안</p>
+      </div>
+    </div>
+    <blockquote>공개 가능한 기록, 멤버 전용 기록, 개인 보관 기록을 나누는 것이 신뢰의 핵심입니다. 김성진님이 5월에 짚어 주신 Security 관점은 매칭 단계에서 더 중요해집니다.<cite>ideas/2026-05-25 김성진님 미팅 메모 「공유 범위와 Security」</cite></blockquote>
+  </section>
+
+  <!-- 06 -->
+  <section class="part" id="p6">
+    <span class="part-num">06</span>
+    <h2>교집합을 함께 키운다 — 모임과 멤버가 함께 성장하는 법</h2>
+    <p class="intro">오늘(9/25) 정리한 구상입니다. Builders Lounge 는 모임과 멤버 사이의 교집합을 찾아 함께 키우면서 서로의 성장을 도모합니다. 교집합은 세 단계로 넓어집니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>단계</th><th>사례</th><th>상대가 얻는 것</th><th>Builders Lounge 가 얻는 것</th></tr></thead>
+        <tbody>
+          <tr><td><b>① 모임 ↔ 멤버의 회사</b><br><span class="tag now">진행 중</span></td><td>GOBI Space 의 Builders Lounge 채널과 @Bila AI</td><td>모임 현장에서 나오는 생생한 Requirements 를 제품에 반영할 기회</td><td>AI Agent 로 모임 활동을 돕는 온라인 공간</td></tr>
+          <tr><td><b>② 모임 ↔ 멤버가 운영하는 모임</b><br><span class="tag next">9/25 제안</span></td><td>창발 Product 팀과 세미나 공동 주최 (첫 후보: 송재희님 특강)</td><td>(박세진님과 논의 예정)</td><td>더 넓은 청중</td></tr>
+          <tr><td><b>③ 멤버 ↔ 멤버</b><br><span class="tag idea">앞으로</span></td><td>멤버끼리 비지니스 교집합을 찾아 함께 진행하는 아이템</td><td>서로의 성장</td><td>그 과정의 기록 → 다른 멤버에게 도움, 모임 성장</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <blockquote>GOBI Space 의 빌더스라운지 채널은 GOBI 회사의 just a part of their business 입니다. … 이 GOBI-Changbal 의 Builders Lounge Channel 은 빌더스라운지 모임 활동의 일 부분입니다.<cite>Journal 2026-09-25 박창수 구술 원문</cite></blockquote>
+    <p>민석님께 특히 여쭙고 싶은 부분입니다. 같은 채널이 GOBI 와 Builders Lounge 양쪽 모두에게 성장 도구가 되는 관계를 <b>Best Practice</b> 로 만들고 싶습니다. 그러려면 모임에서 나온 Requirements 를 GOBI 에 어떻게 전달하고, 어떻게 반영 여부를 공유받을지 방식이 필요합니다.</p>
+    <p class="src">ideas/2026-09-25 교집합 성장 구상 · ideas/2026-07-29 멤버 간 1대1 교류 활성화</p>
+  </section>
+
+  <!-- 07 -->
+  <section class="part" id="p7">
+    <span class="part-num">07</span>
+    <h2>가까운 일정 — 10월까지</h2>
+    <ol class="timeline">
+      <li class="future"><div class="tl-when">9/29 · YouTube 업로드 목표</div><div class="tl-what"><b>5차 김진영님 발표 영상</b> 최종 편집본과 업로드 자료 준비 완료. 화요일 업로드를 목표로 하며 공개 후 영상 인덱스에 링크를 기록합니다.</div></li>
+      <li class="future"><div class="tl-when">~ 10/9 · 결정</div><div class="tl-what"><b>송재희님 특강 날짜 확정</b> (부스에서 날짜를 알리려면 그 전에) · <b>CTS 부스 지킬 사람 확정</b> (컨퍼런스 티켓 $40, 판매 마감 10/9 23:59)</div></li>
+      <li class="future"><div class="tl-when">10/10 (토) · CTS 2026</div><div class="tl-what"><b>Changbal Tech Summit 홍보 부스</b> — 13:00–19:00 Meydenbauer Center. 홍보 페이지 QR 로 안내하고, Builders Lounge 채널 가입을 돕고, 뉴스레터 등록지(이름·이메일)를 받는다. 박창수는 당일 결혼식 참석으로 시간 배정 고민 중.</div></li>
+      <li class="future"><div class="tl-when">10월 중순~말 · 온라인</div><div class="tl-what"><b>송재희님 온라인 특강</b> — 저녁 8시 이후, 강의 1시간+ / Q&amp;A 30분 / BL 소개 10분. 인원 제한 없음. 대상을 IT 비경력자까지 넓히는 첫 시도. 창발 Product 팀 공동 주최 제안 중.</div></li>
+      <li class="future"><div class="tl-when">11월 중순 · KACC</div><div class="tl-what">KACC 11월 프로그램 — 한국 스타트업과 현지 Builder 가 서로의 제품을 써 보고 피드백하는 구조를 넣자고 제안해 둔 상태.</div></li>
+    </ol>
+    <p class="src">ideas/2026-09-23 CTS 2026 홍보 부스 · ideas/2026-09-25 온라인 특강 기획 · notices/2026-07-06 KACC Coffee Chat 결과</p>
+  </section>
+
+  <!-- 08 -->
+  <section class="part" id="p8">
+    <span class="part-num">08</span>
+    <h2>모임을 넓히는 법 — 절대수 문제에 대한 제 생각</h2>
+    <p class="intro">오프라인 모임은 장소가 인원을 제한했습니다. 온라인은 그 제약이 없습니다. 그래서 다음 특강부터는 홍보를 훨씬 넓게 가져가려 합니다. 그리고 한 번 온 사람이 계속 머물 이유도 함께 만들어야 합니다.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="tag now">알리기</span>
+        <h4>닿는 곳을 넓힌다</h4>
+        <ul>
+          <li>메일링 약 250명 (BL 뉴스레터 + 창발 Slack + GOBI Changbal 가입자, 중복 제외) — Gmail 발송 한도 때문에 나눠 보내기 필요</li>
+          <li>CTS 부스 (10/10)</li>
+          <li>Luma 이벤트 페이지 (신청·리마인더 자동)</li>
+          <li>유튜브 커뮤니티 글, Facebook 한국 AI 그룹, bada.tv</li>
+          <li>KACC · KSC 등 지역 단체</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag next">들어오게</span>
+        <h4>문턱을 낮춘다</h4>
+        <ul>
+          <li>온라인 특강처럼 누구나 들을 수 있는 행사를 늘린다</li>
+          <li>IT 비경력자에게 닿는 주제</li>
+          <li>바이브 코딩 온보딩 — 세팅만 도와드려도 스스로 만들기 시작한다 (이선생님, 조윤상님). 온보딩을 받은 분이 원하면 Builders Lounge 로 이어진다 (조윤상님은 5차 참석 → 멤버)</li>
+          <li>다른 모임과 공동 주최 (창발 Product 팀)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag idea">머물게</span>
+        <h4>계속 올 이유를 만든다</h4>
+        <ul>
+          <li>발표자를 앞세운 영상 — 발표한 사람에게 남는 것이 생긴다</li>
+          <li>정기 모임 밖 1:1 교류 권장 (Bila 매칭을 기다리지 않고 지금부터)</li>
+          <li>교집합을 찾아 함께 진행하는 일</li>
+          <li>@Bila AI 매칭</li>
+        </ul>
+      </div>
+    </div>
+    <p class="src">ideas/2026-09-25 온라인 특강 기획 「홍보 — 이번에는 훨씬 넓게」 · ideas/2026-07-20 바이브 코딩 온보딩 지원 프로그램 구상 · Journal 2026-09-15</p>
+  </section>
+
+  <!-- 09 -->
+  <section class="part" id="p9">
+    <span class="part-num">09</span>
+    <h2>같이 정할 것</h2>
+    <p class="intro">여기부터가 이번 만남의 본론입니다. 항목마다 제 생각을 적어 두었지만, 정답이 아니라 이야기의 출발점입니다. 아래 메모 칸에 적은 내용은 이 브라우저에만 저장됩니다.</p>
+
+    <div class="discuss">
+      <div class="q">
+        <div class="q-head"><span class="qn">Q1</span><h4>01 의 원칙들, 셋이 동의하나요? 빠진 것은?</h4></div>
+        <div class="who">모두</div>
+        <div class="mine">「모임보다 멤버가 먼저」와 「서로의 첫 사용자」가 가장 중요하다고 봅니다. 여기에 두 분이 생각하시는 원칙을 더하고 싶습니다.</div>
+        <div class="notes"><label for="n-q1">메모<span class="saved"></span></label><textarea id="n-q1" data-key="q1"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q2</span><h4>「Builders Lounge 가 줄 수 있는 것」 네 가지, 이게 맞나요?</h4></div>
+        <div class="who">특히 민석님</div>
+        <div class="mine">지금 셋은 사실이고 하나(@Bila AI 매칭)는 약속입니다. 약속을 언제까지 지킬 수 있을지가 신뢰에 영향을 줍니다. 부스에서 무엇을 가장 앞에 내세울지도 정하고 싶습니다.</div>
+        <ul><li>실제로 멤버들이 가장 좋았다고 하는 것은 무엇이었나?</li><li>빠진 것 — 예: 발표 기회, 영상으로 남는 기록, 지역 네트워크(KACC) 연결</li></ul>
+        <div class="notes"><label for="n-q2">메모<span class="saved"></span></label><textarea id="n-q2" data-key="q2"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q3</span><h4>절대수 부족 — 무엇부터 할까요?</h4></div>
+        <div class="who">특히 진영님</div>
+        <div class="mine">새 사람을 데려오는 일(온라인 특강·공동 주최·넓은 홍보)과 온 사람을 머물게 하는 일(1:1 교류·발표 기회·교집합)을 동시에 해야 한다고 봅니다. 당장은 특강이 첫 실험입니다.</div>
+        <ul><li>정기 모임 형식 — 월 1회 오프라인 유지? 온라인 비중을 늘릴까?</li><li>「지역 기반으로 둘까, 온라인으로 넓게 열까」 (README 에 열려 있던 질문)</li><li>새로 온 사람을 누가 어떻게 맞이할까</li></ul>
+        <div class="notes"><label for="n-q3">메모<span class="saved"></span></label><textarea id="n-q3" data-key="q3"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q4</span><h4>CTS 부스 (10/10) 는 어떻게 운영할까요?</h4></div>
+        <div class="who">모두 · 10/9 전에 결정</div>
+        <div class="mine">홍보 페이지 QR, 채널 가입 안내, 뉴스레터 등록지까지는 준비됩니다. 저는 결혼식 때문에 당일 시간이 제한돼서, 두 분의 참석 가능 시간을 먼저 여쭙고 싶습니다.</div>
+        <ul><li>누가 몇 시부터 몇 시까지? (티켓 $40, 10/9 23:59 마감)</li><li>물품 — QR 인쇄물, 등록지, 노트북·태블릿으로 페이지 띄우기, 배너?</li><li>그 밖의 아이디어 — 예: 현장에서 @Bila AI 에게 질문해 보기 시연, 영상 틀어 두기</li></ul>
+        <div class="notes"><label for="n-q4">메모<span class="saved"></span></label><textarea id="n-q4" data-key="q4"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q5</span><h4>송재희님 온라인 특강 — 날짜와 방식</h4></div>
+        <div class="who">모두</div>
+        <div class="mine">CTS 직후(10/13~17 주)에 잡으면 부스에서 들은 소식이 바로 신청으로 이어집니다. 창발 Product 팀과 공동 주최가 되면 홍보가 더 넓어집니다.</div>
+        <ul><li>날짜·요일 (저녁 8시 이후, 10/31 핼러윈 금요일은 피하기)</li><li>플랫폼 — Zoom / Teams / GOBI Space?</li><li>녹화·유튜브 공개 여부, Luma 사용 여부</li><li>250명 메일링 발송 방법</li></ul>
+        <div class="notes"><label for="n-q5">메모<span class="saved"></span></label><textarea id="n-q5" data-key="q5"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q6</span><h4>@Bila AI — Phase 2 매칭은 언제, 어떻게?</h4></div>
+        <div class="who">특히 민석님</div>
+        <div class="mine">매칭이 되려면 멤버별 정보(Product Profile)가 먼저 있어야 합니다. Bila 가 나오기 전에도 Product Profile 을 모으는 일은 지금 시작할 수 있습니다.</div>
+        <ul><li>매칭에 꼭 필요한 데이터 필드는? (Product 소개 템플릿 초안 있음)</li><li>Context 데이터 관리 문제 — GOBI 쪽 계획은? GitHub 제안은 의미가 있을까?</li><li>@Bila AI 프롬프트를 운영진이 같이 관리하는 것(Open Harness)이 가능한가?</li><li>모임 Requirements 를 GOBI 에 전달하는 창구</li></ul>
+        <div class="notes"><label for="n-q6">메모<span class="saved"></span></label><textarea id="n-q6" data-key="q6"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q7</span><h4>기록은 누가, 어디에, 어디까지 공개할까?</h4></div>
+        <div class="who">모두</div>
+        <div class="mine">지금은 제가 개인 저장소에 거의 혼자 기록하고 있습니다. 기록 자동화와 멤버 참여 기능이 생기면 공식 저장소로 옮길 계획입니다. 이메일·개인 대화 같은 민감 정보는 공개하지 않는다는 원칙은 지키고 있습니다.</div>
+        <ul><li>공식 저장소로 언제, 어디로 옮길까</li><li>기록 담당을 고정할까, 돌아가며 할까</li><li>공개 / 멤버 전용 / 개인 보관의 기준</li></ul>
+        <div class="notes"><label for="n-q7">메모<span class="saved"></span></label><textarea id="n-q7" data-key="q7"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q8</span><h4>6차 모임과 그 이후 — 어떤 모임을 열까?</h4></div>
+        <div class="who">모두</div>
+        <div class="mine">특강 다음의 정기 모임 발표자, 그리고 KACC 11월 프로그램과 어떻게 연결할지 이야기하고 싶습니다. 창발 Product 팀처럼 다른 모임과 함께 여는 행사도 후보입니다.</div>
+        <div class="notes"><label for="n-q8">메모<span class="saved"></span></label><textarea id="n-q8" data-key="q8"></textarea></div>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="qn">Q9</span><h4>두 분이 하고 싶은 이야기</h4></div>
+        <div class="who">진영님 · 민석님</div>
+        <div class="notes"><label for="n-q9">메모<span class="saved"></span></label><textarea id="n-q9" data-key="q9"></textarea></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="part" id="p10">
+    <span class="part-num">10</span>
+    <h2>역할 분담 — 비워 두고 같이 채웁니다</h2>
+    <p class="intro">지금 제가 맡고 있는 일과, 새로 누군가 맡아 주시면 좋을 일을 나눠 적었습니다. 담당 칸은 만나서 함께 채우면 좋겠습니다.</p>
+    <div class="table-wrap">
+      <table class="roles">
+        <thead><tr><th>영역</th><th>하는 일</th><th>담당</th></tr></thead>
+        <tbody>
+          <tr><td><b>모임 운영</b></td><td>일정·장소(City Hall 예약)·공지·뉴스레터</td><td>박창수</td></tr>
+          <tr><td><b>기록·영상</b></td><td>모임 녹화 편집, 자막, 기록 저장소 정리</td><td>박창수</td></tr>
+          <tr><td><b>@Bila AI · GOBI 채널</b></td><td>Bila 개발, 채널 기능, Requirements 반영</td><td>강민석 (GOBI)</td></tr>
+          <tr><td><b>CTS 부스 (10/10)</b></td><td>현장 안내, 채널 가입 도움, 뉴스레터 등록</td><td class="blank">정할 것</td></tr>
+          <tr><td><b>온라인 특강</b></td><td>연사 조율, 신청 페이지, 진행·녹화</td><td class="blank">정할 것</td></tr>
+          <tr><td><b>새 멤버 맞이</b></td><td>처음 온 분 안내, 1:1 교류 연결</td><td class="blank">정할 것</td></tr>
+          <tr><td><b>Product Profile 수집</b></td><td>멤버 Product 정보 모으기 (Bila 매칭의 재료)</td><td class="blank">정할 것</td></tr>
+          <tr><td><b>외부 협력</b></td><td>창발 Product 팀, KACC, 지역 단체</td><td class="blank">정할 것</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>이 문서는 Builders Lounge 기록 저장소와 박창수의 개인 기록을 바탕으로 정리했습니다. 이메일·개인 대화 원문은 넣지 않았습니다. 모임의 방향이 바뀌거나 새 구상이 생길 때마다 계속 고쳐 나갑니다 (갱신 기준과 이력: <code>AI/Tasks/items/Builders Lounge 청사진 문서 계속 보완.md</code>).</p>
+    <ul>
+      <li>README.md — 개요, 5가지 방향성, 멤버 목록</li>
+      <li>ideas/2026-05-24 2회 준비 브레인덤프 · 2026-05-25 김성진님 미팅 메모</li>
+      <li>ideas/2026-05-30 AI 코디네이터 구상 (+ 2026-06-05 GOBI Mika 피드백)</li>
+      <li>ideas/2026-06-29 Product Discovery Platform 구상</li>
+      <li>feedback/2026-06-18 GOBI Space Open Harness 제안</li>
+      <li>ideas/2026-07-20 바이브 코딩 온보딩 지원 프로그램 구상</li>
+      <li>ideas/2026-07-29 멤버 간 1대1 교류 활성화 · Bila AI Context 데이터 관리 문제</li>
+      <li>notices/2026-07-06 KACC Coffee Chat 결과</li>
+      <li>ideas/2026-09-23 CTS 2026 홍보 부스 · 2026-09-25 온라인 특강 기획 · 2026-09-25 교집합 성장 구상</li>
+      <li>Journal 2026-08-22 · 09-15 · 09-16 · 09-19 · 09-25 (구술 원문)</li>
+      <li>CTS 부스 홍보 페이지 — https://claude.ai/artifact/Vs9GEkCtEXsyRdT5kvyF7s</li>
+    </ul>
+  </footer>
+</main>
+</div>
+
+<script>
+(function(){
+  var PREFIX = "bl-blueprint-0925-";
+  function get(k){ try{ return localStorage.getItem(PREFIX + k) || ""; }catch(e){ return ""; } }
+  function set(k, v){ try{ localStorage.setItem(PREFIX + k, v); return true; }catch(e){ return false; } }
+  function del(k){ try{ localStorage.removeItem(PREFIX + k); }catch(e){} }
+
+  var areas = document.querySelectorAll("textarea[data-key]");
+  areas.forEach(function(ta){
+    ta.value = get(ta.getAttribute("data-key"));
+    var badge = ta.parentNode.querySelector(".saved");
+    var t;
+    ta.addEventListener("input", function(){
+      clearTimeout(t);
+      t = setTimeout(function(){
+        if (set(ta.getAttribute("data-key"), ta.value) && badge){
+          badge.textContent = "저장됨";
+          badge.classList.add("show");
+          setTimeout(function(){ badge.classList.remove("show"); }, 1200);
+        }
+      }, 400);
+    });
+  });
+
+  document.getElementById("btn-print").addEventListener("click", function(){ window.print(); });
+  document.getElementById("btn-clear").addEventListener("click", function(){
+    if (!confirm("이 브라우저에 저장된 메모를 모두 지울까요?")) return;
+    areas.forEach(function(ta){ del(ta.getAttribute("data-key")); ta.value = ""; });
+  });
+
+  // 현재 읽는 섹션을 목차에 표시
+  var links = {};
+  document.querySelectorAll("nav.side a[href^='#']").forEach(function(a){ links[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          Object.keys(links).forEach(function(id){ links[id].classList.toggle("on", id === en.target.id); });
+        }
+      });
+    }, { rootMargin:"-30% 0px -60% 0px" });
+    document.querySelectorAll("section.part").forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>

@@ -28,6 +28,11 @@ tags: [builder, trails-map, vibe-coding, washington]
 | 회차 | 날짜 | 내용 |
 | --- | --- | --- |
 | 2차 | 2026-06-08 | **워싱턴 놀거리 맵 발표** (온라인 참석) |
+| 5차 | 2026-09-16 | **「AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현」 발표.** [YouTube 공개](https://youtu.be/FdWigceb1pk) |
+
+### 5차 발표 영상 상태
+
+김진영님은 검색 AI 모델을 사용자 역할 에이전트로 시험하고 평가 에이전트와 검토 에이전트로 서비스 경험 및 평가 기준의 일관성을 살피는 시스템을 발표했다. 상세 기록은 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리]]에서 확인한다. [YouTube 영상](https://youtu.be/FdWigceb1pk)과 [[Research/2026-09-29 Builders Lounge 5차 김진영 발표 YouTube 업로드 자료 by Codex|업로드 자료]]도 연결했다.
 
 ## 관련 기록
 

@@ -273,6 +273,44 @@
     font-family:var(--font-display); font-size:16.5px; line-height:1.7; color:var(--ink);
   }
 
+  /* 교집합 구상 (2026-09-29) */
+  .ov{
+    margin-top:22px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:24px 22px; display:grid; gap:20px;
+  }
+  .ov-eyebrow{ font-family:var(--font-mono); font-size:11.5px; font-weight:600; letter-spacing:.12em; color:var(--accent); text-transform:uppercase; }
+  .ov h3.ov-h{ font-size:clamp(19px,3vw,22px); line-height:1.4; margin-top:6px; }
+  .ov-lead{ color:var(--ink-dim); font-size:15px; max-width:60ch; margin-top:10px; }
+  .ov-body{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; align-items:center; }
+  @media (max-width:640px){ .ov-body{ grid-template-columns:1fr; } }
+  .ov-venn{ width:100%; max-width:380px; margin:0 auto; display:block; }
+  .ov-venn .c-bl{ fill:var(--accent); fill-opacity:.16; stroke:var(--accent); stroke-width:1.6; }
+  .ov-venn .c-a{ fill:var(--accent2); fill-opacity:.13; stroke:var(--accent2); stroke-width:1.6; }
+  .ov-venn .c-b{ fill:var(--warn); fill-opacity:.13; stroke:var(--warn); stroke-width:1.6; }
+  .ov-venn .lbl{ font-family:var(--font-body); font-weight:700; font-size:14px; fill:var(--ink); text-anchor:middle; }
+  .ov-venn .lbl-sm{ font-family:var(--font-body); font-weight:500; font-size:11.5px; fill:var(--ink-dim); text-anchor:middle; }
+  .ov-venn .num-bg{ fill:var(--surface); stroke:var(--ink); stroke-width:1.4; }
+  .ov-venn .num{ font-family:var(--font-mono); font-weight:600; font-size:13px; fill:var(--ink); text-anchor:middle; dominant-baseline:central; }
+  .ov-venn .core{ font-family:var(--font-display); font-weight:700; font-size:12.5px; fill:var(--ink); text-anchor:middle; }
+  .ov-cases{ list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  .ov-case{ display:grid; grid-template-columns:28px minmax(0,1fr); gap:10px; align-items:start; }
+  .ov-n{
+    width:26px; height:26px; border-radius:50%; border:1.4px solid var(--ink); background:var(--surface);
+    display:grid; place-items:center; font-family:var(--font-mono); font-weight:600; font-size:13px;
+  }
+  .ov-kind{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:.06em; color:var(--ink-faint); text-transform:uppercase; }
+  .ov-case h4{ font-family:var(--font-display); font-weight:700; font-size:15.5px; line-height:1.4; margin:1px 0 0; }
+  .ov-case p{ font-size:13.5px; color:var(--ink-dim); margin-top:3px; }
+  .ov-soon{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; color:var(--warn); border:1px solid currentColor; border-radius:999px; padding:1px 7px; margin-left:6px; vertical-align:2px; }
+  .ov-cycle-wrap{ border-top:1px solid var(--line); padding-top:18px; display:grid; gap:10px; }
+  .ov-cycle-t{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
+  .ov-cycle{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; align-items:center; gap:8px 6px; }
+  .ov-cycle li{ display:flex; align-items:center; gap:6px; }
+  .ov-step{ font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--ink); white-space:nowrap; }
+  .ov-arr{ color:var(--ink-faint); font-family:var(--font-mono); }
+  .ov-back{ font-family:var(--font-mono); font-size:12px; color:var(--accent); white-space:nowrap; }
+  .ov-closing{ font-family:var(--font-display); font-size:16px; line-height:1.7; color:var(--ink); }
+
   .timeline{ list-style:none; margin:26px 0 0; padding:0; border-left:2px solid var(--line-strong); }
   .timeline li{ position:relative; padding:0 0 16px 20px; }
   .timeline li:last-child{ padding-bottom:0; }
@@ -421,9 +459,53 @@
 
     <p class="vision" data-i18n="vision"></p>
 
+    <div class="ov" role="group" aria-labelledby="ov-h">
+      <div>
+        <span class="ov-eyebrow" data-i18n="ov_eyebrow"></span>
+        <h3 class="ov-h" id="ov-h" data-i18n="ov_h"></h3>
+        <p class="ov-lead" data-i18n="ov_lead"></p>
+      </div>
+      <div class="ov-body">
+        <svg class="ov-venn" viewBox="0 0 400 350" role="img" aria-labelledby="ov-venn-t">
+          <title id="ov-venn-t" data-i18n="ov_venn_t"></title>
+          <circle class="c-bl" cx="200" cy="122" r="108"/>
+          <circle class="c-a" cx="138" cy="226" r="108"/>
+          <circle class="c-b" cx="262" cy="226" r="108"/>
+          <text class="lbl" x="200" y="46">Builders Lounge</text>
+          <text class="lbl-sm" x="200" y="64" data-i18n="ov_c_bl_s"></text>
+          <text class="lbl" x="82" y="290" data-i18n="ov_c_a"></text>
+          <text class="lbl-sm" x="82" y="308" data-i18n="ov_c_a_s"></text>
+          <text class="lbl" x="318" y="290" data-i18n="ov_c_b"></text>
+          <text class="lbl-sm" x="318" y="308" data-i18n="ov_c_b_s"></text>
+          <circle class="num-bg" cx="126" cy="158" r="14"/><text class="num" x="126" y="158">1</text>
+          <circle class="num-bg" cx="274" cy="158" r="14"/><text class="num" x="274" y="158">2</text>
+          <circle class="num-bg" cx="200" cy="284" r="14"/><text class="num" x="200" y="284">3</text>
+          <text class="core" x="200" y="192" data-i18n="ov_core1"></text>
+          <text class="core" x="200" y="209" data-i18n="ov_core2"></text>
+        </svg>
+        <ol class="ov-cases">
+          <li class="ov-case"><span class="ov-n" aria-hidden="true">1</span><div><span class="ov-kind" data-i18n="ov_k1"></span><h4 data-i18n="ov_t1"></h4><p data-i18n="ov_d1"></p></div></li>
+          <li class="ov-case"><span class="ov-n" aria-hidden="true">2</span><div><span class="ov-kind" data-i18n="ov_k2"></span><h4 data-i18n="ov_t2"></h4><p data-i18n="ov_d2"></p></div></li>
+          <li class="ov-case"><span class="ov-n" aria-hidden="true">3</span><div><span class="ov-kind" data-i18n="ov_k3"></span><h4><span data-i18n="ov_t3"></span><span class="ov-soon">NEXT</span></h4><p data-i18n="ov_d3"></p></div></li>
+        </ol>
+      </div>
+      <div class="ov-cycle-wrap">
+        <span class="ov-cycle-t" data-i18n="ov_cycle_t"></span>
+        <ol class="ov-cycle">
+          <li><span class="ov-step" data-i18n="ov_s1"></span><span class="ov-arr" aria-hidden="true">→</span></li>
+          <li><span class="ov-step" data-i18n="ov_s2"></span><span class="ov-arr" aria-hidden="true">→</span></li>
+          <li><span class="ov-step" data-i18n="ov_s3"></span><span class="ov-arr" aria-hidden="true">→</span></li>
+          <li><span class="ov-step" data-i18n="ov_s4"></span><span class="ov-arr" aria-hidden="true">→</span></li>
+          <li><span class="ov-step" data-i18n="ov_s5"></span></li>
+          <li><span class="ov-back" data-i18n="ov_back"></span></li>
+        </ol>
+        <p class="ov-closing" data-i18n="ov_closing"></p>
+      </div>
+    </div>
+
     <h3 class="sub-h" data-i18n="history_h"></h3>
     <ol class="timeline">
-      <li><div class="tl-when" data-i18n="tl1_when"></div><div class="tl-what" data-i18n-html="tl1_what"></div></li>
+      <li><div class="tl-when" data-i18n="tl1_when"></div><div class="tl-what" data-i18n="tl1_what"></div></li>
       <li><div class="tl-when" data-i18n="tl2_when"></div><div class="tl-what" data-i18n="tl2_what"></div></li>
       <li><div class="tl-when" data-i18n="tl3_when"></div><div class="tl-what" data-i18n="tl3_what"></div></li>
       <li><div class="tl-when" data-i18n="tl4_when"></div><div class="tl-what" data-i18n="tl4_what"></div></li>
@@ -444,6 +526,10 @@
         <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t1_meta"></span></span>
         <span class="talk-title" data-i18n="t1"></span>
       </a>
+      <a class="talk" href="https://youtu.be/FdWigceb1pk" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t7_meta"></span></span>
+        <span class="talk-title" data-i18n="t7"></span>
+      </a>
       <a class="talk" href="https://youtu.be/vXPCbt47rok" target="_blank" rel="noopener">
         <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t2_meta"></span></span>
         <span class="talk-title" data-i18n="t2"></span>
@@ -463,6 +549,10 @@
       <a class="talk" href="https://youtu.be/Racs4wG3BtA" target="_blank" rel="noopener">
         <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t6_meta"></span></span>
         <span class="talk-title" data-i18n="t6"></span>
+      </a>
+      <a class="talk" href="https://youtu.be/AoOhKZ4LoKs" target="_blank" rel="noopener">
+        <span class="talk-meta"><span class="play"><svg viewBox="0 0 10 10" aria-hidden="true"><polygon points="1,0 10,5 1,10" fill="currentColor"/></svg></span><span data-i18n="t8_meta"></span></span>
+        <span class="talk-title" data-i18n="t8"></span>
       </a>
     </div>
 
@@ -717,9 +807,41 @@
     soon: { ko:"준비 중", en:"COMING" },
     vision: { ko:"Builders Lounge 는 AI 시대 Builder 들의 네트워킹 공간이자, 그 네트워킹 기록을 바탕으로 AI Agent 가 내가 하는 일에 조언을 주고 사람을 소개해 주는 곳이 되려 합니다.", en:"Builders Lounge aims to be a networking space for builders in the AI era — and, drawing on those networking records, a place where an AI agent advises you on your work and introduces you to the right people." },
 
+    /* ---- 2026-09-29 교집합 구상 ---- */
+    ov_eyebrow: { ko:"교집합을 함께 키웁니다", en:"Growing the overlap" },
+    ov_h: { ko:"모임과 멤버가 겹치는 곳, 멤버와 멤버가 겹치는 곳을 찾아 함께 키웁니다", en:"We find where the community and its members overlap, and where members overlap, and grow it together" },
+    ov_lead: { ko:"당신이 만들고 있는 것과 이 모임이 겹치는 곳, 그리고 당신과 다른 멤버가 겹치는 곳이 있습니다. 그 교집합을 함께 키우면 양쪽 모두가 잘됩니다. 키워 온 과정을 기록으로 남기면 다른 멤버에게도 도움이 되고, 모임이 커지면서 새로운 교집합이 또 생깁니다.", en:"What you're building overlaps with what this community needs, and with what other members are building. Grow that overlap together, and both sides do well. We keep a record of each story, so it helps the next member and opens new overlaps as the community grows." },
+    ov_venn_t: { ko:"Builders Lounge 와 두 빌더의 원이 겹치는 벤 다이어그램. 겹친 곳 1·2·3 이 세 가지 교집합이다.", en:"Venn diagram of Builders Lounge and two builders. Overlaps 1, 2 and 3 are the three kinds of overlap." },
+    ov_c_bl_s: { ko:"모임", en:"the community" },
+    ov_c_a: { ko:"빌더 A", en:"Builder A" },
+    ov_c_a_s: { ko:"멤버와 그의 회사", en:"a member and their company" },
+    ov_c_b: { ko:"빌더 B", en:"Builder B" },
+    ov_c_b_s: { ko:"다른 멤버 · 다른 모임", en:"another member or group" },
+    ov_core1: { ko:"함께", en:"Growing" },
+    ov_core2: { ko:"성장", en:"together" },
+    ov_k1: { ko:"모임 × 멤버의 회사", en:"Community × a member's company" },
+    ov_t1: { ko:"GOBI Space 채널 · @Bila AI", en:"GOBI Space channel · @Bila AI" },
+    ov_d1: { ko:"모임에 필요한 기능이 GOBI 의 제품 요구사항이 되고, 모임은 AI Agent 가 돕는 온라인 공간을 얻습니다.", en:"What the community needs becomes GOBI's product requirements, and the community gets an online space with an AI agent helping out." },
+    ov_k2: { ko:"모임 × 다른 모임", en:"Community × another group" },
+    ov_t2: { ko:"다른 모임과 함께 여는 세미나 · 커피챗", en:"Seminars and coffee chats with other groups" },
+    ov_d2: { ko:"앱을 만드는 사람만 빌더가 아닙니다. AI 로 세미나를 열고 사람을 잇는 모임도 빌더이고, Builders Lounge 도 그중 하나입니다. 7월 워싱턴주 한인상공회의소(KACC)와의 커피챗처럼 다른 모임과 함께 자리를 엽니다.", en:"Builders aren't only people who make apps. Groups that use AI to run seminars and connect people are builders too, and Builders Lounge is one of them. Like our July coffee chat with the Korean American Chamber of Commerce of Washington (KACC), we open events together with other groups." },
+    ov_k3: { ko:"멤버 × 멤버", en:"Member × member" },
+    ov_t3: { ko:"함께 만드는 비지니스 아이템", en:"Business ideas built together" },
+    ov_d3: { ko:"@Bila AI 가 서로 도움이 될 멤버를 이어 주고, 멤버들도 스스로 교집합을 찾아 함께 진행합니다.", en:"@Bila AI connects members who can help each other, and members find their own overlaps and build on them." },
+    ov_cycle_t: { ko:"선순환", en:"The cycle" },
+    ov_s1: { ko:"교집합 발견", en:"Find an overlap" },
+    ov_s2: { ko:"함께 키우기", en:"Grow it together" },
+    ov_s3: { ko:"기록으로 남기기", en:"Keep a record" },
+    ov_s4: { ko:"모임 성장", en:"The community grows" },
+    ov_s5: { ko:"새 교집합", en:"New overlaps" },
+    ov_back: { ko:"↺ 다시 처음으로", en:"↺ and around again" },
+    ov_closing: { ko:"Builders Lounge 는 모임과 멤버, 멤버와 멤버 사이의 교집합을 찾아 함께 키우며, 모임과 멤버가 같이 성장하는 곳입니다.", en:"Builders Lounge finds the overlaps between the community and its members, and between members, and grows them together, so the community and its members grow at the same time." },
+
     history_h: { ko:"지금까지의 모임", en:"Our meetups so far" },
+    t8_meta: { ko:"1차 · 25분", en:"#1 · 25 min" },
+    t8: { ko:"AI 에이전트가 나 대신 글을 올린다 — GOBI Space 함께 익히기", en:"An AI agent that posts for you — learning GOBI Space together" },
     tl1_when: { ko:"2026년 5월 7일 · 1차", en:"May 7, 2026 · #1" },
-    tl1_what: { ko:"첫 공식 모임. 모임 이름을 Builders Lounge 로 정하고, AI 에이전트가 나 대신 글을 올리는 GOBI Space 사용법을 함께 익혔습니다. <a href=\"https://youtu.be/AoOhKZ4LoKs\" target=\"_blank\" rel=\"noopener\">영상 보기 ↗</a>", en:"Our first official meetup. We named the group Builders Lounge and learned GOBI Space together — an AI agent that posts on your behalf. <a href=\"https://youtu.be/AoOhKZ4LoKs\" target=\"_blank\" rel=\"noopener\">Watch ↗</a>" },
+    tl1_what: { ko:"첫 공식 모임. 모임 이름을 Builders Lounge 로 정하고, AI 에이전트가 나 대신 글을 올리는 GOBI Space 사용법을 함께 익혔습니다.", en:"Our first official meetup. We named the group Builders Lounge and learned GOBI Space together — an AI agent that posts on your behalf." },
     tl2_when: { ko:"6월 · 2차", en:"June · #2" },
     tl2_what: { ko:"개발자와 비개발자 다섯 명이 각자 만든 AI Product 를 소개했습니다. 온·오프라인 하이브리드로 진행했습니다.", en:"Five developers and non-developers each presented an AI product they built. Held as an online/in-person hybrid." },
     tl3_when: { ko:"7월 · 3차", en:"July · #3" },
@@ -733,6 +855,8 @@
     talks_lead: { ko:"모임에 오지 못하셨어도 괜찮습니다. 발표 영상은 유튜브에서, 모임 기록은 GitHub 에서 누구나 보실 수 있습니다.", en:"Missed a meetup? No problem. Talk videos are on YouTube and meeting notes are on GitHub — open to everyone. Most talks are in Korean, many with English subtitles." },
     t1_meta: { ko:"5차 · 37분", en:"#5 · 37 min" },
     t1: { ko:"샌프란시스코 공무원의 Multi-Agent AI 시스템 실전 개발기 — 그리고 「이걸 해킹에 쓰면?」", en:"A San Francisco civil servant’s multi-agent AI system, built for real — and then: “What if we used it for hacking?”" },
+    t7_meta: { ko:"5차 · 20분", en:"#5 · 20 min" },
+    t7: { ko:"AI 가 AI 를 평가한다 — 검색 AI 를 검증하는 멀티 에이전트 평가 시스템", en:"AI grading AI — a multi-agent system that tests search AI" },
     t2_meta: { ko:"4차 · 38분", en:"#4 · 38 min" },
     t2: { ko:"코드를 모르던 목회자가 바이브 코딩으로 만든 이주민 정착 앱, 86개 도시로 퍼지다", en:"A pastor who couldn’t code vibe-coded an app for newcomers — and it spread to 86 cities" },
     t3_meta: { ko:"4차 · 20분", en:"#4 · 20 min" },
@@ -749,26 +873,26 @@
     bila_body: { ko:"Builders Lounge 채널에서 @Bila AI 를 부르고 질문하면, 지난 모임 기록을 바탕으로 답해 줍니다. 예: 「@Bila AI 지난 모임에서 멀티 에이전트 이야기 한 영상 있어요?」", en:"Mention @Bila AI in the Builders Lounge channel and ask — it answers from our past meeting records. For example: “@Bila AI, is there a video from a past meetup about multi-agent systems?”" },
 
     next_h2: { ko:"다음 모임 — 온라인 특강", en:"Next meetup — online lecture" },
-    ev_badge_date: { ko:"날짜 곧 공개", en:"Date coming soon" },
+    ev_badge_date: { ko:"10월 21일 (수) 저녁 8시", en:"Wed, Oct 21 · 8 p.m." },
     ev_badge_online: { ko:"온라인", en:"Online" },
     ev_badge_open: { ko:"인원 제한 없음", en:"No attendance limit" },
     ev_title: { ko:"바이브 코딩으로 만들기는 쉬워졌는데, 왜 아무도 안 쓸까?", en:"Vibe coding made building easy. So why does nobody use what I built?" },
     ev_desc: { ko:"코딩부터 배포까지 쉬워진 시대에도 제품의 승부는 여전히 코딩 전에 갈립니다. 누구의 어떤 문제를 왜 풀 것인가 — 만들기 전에 생각해야 할 것들을 비개발자의 눈높이에서 이야기합니다. 바이브 코딩을 하시면서 궁금했던 것, 나누고 싶었던 이야기를 가지고 오세요.", en:"Even now that coding and deployment are easy, a product is still won or lost before the coding starts. Whose problem, which problem, and why this way — we’ll talk about what to think through before you build, from a non-developer’s point of view. Bring the questions you’ve had while vibe coding, and the stories you’ve wanted to share." },
-    ev_k_when: { ko:"시기", en:"When" },
-    ev_v_when: { ko:"2026년 10월 중순~말", en:"Mid-to-late October 2026" },
+    ev_k_when: { ko:"날짜", en:"Date" },
+    ev_v_when: { ko:"2026년 10월 21일 (수)", en:"Wednesday, October 21, 2026" },
     ev_k_time: { ko:"시간", en:"Time" },
-    ev_v_time: { ko:"저녁 8시 이후 (시애틀 시간)", en:"After 8 p.m. (Seattle time)" },
+    ev_v_time: { ko:"저녁 8시 (시애틀 시간)", en:"8 p.m. (Seattle time)" },
     ev_k_format: { ko:"구성", en:"Format" },
     ev_v_format: { ko:"강의 1시간 + Q&A 30분", en:"1-hour lecture + 30-min Q&A" },
     ev_k_who: { ko:"대상", en:"For" },
     ev_v_who: { ko:"IT 경력과 관계없이 누구나", en:"Everyone, with or without an IT background" },
     // 강사 소개는 박창수가 준 문구 그대로 (2026-09-25) — 고치지 말 것
     ev_speaker: { ko:"<span class=\"speaker-k\">강사</span><b class=\"speaker-name\">송재희</b>포춘 500대 기업을 위한 데이터 시스템을 구축한 20년 이상의 경력을 가진 엔터프라이즈 데이터 플랫폼 아키텍트. 바이브 코딩과 AI 개발을 수백 명의 학생에게 가르친 AI 개발 교육자. 한국 기술 스타트업이 미국 시장을 navigating하도록 돕는 Seattle Partners의 창립자.", en:"<span class=\"speaker-k\">Speaker</span><b class=\"speaker-name\">Jaehee Song</b>An enterprise data platform architect with more than 20 years of experience building data systems for Fortune 500 companies. An AI development educator who has taught vibe coding and AI development to hundreds of students. Founder of Seattle Partners, which helps Korean tech startups navigate the U.S. market." },
-    ev_cta: { ko:"날짜 공지 받기 — 채널 참여", en:"Get the date — join the channel" },
+    ev_cta: { ko:"참여 링크 받기 — 채널 참여", en:"Get the join link — join the channel" },
     ev_video: { ko:"이 특강의 출발점이 된 5분 영상", en:"The 5-minute video that started this talk" },
 
     join_h2: { ko:"Builders Lounge 온라인 모임 공간, 이렇게 들어오세요", en:"How to Join the Builders Lounge Online Space" },
-    join_lead: { ko:"Builders Lounge는 Gobi Space 안에 있는 창발(Changbal) 스페이스의 채널입니다. 아래 링크나 QR 코드로 시작하시면 몇 분 안에 들어오실 수 있습니다. 모임 공지와 특강 날짜도 이 채널에서 가장 먼저 알려 드립니다.", en:"Builders Lounge is a channel inside the Changbal space on Gobi Space. Start from the link or QR code below and you’ll be in within a few minutes. Meetup announcements and the lecture date are posted here first." },
+    join_lead: { ko:"Builders Lounge는 Gobi Space 안에 있는 창발(Changbal) 스페이스의 채널입니다. 아래 링크나 QR 코드로 시작하시면 몇 분 안에 들어오실 수 있습니다. 모임 공지와 특강 참여 링크도 이 채널에서 가장 먼저 알려 드립니다.", en:"Builders Lounge is a channel inside the Changbal space on Gobi Space. Start from the link or QR code below and you’ll be in within a few minutes. Meetup announcements and the lecture join link are posted here first." },
     cta_label: { ko:"초대 링크 — 여기서 시작하세요", en:"Invite link — start here" },
     entry_hint: { ko:"컴퓨터와 휴대폰에서 같은 링크를 쓰지만, 열리는 화면이 서로 다릅니다. 아래에서 쓰시는 기기를 골라 주세요.", en:"The same link works on computer and phone, but each opens a different screen. Pick your device below." },
     qr_cap: { ko:"휴대폰으로 스캔", en:"Scan with your phone" },

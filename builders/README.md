@@ -23,9 +23,9 @@ tags:
 | [강민석](Kang-Minsuk-Gobi/profile.md) | Gobi Space · Bila AI · 웨어러블 | 1차 | 1·2·3·4차 | [1차](https://youtu.be/AoOhKZ4LoKs) · [4차②](https://youtu.be/5nlVyb6HBR0) |
 | [김성수](Kim-Sung-Soo-HebronGuide/profile.md) | HebronGuide | 3차 | 4차 **메인** | [4차①](https://youtu.be/vXPCbt47rok) |
 | [김성진](Kim-Sung-Jin-BrainTraining/profile.md) | Brain Training Board Games | 2차 | 2차 | — |
-| [김진영](Kim-Jin-young-TrailsMap/profile.md) | 워싱턴 놀거리 맵 | 2차 | 2차 | — |
+| [김진영](Kim-Jin-young-TrailsMap/profile.md) | Washington State Leisure Map · 검색 AI 평가 | 2차 | 2차 · 5차 | 2차 영상은 전체 녹화본에 포함 · 5차 [발표 영상 공개](https://youtu.be/FdWigceb1pk) |
 | [박창수](Park-Changsoo-BuildersLounge/profile.md) | 기록 저장소 · Bila AI (공동) | 1차 | 2차 | — |
-| [손민수](Son-Minsu-ConductorAI/profile.md) | Conductor AI | 2차 | 2·4차, **5차 메인 예정** | [4차④](https://youtu.be/e9iMkxUGXfM) |
+| [손민수](Son-Minsu-ConductorAI/profile.md) | Conductor AI | 2차 | 2·4차 · 5차 메인 | [4차④](https://youtu.be/e9iMkxUGXfM) · [5차](https://youtu.be/nypuwYuyMJQ) |
 | [이도규](Lee-Dokyu-Quant/profile.md) | Quant 퀀트 투자 에이전트 | 2차 | 4차 | [4차③](https://youtu.be/dsl7CZCCAh4) |
 | [송재희](Song-Jae-hee-Build-with-AI/2026-06-29%20Build%20with%20AI%20source%20note.md) | Build with AI (교재) | — | **모임 발표 아님** | — |
 
@@ -53,7 +53,7 @@ tags:
 | 2차 | 2026-06-08 | Bellevue City Hall | 김성진 · 박창수 · 강민석 · 김진영 · 손민수 |
 | 3차 | 2026-07-06 | KACC 사무실 | *Coffee Chat — 제품 발표 형식 아님* |
 | 4차 | 2026-08-06 | Bellevue City Hall 1E-110 | 김성수(메인) · 강민석 · 이도규 · 손민수 |
-| 5차 | 미정 | 미정 | 손민수(메인, 20~30분) + 짧은 발표 5~10분 **모집 중** |
+| 5차 | 2026-09-16 | Bellevue City Hall 1E-109 · 하이브리드 | 손민수(메인) · 김진영 · 박창수(10분) |
 
 ## 아직 프로필이 없는 분들
 

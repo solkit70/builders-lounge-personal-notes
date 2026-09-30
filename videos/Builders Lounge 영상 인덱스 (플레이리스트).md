@@ -19,7 +19,7 @@ https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
 
 > 📌 **답변할 때 원칙**: 영상을 언급하면 **반드시 링크를 함께** 준다. 특정 발표를 묻는 질문에는 플레이리스트 링크가 아니라 **그 영상의 개별 링크**를 준다. 아직 공개되지 않은 영상은 「편집 중」이라고 정확히 말한다.
 
-## 영상 전체 목록 (9편 공개)
+## 영상 전체 목록 (10편 공개)
 
 | # | 제목 | 길이 | 회차 | 링크 |
 |---|---|---:|---|---|
@@ -32,6 +32,8 @@ https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
 | 7 | How to Create a YouTube Video with AI in 36 Minutes — Documentation Makes AI Stronger | 38:33 | 관련 | https://youtu.be/cmC1GFARQus |
 | 8 | I Finally Built an App with AI! But Nobody is Using It — The Development Mindset in the Age of Vibe Coding | 5:45 | 관련 | https://youtu.be/jkXtL5J4rUM |
 | 9 | Vibe coding made building easy. So why does nobody use what I built? | 5:18 | 관련 | https://youtu.be/AHsVMXCbQYk |
+| 10 | 샌프란시스코 공무원의 Multi-Agent AI 시스템 실전 개발기 \| 생생한 경험담과 시행 착오 공유 \| 이어진 토론 - 이것을 해킹에 이용하면??? | 37:41 | 5차 | https://youtu.be/nypuwYuyMJQ |
+| 11 | AI를 평가하는 AI \| 검색 AI를 검증하는 Multi Agent AI 평가 시스템의 설계와 구현 \| Builders Lounge | 19:54 | 5차 | https://youtu.be/FdWigceb1pk |
 
 > ⚠️ **3차 모임(Coffee Chat)은 영상이 없다.** 카페에서 진행한 비공식 모임이라 녹화하지 않았다.
 
@@ -74,17 +76,17 @@ https://youtu.be/Racs4wG3BtA
 
 → 정리 문서: [[Initiatives/Builders Lounge/videos/2026-08-06 Builders Lounge 4차 모임 정리|4차 모임 정리]] · FAQ: [[Initiatives/Builders Lounge/videos/2026-08-06 Builders Lounge 4차 모임 FAQ|4차 모임 FAQ]] · 참석자 자기소개: [[Initiatives/Builders Lounge/videos/2026-08-06 Builders Lounge 4차 모임 참석자 자기소개|자기소개]]
 
-### 5차 모임 (2026-09-16) — ⏳ 영상 편집 중
+### 5차 모임 (2026-09-16) — 발표 영상 2편 공개
 
-**아직 공개된 영상이 없다.** 질문을 받으면 「편집 중이며 정리되는 대로 공개한다」고 답한다.
+손민수님과 김진영님 발표 영상이 모두 공개됐다. 김진영님 발표의 자세한 내용은 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리]]에서 확인한다.
 
 | 발표 | 상태 |
 |---|---|
-| **손민수 — Multi-Agent AI 시스템** (36:51) | 영어 자막 작업 완료, **공개 준비 중** |
-| **김진영 발표** | **편집 대기** — 손민수 님 영상 작업 완료 후 진행 |
+| **손민수 — Multi-Agent AI 시스템** (37:41) | [YouTube 공개](https://youtu.be/nypuwYuyMJQ) · 영어 자막 |
+| **김진영 — AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현** (19:54) | [YouTube 공개](https://youtu.be/FdWigceb1pk) · 한국어 발표 |
 | 박창수 — AI와 함께 몰락해 가는 유튜브 채널을 살린 과정 (10분) | 미정 |
 
-내용은 영상 공개 전에도 답할 수 있다 → [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 모임 정리|5차 모임 정리]] · 전사본(한·영 279문장): [[Ingest/Transcripts/Builders_Lounge/2026-09-16 Builders Lounge 5th Meeting - 손민수 Multi-Agent AI - transcript|5차 Transcript]]
+내용은 영상 공개 전에도 답할 수 있다 → [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 모임 정리|5차 모임 정리]] · 손민수 전사본(한·영 279문장): [[Ingest/Transcripts/Builders_Lounge/2026-09-16 Builders Lounge 5th Meeting - 손민수 Multi-Agent AI - transcript|전사본]] · 김진영 전사 검토본: [[Research/2026-09-23 Builders Lounge 5차 김진영 발표 - 한국어 전사 검토 by Codex|한국어 전사 검토]]
 
 ## 모임 영상은 아니지만 함께 안내하면 좋은 것
 
@@ -110,13 +112,13 @@ https://youtu.be/Racs4wG3BtA
 → 회차를 확인하고, 그 회차의 **한 줄 요약 + 영상 링크 + 정리 문서**를 함께 준다.
 
 **「5차 모임 영상은요?」**
-→ **아직 공개 전이고 편집 중**이라고 답한다. 대신 5차 모임 정리 문서의 내용으로 답할 수 있다.
+→ 손민수님 발표는 https://youtu.be/nypuwYuyMJQ, 김진영님 발표는 https://youtu.be/FdWigceb1pk 에서 볼 수 있다. 김진영님 발표의 시스템 구조와 Q&A는 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리]]에서 확인한다. 자세한 모임 맥락은 5차 모임 정리 문서에서 확인한다.
 
 **「3차 영상은 왜 없어요?」**
 → 카페에서 한 비공식 커피챗이라 **녹화하지 않았다**고 답한다.
 
 **「멀티 에이전트 / 장애 대응 이야기가 궁금해요」**
-→ 4차의 손민수 님 영상(https://youtu.be/e9iMkxUGXfM)을 주고, **5차에서 더 깊이 다룬 후속 발표가 있으며 곧 공개된다**고 덧붙인다.
+→ 4차의 손민수 님 영상(https://youtu.be/e9iMkxUGXfM)과 5차 후속 발표(https://youtu.be/nypuwYuyMJQ)를 안내한다.
 
 ## 관련
 
