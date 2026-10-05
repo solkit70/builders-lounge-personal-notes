@@ -163,6 +163,7 @@ builders-lounge-personal-notes/
 | [2026-05-25 Builders Lounge GobiSpace Global 안내 글.md](notices/2026-05-25%20Builders%20Lounge%20GobiSpace%20Global%20%EC%95%88%EB%82%B4%20%EA%B8%80.md) | GobiSpace Global 게시 글 — 커뮤니티 소개, AI 기록 활용, Changbal Space 참여 안내 |
 | [2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack.md](slack/2026-05-26%20Builders%20Lounge%20%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%9D%B4%EB%A6%84%20%EB%B0%8F%20AI%20%EC%9D%B4%EB%A6%84%20%EB%85%BC%EC%9D%98%20Slack.md) | MinSuk Kang과 DM — 창발 Space 이름 변경, Builders Lounge 독립성, 커뮤니티 AI 이름(Bila 후보), Dreaming 프로세스 |
 | [2026-06-05 Builders Lounge AI 코디네이터 GOBI Mika 피드백 Slack.md](slack/2026-06-05%20Builders%20Lounge%20AI%20%EC%BD%94%EB%94%94%EB%84%A4%EC%9D%B4%ED%84%B0%20GOBI%20Mika%20%ED%94%BC%EB%93%9C%EB%B0%B1%20Slack.md) | GOBI 개발자 Mika — Phase 1~3 기술 검토: QnA 즉시 가능, Phase 3는 웹훅 트리거 구조, Phase 2는 Cron 방식 |
+| [2026-09-29 CTS 부스 미팅 메모 - 강민석님.md](ideas/2026-09-29%20CTS%20%EB%B6%80%EC%8A%A4%20%EB%AF%B8%ED%8C%85%20%EB%A9%94%EB%AA%A8%20-%20%EA%B0%95%EB%AF%BC%EC%84%9D%EB%8B%98.md) | CTS 2026 부스 합의 — 커뮤니티 중심, 뉴스레터 신청, 역할, 250명 뉴스레터 |
 
 ## 모임 운영에 도움이 되는 Product, 언제든 환영합니다
 
