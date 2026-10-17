@@ -13,6 +13,8 @@ notices/2026-09-07 Builders Lounge 5차 모임 Gobi Space 채널 공지.md
 notices/2026-09-07 Builders Lounge 5차 모임 Slack 공지.md
 notices/2026-09-22 외부 강연 소개 - Betty Row KSEA Salient Senior Forum.md
 newsletters/2026-09-07 Builders Lounge 뉴스레터 - 5차 모임 확정 안내.md
+newsletters/2026-10-05 Builders Lounge 뉴스레터 - 첫 온라인 특강 · 5차 영상 · CTS 부스.md
+newsletters/2026-10-21 Builders Lounge 온라인 특강.ics
 
 # DM·슬랙 대화 원문이 든 기획 문서 (2026-09-26)
 ideas/2026-09-23 CTS 2026 Builders Lounge 홍보 부스.md
@@ -24,3 +26,18 @@ ideas/2026-09-29 강민석님 미팅 요약 - CTS 부스 · Requirements · 비�
 
 # Private source transcript is stored outside this repository; block any accidental copy
 **/2026-09-29 Builders Lounge GOBI Minsuck Transcript.*
+
+# 외부 강사 강의 자료 — 강사 동의 전에는 공개 레포에 올리지 않는다 (2026-10-05)
+lectures/
+
+# 메일링 리스트 폴더(이름·이메일) — 2026-10-13 newsletters/ 에서 옮김. 절대 커밋하지 않는다 (2026-10-14)
+메일링 리스트/
+
+# CTS 부스 신청자 연락처 · 손글씨 신청지 사진 (2026-10-14)
+booth/cts-2026-signups/
+
+# 직접 연락할 분들의 실명 · 이메일 · 연락 이력 (🔒 내부 자료, 2026-10-17)
+network/Builders Lounge Contact 대상자.md
+
+# 수정 전 백업본 — 저장소에 올리지 않는다 (2026-10-17)
+booth/_backup_*/

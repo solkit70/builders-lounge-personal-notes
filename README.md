@@ -227,6 +227,9 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 - Builders Lounge 기록 저장소: https://github.com/solkit70/builders-lounge-personal-notes
 - Builders Lounge #1 GOBI Hands-on video: https://youtu.be/AoOhKZ4LoKs
 
+### 언론 보도
+- 시애틀 코리안 데일리 (2026-10-14) — [빌더스 라운지] AI로 앱은 만들었는데, 왜 아무도 안 쓸까? · 첫 온라인 특강(10/21, 송재희 강사) 안내: https://www.seattlekdaily.com/news/articleView.html?idxno=22783
+
 ### 멤버 Product
 - Gobi Space (강민석): https://www.gobispace.com/
 - Brain Training Board Games (김성진): http://braintraining-boardgames-319297116860.s3-website-us-west-2.amazonaws.com/landing-page/
