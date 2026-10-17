@@ -1,17 +1,43 @@
 ---
-title: "김진영 — 워싱턴 놀거리 맵"
+title: "김진영 — 워싱턴 놀거리 맵 · 검색 AI 멀티 에이전트 평가 시스템"
 builder: "김진영 (Kim Jin-young)"
-product: "Washington State Leisure Map / Trails"
+product: "Washington State Leisure Map / Trails · 멀티 에이전트 평가 시스템"
 product_url: "https://trails.aiforbetter.me/"
 first_appearance: 2026-06-08
-tags: [builder, trails-map, vibe-coding, washington]
+tags: [builder, trails-map, vibe-coding, washington, multi-agent, evaluation, search]
 ---
 
 ## 한 줄 소개
 
-**시애틀 근교의 트레일·캠핑장·골프장 정보를 한 장의 지도에 모은 앱을 만든 빌더.** 2차 모임에 온라인으로 참석해 발표했다.
+**네이버 검색 US 디렉터(5차 발표 슬라이드 소개 기준).** 2차 모임에서는 시애틀 근교의 트레일 · 캠핑장 · 골프장 정보를 한 장의 지도에 모은 **워싱턴 놀거리 맵**을, 5차 모임에서는 **AI 가 AI(검색 시스템)를 평가하는 멀티 에이전트 평가 시스템**을 발표했다. 두 번 모두 온라인으로 참석했다.
 
-## 제품 — Washington State Leisure Map / Trails
+## 5차 발표 — 멀티 에이전트 평가 시스템 (2026-09-16)
+
+**「AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현」.** 검색 AI 를 실제 사용자처럼 행동하는 에이전트로 시험하고, 다른 에이전트가 그 결과와 검색 경험을 평가한 뒤, 또 다른 에이전트가 평가 기준이 일관됐는지 검토하는 시스템이다. 답변 점수만 매기는 것이 아니라 **사용자 경험과 태스크 수행 과정을 시뮬레이션해 여러 검색 시스템을 비교**하는 것이 핵심이다.
+
+| 역할 | 하는 일 |
+| --- | --- |
+| **User Agent** | 검색 태스크를 실제 사용자처럼 수행한다. 답변을 읽고 다음 행동이나 질문을 이어간다 |
+| **Evaluator** | 태스크의 성공 기준(Success Criteria)으로 결과를 평가한다 — 검색 경험, 목표 달성, 답변의 유용성, 정보와 출처 품질 |
+| **Auditor** | 시스템별 평가가 같은 기준으로 이루어졌는지 검토해 비교의 일관성을 확인한다 |
+| 평가 대상 | 여러 검색 모델 · 검색 서비스를 같은 태스크로 시험해 비교한다 |
+
+**설계에서 눈여겨볼 지점**
+
+- **「정답」이 아니라 「성공 기준」** — 미리 준비한 답이 정말 Ground Truth 인지 스스로 의문을 제기했다. 검색 지식은 질의와 시점에 따라 바뀌고 믿을 만한 기준을 만드는 데 비용이 들기 때문이다. 그래서 정답 대신 성공 기준이라고 부르고, 모든 질의에 불변의 정답을 보증하지 않는다.
+- **Evaluator 는 매번 검색하지 않는다** — 태스크에 적힌 답의 방향과 성공 기준을 쓰므로 Tool Calling 비용과 실행 부담이 줄어든다. 시연에서 Evaluator · Auditor 의 기본 모델은 GPT 였고 다른 모델도 쓸 수 있다.
+- **가상 사용자 실험** — 실제 사용자 실험 전에 대표성 있는 가상 사용자 집단으로 서비스를 먼저 시험해 보는 구상이다. 페르소나를 어떻게 정의하느냐에 좌우되며, 실제 사용자를 완전히 대체한다는 뜻은 아니다.
+- **검증 계획** — 내부 지표와 결과가 일치하는지 확인하려 한다. 외부 벤치마크나 NPS 검증이 끝났다고 발표한 것은 아니다.
+
+**사람과 AI 의 역할**: AI 로 초기 프로토타입을 만드는 일은 쉬웠지만, 다른 사람도 쓸 수 있게 완성도를 높이는 데는 여전히 시간이 든다고 했다. 토론에서는 큰 목표를 작은 작업으로 나누고 사람이 결과를 확인해야 한다는 점, 그리고 요약된 답만 받으면 여러 출처를 비교하며 쌓던 판단 감각이 줄어들 수 있다는 우려(고가공 식품과 통곡물 비유)를 나눴다. 손민수 님 발표 Q&A 에서는 장애가 과거 패턴만 반복하지 않는다며 **Chaos Monkey** 를 꺼내 레드팀 아이디어를 넓혔다.
+
+> 손민수 님의 5차 발표(시스템 장애 대응 멀티 에이전트)와는 다른 프로젝트다.
+
+- 영상: https://youtu.be/FdWigceb1pk (약 19:54, 한국어)
+- 발표 슬라이드: https://agentic-eval-pkm-2026.lifidea.chatgpt.site/#s1
+- 상세 기록: [5차 김진영 발표 정리](<../../videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리.md>)
+
+## 2차 발표 — Washington State Leisure Map / Trails (2026-06-08)
 
 | 항목 | 내용 |
 | --- | --- |
@@ -19,22 +45,21 @@ tags: [builder, trails-map, vibe-coding, washington]
 | 담은 정보 | WTA trail status · campground · golf course |
 | 범위 | 워싱턴주 |
 
-**만든 계기가 인상적이었다.** "일하기 싫을 때 만들었다" 고 밝혔다.
-
-흩어져 있는 여가 정보를 한 장의 지도로 합치는 것이 핵심이다. WTA(Washington Trails Association)의 트레일 상태 정보를 함께 보여준다.
+**만든 계기가 인상적이었다.** "일하기 싫을 때 만들었다" 고 밝혔다. 흩어져 있는 여가 정보를 한 장의 지도로 합치는 것이 핵심이고, WTA(Washington Trails Association)의 트레일 상태 정보를 함께 보여준다.
 
 ## Builders Lounge 참여 이력
 
 | 회차 | 날짜 | 내용 |
 | --- | --- | --- |
 | 2차 | 2026-06-08 | **워싱턴 놀거리 맵 발표** (온라인 참석) |
-| 5차 | 2026-09-16 | **「AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현」 발표.** [YouTube 공개](https://youtu.be/FdWigceb1pk) |
+| 5차 | 2026-09-16 | **「AI가 AI를 평가하는 시대: 멀티 에이전트 평가 시스템의 설계와 구현」 발표** (온라인 참석) · [YouTube](https://youtu.be/FdWigceb1pk) |
 
-### 5차 발표 영상 상태
-
-김진영님은 검색 AI 모델을 사용자 역할 에이전트로 시험하고 평가 에이전트와 검토 에이전트로 서비스 경험 및 평가 기준의 일관성을 살피는 시스템을 발표했다. 상세 기록은 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리]]에서 확인한다. [YouTube 영상](https://youtu.be/FdWigceb1pk)과 [[Research/2026-09-29 Builders Lounge 5차 김진영 발표 YouTube 업로드 자료 by Codex|업로드 자료]]도 연결했다.
+> 📌 **3개월 사이 주제가 「내가 쓰려고 만든 지도 앱」에서 「AI 를 평가하는 AI 시스템」으로 넓어졌다.** 개인 생활 도구와 직업 현장의 문제를 모두 AI 로 풀어 보는 빌더다.
 
 ## 관련 기록
 
-- 2차 모임 정리 — `videos/2026-06-08 Builders Lounge 2차 모임 정리.md`
-- Beyond LLM Wiki 아이디어 노트 — `ideas/2026-07-04 Kim Jin-young - Beyond LLM Wiki.md`
+- [5차 김진영 발표 정리](<../../videos/2026-09-16 Builders Lounge 5차 김진영 발표 정리.md>)
+- [5차 모임 정리](<../../videos/2026-09-16 Builders Lounge 5차 모임 정리.md>)
+- [2차 모임 정리](<../../videos/2026-06-08 Builders Lounge 2차 모임 정리.md>)
+- [Beyond LLM Wiki 아이디어 노트](<../../ideas/2026-07-04 Kim Jin-young - Beyond LLM Wiki.md>)
+- [모임 전체 FAQ (1~5차)](<../../videos/Builders Lounge 모임 전체 FAQ (1~5차).md>)

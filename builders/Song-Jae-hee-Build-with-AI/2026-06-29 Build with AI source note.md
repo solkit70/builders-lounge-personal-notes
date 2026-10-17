@@ -26,11 +26,9 @@ external:
 - [2026-06-29 - Weekly Progress and Planning](<../../../../Roundup/2026-06-29 - Weekly Progress and Planning.md>)
 - [2026-06-29 Builders Lounge Product Discovery Platform 구상](<../../ideas/2026-06-29 Builders Lounge Product Discovery Platform 구상.md>)
 
-## 강사 프로필 사진
+## 강사 소개 · 특강
 
-![송재희 강사](<assets/images/송재희 강사 프로필 사진.jpg>)
-
-송재희님은 Builders Lounge 첫 온라인 특강 「AI 시대, 무엇을 만들 것인가 — 바이브 코딩으로 만들기는 쉬워졌는데, 왜 아무도 안 쓸까?」(2026-10-21 수 오후 8시, 시애틀 시간 · Microsoft Teams)의 강사다. 강사를 소개할 때는 위 사진(`assets/images/송재희 강사 프로필 사진.jpg`, 1024×1024)을 쓴다. Luma 이벤트(https://luma.com/4b8kk8sj)와 시애틀 코리안 데일리 기사(2026-10-14)에도 같은 사진이 쓰였다.
+송재희님 소개와 프로필 사진은 [profile.md](profile.md), 10/21 첫 온라인 특강은 [특강 문서](<2026-10-21 Builders Lounge 첫 온라인 특강.md>)에 있다.
 
 ## Summary
 

@@ -27,9 +27,9 @@ tags:
 | [박창수](Park-Changsoo-BuildersLounge/profile.md) | 기록 저장소 · Bila AI (공동) | 1차 | 2차 | — |
 | [손민수](Son-Minsu-ConductorAI/profile.md) | Conductor AI | 2차 | 2·4차 · 5차 메인 | [4차④](https://youtu.be/e9iMkxUGXfM) · [5차](https://youtu.be/nypuwYuyMJQ) |
 | [이도규](Lee-Dokyu-Quant/profile.md) | Quant 퀀트 투자 에이전트 | 2차 | 4차 | [4차③](https://youtu.be/dsl7CZCCAh4) |
-| [송재희](Song-Jae-hee-Build-with-AI/2026-06-29%20Build%20with%20AI%20source%20note.md) | Build with AI (교재) | — | **모임 발표 아님** | — |
+| [송재희](Song-Jae-hee-Build-with-AI/profile.md) | Build with AI (교재) | — | **첫 온라인 특강 강사** (2026-10-21) | — |
 
-> 📌 **송재희 님은 특별 케이스다.** 모임에서 발표한 빌더가 아니라, 커뮤니티에 공유된 *Build with AI* 교재의 저자다. 자료가 먼저 들어와 있어 이 폴더에 남겨 둔다.
+> 📌 **송재희 님은 특별 케이스다.** 오프라인 모임에서 발표한 빌더가 아니라, 커뮤니티에 공유된 *Build with AI* 교재의 저자이고 **Builders Lounge 첫 온라인 특강(2026-10-21 수 오후 8시, 시애틀 시간)의 강사**다 → [강사 소개](Song-Jae-hee-Build-with-AI/profile.md) · [특강 문서](Song-Jae-hee-Build-with-AI/2026-10-21%20Builders%20Lounge%20%EC%B2%AB%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%ED%8A%B9%EA%B0%95.md)
 
 ## 직업으로 보면
 

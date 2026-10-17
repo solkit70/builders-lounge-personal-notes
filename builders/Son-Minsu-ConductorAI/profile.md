@@ -9,9 +9,36 @@ tags: [builder, conductor-ai, ai-agent, devops, incident-response]
 
 ## 한 줄 소개
 
-**샌프란시스코시 IT 공무원.** 업무 중 겪은 새벽 장애 대응 경험에서 출발해 **서버 장애를 스스로 진단·복구하는 에이전트 Conductor AI**를 만들고 있다. Builders Lounge **5차 모임 메인 스피커**.
+**샌프란시스코시 IT 공무원.** 업무 중 겪은 새벽 장애 대응 경험에서 출발해 **서버 장애를 스스로 진단·복구하는 에이전트 Conductor AI**를 만들었다. Builders Lounge **5차 모임 메인 스피커**. 2026-09-16 5차 발표 기준으로 **MVP 는 완료됐고, 사내 도입 여부는 회사에서 논의 중**이다. 다음 모임에서는 **다른 프로젝트**를 소개하겠다고 예고했다.
 
-## 제품 — Conductor AI
+## 5차 발표 — 멀티 에이전트로 다시 설계하며 배운 것 (2026-09-16)
+
+4차에서 보여 준 장애 대응 에이전트를 **멀티 에이전트로 다시 구현하면서 겪은 시행착오**를 36분, 슬라이드 34장으로 풀고 실제 시스템을 라이브로 시연했다. 발표의 힘은 성공담이 아니라 **실패의 순서**에 있었다 — 문제가 하나 터질 때마다 그것을 막는 장치를 붙였고, 다 붙이고 보니 **Anthropic 이 권하는 Agentic 아키텍처와 거의 같아졌다.**
+
+> "결국은 이게 업계에서 말하는 것도 … 다들 비슷하게 이렇게 시행착오를 거치면서 필요한 애들을 다 적용시키다보니까 그래서 결국은 이제 업계에서 말하는 그런 것처럼 되더라."
+
+| 부딪힌 문제 | 붙인 장치 |
+| --- | --- |
+| 같은 장애에 에이전트들이 매번 LLM 을 호출 → **하루 100만 토큰 소진**(회사 토큰에 개인 토큰까지) | **AI Gateway** · 시그니처 기반 인시던트 중복 제거 — 조사 중인 인시던트는 건너뛰게 하자 **토큰 사용량 20배 이상 감소** |
+| 에이전트가 무한 반복 | **TimeoutWatcher** · Rate Limit · CoolDown · **Kill Switch** |
+| 상태가 꼬임 | **State Machine** · State History (Harness Engineering) |
+| 타겟마다 에이전트를 하나씩 붙이자 200개가 되어 느려짐 | **Stateful / Stateless 분리** — 가벼운 상태 객체 100개 + 공유 LLM Worker 7개 = **107개**. 타겟이 1,000개로 늘어도 Worker Pool 은 늘지 않는다 |
+| 에이전트가 몇 개인지 셀 수 없음 | **AgentGroup 객체화** — 정확한 수 추적 · 부모 단위 제어 · 스케일 판단 |
+| Python 은 에이전트가 늘수록 프로세스마다 Redis 가 필요 | **Go 로 전환** — goroutine 으로 Redis 없이 수백 개를 동시에 실행 |
+
+**5차 시점의 구조**: Brain(오케스트레이터) · Judge · Investigation · Specialist · Airman(UI)이 **Agent Bus** 로 연결된다. Specialist 는 ReAct 루프(Thought → Action → Observation)를 돌며 Confidence 가 0 에서 0.92 로 오르면 조사를 마친다. 도구(SSH · Kubernetes · GitHub · New Relic)는 하드코딩이 아니라 **등록 방식(동적 디스커버리)** 이라 에이전트를 더해도 Judge 코드를 고치지 않는다. 오퍼레이션 추론이라 **ChatGPT Mini 로 충분했고 값도 쌌다.**
+
+**라이브 데모**: 스트레스 테스트로 메모리를 97% 까지 올리자 AI 가 60% 확률로 원인을 지목해 심어 둔 프로세스를 정확히 찾았고, Approve → Execute 로 조치하자 메모리가 내려갔다.
+
+**AI 와 일하는 감각**: 아키텍처를 미리 설계하지 않고 AI 와 대화하며 키웠지만 선을 그었다 — *"2026년 현재는 AI들이 이런 아키텍처까지 결정할 정도로 똑똑하지는 않다… 이 사람이 계속 조율을 해야지 AI에게 모든 것을 맡겨 놓으면 절대 안 된다."* 구글 검색은 2년째 쓰지 않고, 항상 「검색해서 알려 달라」고 묻고 KIRO · Claude · ChatGPT 를 오가며 교차 검증한다. 자동 리메디에이션은 *"거의 Human In The Loop 선에서 끝날 것 같다"* 고 했다.
+
+**Q&A — 레드팀으로 써 볼 수 있나**: 강민석 님이 해킹(Red Teaming) 쪽 활용을 제안했고, 손민수 님은 일부러 망가뜨린 뒤 블루팀 에이전트가 잡아내는지 보는 방식으로 쓸 수 있다고 답했다. 김진영 님은 장애가 과거 패턴만 반복하지 않는다며 Chaos Monkey 를 꺼냈고, 지금은 CPU · 메모리 · 디스크 3종만 하는 **Evaluate(스트레스 테스트) 기능을 레드팀 패턴으로 넓히자**는 아이디어가 나왔다.
+
+→ 상세: [5차 모임 정리](<../../videos/2026-09-16 Builders Lounge 5차 모임 정리.md>) · [발표 슬라이드 34장 (HTML)](<../../assets/presentations/2026-09-16 손민수 - Multi-Agent AI 시스템 (5차 모임 발표자료).html>)
+
+## 4차 시점의 제품 — Conductor AI (2026-08-06)
+
+> 아래는 4차 모임 때의 구조와 설명이다. 5차에서 다시 설계한 내용은 위 절을 본다.
 
 **서버를 24시간 감시하다가 장애가 나면 스스로 원인을 찾고 복구를 제안하는 시스템.**
 
@@ -59,9 +86,9 @@ Go 1.21+ · Next.js 14 · Gorilla WebSocket · client-go(Kubernetes) · PostgreS
 | --- | --- | --- |
 | 2차 | 2026-06-08 | **개발 1주차 MVP**로 첫 소개. GateKeeper·Specialist·Judge 세 단계 구조만 있는 아이디어 수준 |
 | 4차 | 2026-08-06 | **동작하는 시스템으로 복귀.** 라이브 데모 — **Dev Server** 메모리를 90% 이상으로 올려 비상 상황을 만들고 에이전트들이 대응하는 과정을 보여줌 (Root Cause 탐지 → 승인 → 복구) |
-| 5차 | 2026-09-16 | **Multi-Agent AI 시스템 메인 발표.** 시스템 장애 대응 자동화를 다시 설계하며 겪은 시행착오와 구현을 공유 |
+| 5차 | 2026-09-16 | **Multi-Agent AI 시스템 메인 발표.** 멀티 에이전트로 다시 구현하며 겪은 시행착오(토큰 폭주 → AI Gateway, 200 → 107 에이전트, Harness Engineering)와 라이브 데모. **MVP 완료 · 사내 도입 논의 중** |
 
-> 📌 **두 달 만의 변화가 이 모임의 성격을 잘 보여준다.** 6월에 컨셉만 있던 것이 8월에 라이브 데모가 됐다. 모임이 일회성 발표가 아니라 **진행 상황을 되짚는 자리**로 기능하고 있다.
+> 📌 **석 달 동안의 변화가 이 모임의 성격을 잘 보여준다.** 6월에 컨셉만 있던 것이 8월에 라이브 데모가 됐고, 9월에는 시행착오를 거쳐 업계 아키텍처와 같은 구조로 다시 설계한 **완성된 MVP** 가 됐다. 모임이 일회성 발표가 아니라 **진행 상황을 되짚는 자리**로 기능하고 있다.
 
 ## 영상
 
@@ -73,10 +100,13 @@ https://youtu.be/e9iMkxUGXfM
 **Builders Lounge 5차 — Multi-Agent AI 시스템: 시스템 장애 대응 자동화를 위한 아키텍처 심층 분석** (37:41)
 https://youtu.be/nypuwYuyMJQ
 
-5차 발표 영상은 본편 36:51에 Remotion 아웃트로를 붙인 최종본이다. 전사와 상세 발표 기록은 [[Initiatives/Builders Lounge/videos/2026-09-16 Builders Lounge 5차 모임 정리|5차 모임 정리]] 및 [[Ingest/Transcripts/Builders_Lounge/2026-09-16 Builders Lounge 5th Meeting - 손민수 Multi-Agent AI - transcript|한·영 전사본]]을 참조한다.
+5차 발표 영상은 본편 36:51에 Remotion 아웃트로를 붙인 최종본이고 영어 자막이 있다.
 
 ## 관련 기록
 
+- [5차 모임 정리](<../../videos/2026-09-16 Builders Lounge 5차 모임 정리.md>)
+- [5차 발표 슬라이드 34장 (HTML)](<../../assets/presentations/2026-09-16 손민수 - Multi-Agent AI 시스템 (5차 모임 발표자료).html>)
+- [모임 전체 FAQ (1~5차)](<../../videos/Builders Lounge 모임 전체 FAQ (1~5차).md>)
 - [4차 모임 정리](../../videos/2026-08-06%20Builders%20Lounge%204%EC%B0%A8%20%EB%AA%A8%EC%9E%84%20%EC%A0%95%EB%A6%AC.md)
 - [4차 모임 FAQ](../../videos/2026-08-06%20Builders%20Lounge%204%EC%B0%A8%20%EB%AA%A8%EC%9E%84%20FAQ.md)
 - [2차 모임 정리](../../videos/2026-06-08%20Builders%20Lounge%202%EC%B0%A8%20%EB%AA%A8%EC%9E%84%20%EC%A0%95%EB%A6%AC.md)
