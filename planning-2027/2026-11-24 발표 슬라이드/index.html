@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>빌더스라운지의 2026 과 2027 — 11월 모임 두 번째 세션</title>
+<style>
+  :root{
+    --bg:#0f1424; --bg2:#182038; --ink:#f3f5fb; --dim:#a9b3cc; --line:#2c3757;
+    --accent:#ffb547; --accent2:#5fd4c4; --card:#1c2542;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:#070a14;overflow:hidden;
+    font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo","Segoe UI",sans-serif;color:var(--ink)}
+  #stage{position:absolute;left:50%;top:50%;width:1280px;height:720px;transform-origin:center center;
+    background:var(--bg);overflow:hidden;transition:background .6s}
+  #stage.t-proposal{--bg:#0c1f2a;--bg2:#12303d;--card:#15364a;--line:#235066;--accent:#5fd4c4}
+  #stage.t-personal{--bg:#1d1330;--bg2:#2a1c46;--card:#33235a;--line:#4a3578;--accent:#c9a2ff}
+  .slide{position:absolute;inset:0;padding:64px 80px 70px;display:none;flex-direction:column;justify-content:center}
+  .slide.active{display:flex;animation:in .45s ease}
+  @keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  h1{font-size:60px;line-height:1.2;font-weight:800;letter-spacing:-1px}
+  h2{font-size:42px;line-height:1.25;font-weight:800;margin-bottom:28px;letter-spacing:-.5px}
+  h2 small{display:block;font-size:20px;color:var(--accent);font-weight:700;margin-bottom:10px;letter-spacing:1px}
+  p,li{font-size:27px;line-height:1.55}
+  .lead{font-size:31px;line-height:1.5}
+  .dim{color:var(--dim)} .hl{color:var(--accent);font-weight:800}
+  ul{list-style:none} li{margin:10px 0;padding-left:34px;position:relative}
+  li::before{content:"";position:absolute;left:6px;top:17px;width:11px;height:11px;border-radius:50%;background:var(--accent)}
+  .step{opacity:0;transform:translateY(12px);transition:opacity .4s,transform .4s}
+  .step.on{opacity:1;transform:none}
+  .big{font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-1px}
+  .center{text-align:center;align-items:center}
+  .grid{display:grid;gap:22px}
+  .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
+  .card h3{font-size:25px;margin-bottom:10px;color:var(--accent)}
+  .card p{font-size:22px;line-height:1.5}
+  .num{font-size:76px;font-weight:800;color:var(--accent);line-height:1}
+  .tag{position:absolute;top:28px;right:36px;font-size:18px;font-weight:800;padding:8px 18px;border-radius:999px;
+    background:var(--accent);color:#10131f;display:none}
+  #stage.t-proposal .tag.proposal,#stage.t-personal .tag.personal{display:block}
+  #bar{position:absolute;left:0;bottom:0;height:5px;background:var(--accent);transition:width .3s}
+  #pageno{position:absolute;right:28px;bottom:16px;font-size:16px;color:var(--dim)}
+  #timer{position:absolute;left:28px;bottom:16px;font-size:16px;color:var(--dim);display:none}
+  #notes{position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.88);color:#e8ecf8;font-size:19px;line-height:1.5;
+    padding:16px 80px 34px;display:none;border-top:2px solid var(--accent)}
+  a{color:var(--accent)}
+  /* 표지 */
+  .cover h1 span{display:inline-block;opacity:0;animation:pop .5s forwards}
+  @keyframes pop{from{opacity:0;transform:translateY(24px) scale(.9)}to{opacity:1;transform:none}}
+  .cover .sub{margin-top:30px;font-size:26px;color:var(--dim)}
+  /* 세 명의 박창수 */
+  .trio{display:flex;gap:34px;justify-content:center;align-items:flex-end;margin-top:8px}
+  .me{width:250px;text-align:center}
+  .me img,.me .ph{width:190px;height:190px;border-radius:50%;object-fit:cover;border:5px solid var(--line);background:var(--card)}
+  .me .ph{display:inline-flex;align-items:center;justify-content:center;font-size:64px}
+  .me .age{font-size:22px;font-weight:800;color:var(--accent);margin-top:10px}
+  .bubble{background:#fff;color:#141a2c;border-radius:20px;padding:16px 18px;font-size:21px;line-height:1.45;font-weight:600;
+    margin-bottom:18px;position:relative;min-height:96px;display:flex;align-items:center;justify-content:center}
+  .bubble::after{content:"";position:absolute;left:50%;bottom:-13px;margin-left:-12px;border:12px solid transparent;border-top-color:#fff;border-bottom:0}
+  video{max-width:100%;max-height:520px;border-radius:16px;display:none;margin:0 auto}
+  .hasvideo video{display:block}.hasvideo .trio{display:none}
+  /* 타임라인 · 로드맵 */
+  .flow{display:flex;align-items:stretch;gap:14px}
+  .flow .card{flex:1}.arrow{align-self:center;font-size:34px;color:var(--accent)}
+  .q .qn{font-size:19px;font-weight:800;color:var(--accent);margin-bottom:8px}
+  /* 그림 */
+  .dia{display:flex;flex-direction:column;gap:18px;align-items:center}
+  .box{border:2px solid var(--line);border-radius:18px;padding:16px 22px;background:var(--bg2);text-align:center}
+  .box b{display:block;font-size:20px;color:var(--accent);margin-bottom:10px}
+  .chips{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 16px;font-size:21px}
+  .chip.new{border-color:var(--accent);color:var(--accent);font-weight:700}
+  /* 뒤집는 카드 */
+  .flip{perspective:1000px;height:290px;cursor:pointer}
+  .flip .inner{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+  .flip.flipped .inner{transform:rotateY(180deg)}
+  .flip .f,.flip .b{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;padding:20px;display:flex;
+    flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .flip .f{background:var(--accent);color:#10131f;font-size:25px;font-weight:800;line-height:1.35}
+  .flip .f em{font-style:normal;font-size:58px;display:block;margin-bottom:8px}
+  .flip .b{background:var(--card);border:2px solid var(--accent);transform:rotateY(180deg);font-size:21px;line-height:1.5}
+  table{border-collapse:collapse;width:100%}
+  td,th{font-size:23px;line-height:1.45;padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{color:var(--accent);font-size:20px;white-space:nowrap}
+  .quote{border-left:6px solid var(--accent);padding:6px 0 6px 26px}
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- 0 표지 -->
+<section class="slide cover center" data-note="인사. 두 번째 세션 소개. 30분 발표 + 10분 Q&A.">
+  <p class="dim" style="font-size:22px;margin-bottom:22px;letter-spacing:2px">BUILDERS LOUNGE · 2026년 11월 모임 · 두 번째 세션</p>
+  <h1 id="covertitle">배우는 모임에서 만드는 모임으로</h1>
+  <p class="sub">빌더스라운지의 2026 과 2027</p>
+</section>
+
+<!-- 1 영상 ① -->
+<section class="slide center vid" data-video="assets/video1.mp4" data-note="영상 ①. 영상 파일이 없으면 사진과 말풍선으로 진행 — 클릭할 때마다 한 사람씩 말한다.">
+  <h2><small>오프닝</small>세 명의 박창수가 만났습니다</h2>
+  <video controls preload="metadata"></video>
+  <div class="trio">
+    <div class="me"><div class="bubble step">AI 요? 그건 영화에나<br>나오는 거 아닌가요?</div><img src="assets/me30.png" alt="30대"><div class="age">30대</div></div>
+    <div class="me"><div class="bubble step">AI 가 바둑을 이겼다던데요.<br>제 일이랑은 상관없겠죠?</div><img src="assets/me40.png" alt="40대"><div class="age">40대</div></div>
+    <div class="me"><div class="bubble step">놀라지 마세요. 지금은 말로 하면 AI 가 앱을 만들어 줍니다.</div><img src="assets/me50.jpg" alt="50대"><div class="age">50대 · 지금</div></div>
+  </div>
+</section>
+
+<!-- 2 순서 -->
+<section class="slide" data-note="오늘 순서 세 가지. 색 꼬리표 안내 — 청록은 운영자로서의 제안, 보라는 한 멤버의 개인 플랜.">
+  <h2><small>오늘의 순서</small>세 가지를 이야기합니다</h2>
+  <div class="grid g3">
+    <div class="card step"><div class="num">1</div><h3 style="margin-top:14px">올해 돌아보기</h3><p>빌더스라운지의 6개월과 우리가 누구인지</p></div>
+    <div class="card step" style="border-color:#5fd4c4"><div class="num" style="color:#5fd4c4">2</div><h3 style="margin-top:14px;color:#5fd4c4">운영자로서의 2027 계획</h3><p>멤버 의견을 들어 함께 정할 <b>제안</b></p></div>
+    <div class="card step" style="border-color:#c9a2ff"><div class="num" style="color:#c9a2ff">3</div><h3 style="margin-top:14px;color:#c9a2ff">한 멤버로서의 개인 계획</h3><p>모임의 공식 활동이 아닌 <b>개인 플랜</b></p></div>
+  </div>
+</section>
+
+<!-- 3 한 문장 -->
+<section class="slide center" data-note="6개월을 한 문장으로.">
+  <p class="dim" style="font-size:24px;margin-bottom:26px">1부 · 빌더스라운지의 올해</p>
+  <div class="big">배우는 사람들의 모임에서<br><span class="hl">만드는 사람들의 모임</span>으로</div>
+</section>
+
+<!-- 4 출발 -->
+<section class="slide" data-note="스터디가 다시 모였을 때 각자 이미 만들고 있었다. 5/7 출범.">
+  <h2><small>1부 · 출발</small>다시 모였더니, 다들 만들고 있었습니다</h2>
+  <div class="flow">
+    <div class="card step"><h3>스터디</h3><p>AI 를 함께 공부하던 모임</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>다시 모인 날</h3><p>각자 이미 무언가를 만들고 있었다</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>5월 7일</h3><p>「만든 것을 나누는 빌더 커뮤니티」<br><b class="hl">Builders Lounge 출범</b></p></div>
+  </div>
+</section>
+
+<!-- 5 사람 -->
+<section class="slide" data-note="2차 비개발자의 보드게임 앱, 4차 코딩을 모르던 목회자의 앱. 대상이 넓어진 것이 가장 잘한 일.">
+  <h2><small>1부 · 가장 잘한 것 ①</small>사람이 넓어졌습니다</h2>
+  <div class="grid g2">
+    <div class="card step"><h3>2차 모임</h3><p>비개발자가 만든 보드게임 앱이 무대에 섰습니다</p></div>
+    <div class="card step"><h3>4차 모임</h3><p>코딩을 모르던 목회자가 만든 앱이 무대에 섰습니다</p></div>
+  </div>
+  <p class="lead step" style="margin-top:30px">IT 엔지니어의 스터디 → <span class="hl">AI 로 만들고 싶은 모든 사람</span>의 모임</p>
+</section>
+
+<!-- 6 지역 -->
+<section class="slide" data-note="10/21 첫 온라인 특강. Teams 66명. 한국에서도 접속.">
+  <h2><small>1부 · 가장 잘한 것 ②</small>지역이 넓어졌습니다</h2>
+  <div class="grid g2" style="align-items:center">
+    <div class="center" style="display:flex;flex-direction:column"><div class="num" style="font-size:150px" data-count="66">0</div><p class="dim">첫 온라인 특강 Teams 참여 인원 (10/21)</p></div>
+    <ul><li class="step">시애틀에서 <b>모든 지역</b>으로</li><li class="step">한국에서도 접속했습니다</li><li class="step">전체 모임은 이제 항상 온라인으로 열려 있습니다</li></ul>
+  </div>
+</section>
+
+<!-- 7 기록 (숫자: 발표일 기준으로 다시 세어 data-count 를 고칠 것) -->
+<section class="slide" data-note="숫자는 발표일 기준으로 갱신 필요. 이 기록이 뒤에 나올 '하나의 기록, 여러 쓰임'의 바탕.">
+  <h2><small>1부 · 쌓인 것</small>기록이 쌓였습니다</h2>
+  <div class="grid g4 center" style="text-align:center">
+    <div class="card"><div class="num" data-count="5">0</div><p style="margin-top:12px">공식 모임</p></div>
+    <div class="card"><div class="num" data-count="1">0</div><p style="margin-top:12px">온라인 특강</p></div>
+    <div class="card"><div class="num" data-count="15">0</div><p style="margin-top:12px">공개 영상</p></div>
+    <div class="card"><div class="num" data-count="9">0</div><p style="margin-top:12px">뉴스레터</p></div>
+  </div>
+  <p class="lead step" style="margin-top:30px">이 기록은 <span class="hl">사람과 AI 에이전트 모두</span>가 읽을 수 있습니다</p>
+</section>
+
+<!-- 8 숙제 -->
+<section class="slide" data-note="아쉬운 점. 발표 중심으로 흘렀다. 이 숙제가 뒤의 계획과 홈페이지로 이어진다.">
+  <h2><small>1부 · 남은 숙제</small>아쉬웠던 한 가지</h2>
+  <div class="quote"><p class="big" style="font-size:46px">서로 만든 것을 <span class="hl">써 보고 피드백을 주고받는 일</span>은 부족했습니다</p></div>
+  <p class="lead dim step" style="margin-top:34px">기본 취지 중 하나였지만 발표 중심으로 흘렀습니다. 이 숙제가 오늘의 계획으로 이어집니다.</p>
+</section>
+
+<!-- 9 정의 -->
+<section class="slide" data-note="정체성 한 문장. 발표에서 쓰는 문장이고, 공식 채택 여부는 함께 정할 것.">
+  <h2><small>2부 · 우리는 누구인가</small>빌더스라운지 한 문장</h2>
+  <div class="quote"><p class="lead" style="font-size:36px;line-height:1.5">AI 로 무언가를 만드는 사람들이 <span class="hl">서로의 첫 사용자</span>가 되어 주고, 그 과정을 <span class="hl">기록</span>해 사람과 AI 에이전트 누구나 쓸 수 있게 나누는 모임</p></div>
+  <p class="lead dim step" style="margin-top:32px">AI 가 주는 정보는 누구나 얻지만, 사람의 시도와 경험은 만나야 얻습니다.</p>
+</section>
+
+<!-- 10 빌더 -->
+<section class="slide" data-note="빌더는 앱 개발자만이 아니다. 빌더와 크리에이터가 닮아졌다.">
+  <h2><small>2부 · 빌더는 누구인가</small>앱 개발자만이 아닙니다</h2>
+  <div class="grid g4">
+    <div class="card step center"><h3>앱</h3><p>말로 만드는 프로덕트</p></div>
+    <div class="card step center"><h3>워크플로우</h3><p>내 일을 돕는 흐름</p></div>
+    <div class="card step center"><h3>글</h3><p>AI 와 함께 쓰는 글</p></div>
+    <div class="card step center"><h3>콘텐츠</h3><p>영상 · 강의 · 자료</p></div>
+  </div>
+  <p class="lead step" style="margin-top:30px">아이디어가 곧바로 프로덕트가 되는 지금, <span class="hl">빌더와 크리에이터는 닮아졌습니다</span></p>
+</section>
+
+<!-- 11 그림 -->
+<section class="slide" data-note="기록의 범위: 모임·발표, 제품·피드백, 소모임, 빌더 소식·근황. GitHub 에 열려 있다. 지금 쓰이는 곳과 앞으로.">
+  <h2><small>2부 · 가장 신경 쓰는 특징</small>하나의 기록, 여러 쓰임</h2>
+  <div class="dia">
+    <div class="box" style="width:100%"><b>빌더스라운지 기록 — GitHub 에 공개</b>
+      <div class="chips"><span class="chip">모임 · 발표</span><span class="chip">제품 · 피드백</span><span class="chip">소모임 기록</span><span class="chip new">빌더 소식 · 근황</span></div></div>
+    <div class="arrow step" style="transform:rotate(90deg)">→</div>
+    <div class="grid g2 step" style="width:100%">
+      <div class="box"><b>지금 쓰이는 곳</b><div class="chips"><span class="chip">정리 문서 · 뉴스레터</span><span class="chip">Bila AI 답변</span></div></div>
+      <div class="box"><b>앞으로</b><div class="chips"><span class="chip">멤버 프로덕트 홈페이지</span><span class="chip">멤버 각자의 제품 · 에이전트</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 영상 ② -->
+<section class="slide center vid" data-video="assets/video2.mp4" data-note="영상 ②. 40대의 질문 → 50대의 답.">
+  <h2><small>잠깐, 40대의 내가 묻습니다</small>그 에이전트, 누가 만들죠?</h2>
+  <video controls preload="metadata"></video>
+  <div class="trio">
+    <div class="me"><div class="bubble" style="visibility:hidden">…</div><img src="assets/me30.png" alt="30대"><div class="age">30대</div></div>
+    <div class="me"><div class="bubble step">그럼 그 똑똑한 AI 에이전트, 모임에서 하나 만들어 주면 되겠네요?</div><img src="assets/me40.png" alt="40대"><div class="age">40대</div></div>
+    <div class="me"><div class="bubble step">아니요. 각자 만듭니다.<br>우리는 빌더니까요.</div><img src="assets/me50.jpg" alt="50대"><div class="age">50대 · 지금</div></div>
+  </div>
+</section>
+
+<!-- 13 각자 만든다 -->
+<section class="slide" data-note="모임은 기록을 쌓고 열어 둔다. 에이전트는 각자. 매칭도 각자. 괜찮으면 공유. 좋은 기능이 모이면 모임 서비스.">
+  <h2><small>2부 · 11월에 바꾼 방향</small>AI 에이전트는 모임이 아니라 각자가 만듭니다</h2>
+  <div class="flow">
+    <div class="card step"><h3>① 가져온다</h3><p>기록을 내려받거나, 내 에이전트가 저장소에 접근</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>② 만든다</h3><p>나에게 맞는 에이전트 · 웹 · 앱. 매칭도 내 에이전트로</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>③ 나눈다</h3><p>괜찮으면 다른 멤버도 쓰게 공유하고 서로 참조</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>④ 모인다</h3><p>좋은 기능이 모이면 그때 모임의 서비스로</p></div>
+  </div>
+  <p class="lead step" style="margin-top:28px">모임이 할 일은 <span class="hl">기록하고, 누구나 쓸 수 있게 열어 두는 것</span>입니다</p>
+</section>
+
+<!-- 14 왜 -->
+<section class="slide" data-note="토큰 비용, 통제, 생산자. Bila AI 는 GOBI Space 를 만드는 멤버가 자기 제품 안에 만든 쓰임의 첫 사례. 그 회사의 일정 안에서 발전.">
+  <h2><small>2부 · 왜 이 방향인가</small>누구나 생산자가 되는 시대니까요</h2>
+  <div class="grid g3">
+    <div class="card step"><h3>비용</h3><p>각자 자기 에이전트를 쓰면 모임이 토큰 비용을 크게 걱정하지 않아도 됩니다</p></div>
+    <div class="card step"><h3>통제</h3><p>쓰는 사람이 자기 에이전트를 직접 통제합니다</p></div>
+    <div class="card step"><h3>시대</h3><p>소비자에 머무르지 않고 누구나 생산자가 될 수 있습니다</p></div>
+  </div>
+  <p class="lead step" style="margin-top:28px"><b>Bila AI</b> 는 한 멤버가 자기 제품 안에 만들어 준 <span class="hl">첫 번째 사례</span>입니다. 고맙습니다.</p>
+</section>
+
+<!-- 15 소모임 -->
+<section class="slide" data-note="정기 모임만이 아니다. 둘 이상 추천 — 사람 사이의 소통에서 나온 콘텐츠. 혼자 만든 것도 공유 가능.">
+  <h2><small>2부 · 모임의 모양</small>정기 모임만이 빌더스라운지가 아닙니다</h2>
+  <div class="grid g2">
+    <div class="card step"><h3>빌더 소모임 — 둘 이상을 추천</h3><p>만드는 것을 소개하고 인사이트를 나눈 뒤 기록을 내 주면 그것도 빌더스라운지 활동입니다. 사람 사이의 소통에서 나온 콘텐츠를 더 추천합니다.</p></div>
+    <div class="card step"><h3>혼자 만든 기록도 좋습니다</h3><p>기록에 제한은 없습니다. 혼자 만든 제품 소개나 인사이트 정리도 공유해 주세요.</p></div>
+  </div>
+  <p class="lead step" style="margin-top:28px">기준은 모임의 크기가 아니라 <span class="hl">만든 것을 나누고 기록하는가</span>입니다</p>
+</section>
+
+<!-- 16 2027 주제 -->
+<section class="slide" data-theme="proposal" data-note="여기부터 운영자로서의 제안. 2025 → 2026 → 2027. 세 고리: 네트워킹 → 기록 → 시너지.">
+  <h2><small>3부 · 운영자로서의 2027 계획</small>2027 주제</h2>
+  <div class="flow" style="margin-bottom:26px">
+    <div class="card step"><h3>2025</h3><p>재미로 하는 바이브 코딩</p></div><div class="arrow step">→</div>
+    <div class="card step"><h3>2026</h3><p>만드는 모임으로</p></div><div class="arrow step">→</div>
+    <div class="card step" style="border-color:var(--accent)"><h3>2027</h3><p><b>연결과 시너지</b></p></div>
+  </div>
+  <p class="big step" style="font-size:40px">AI 로 만드는 사람들의 <span class="hl">네트워킹</span>,<br>그 <span class="hl">기록</span>이 <span class="hl">시너지</span>가 되는 해</p>
+</section>
+
+<!-- 17 형식 -->
+<section class="slide" data-theme="proposal" data-note="전체 모임은 항상 온라인. 오프라인 주기 옵션 A·B·C 는 의견을 듣는다. 장소는 Bellevue City Hall — 무료, Teams·카메라·마이크. 오프라인은 사전 신청·승인.">
+  <h2><small>3부 · 모임 형식</small>항상 온라인으로 열고, 오프라인으로도 만납니다</h2>
+  <div class="grid g3">
+    <div class="card step"><h3>옵션 A</h3><p>오프라인 <b>매달</b><br><span class="dim">(지향하는 모습)</span></p></div>
+    <div class="card step"><h3>옵션 B</h3><p>오프라인 <b>두 달에 한 번</b><br><span class="dim">사이 달은 온라인</span></p></div>
+    <div class="card step"><h3>옵션 C</h3><p>오프라인 <b>분기에 한 번</b><br><span class="dim">나머지는 온라인</span></p></div>
+  </div>
+  <ul style="margin-top:22px"><li class="step">오프라인 장소는 <b>Bellevue City Hall</b> — 무료, 회의실에 Teams · 카메라 · 마이크</li><li class="step">오프라인 참여는 사전 신청 → 승인 (장소마다 수용 인원이 달라서)</li></ul>
+</section>
+
+<!-- 18 역할 채널 -->
+<section class="slide" data-theme="proposal" data-note="박창수가 당분간 맡을 일과 간사가 도와줄 수 있는 일. 채널은 늘리지 않고 역할로 나눈다.">
+  <h2><small>3부 · 역할과 채널</small>함께 나누면 좋을 일</h2>
+  <div class="grid g2">
+    <div class="card step"><h3>제가 당분간 맡을 일</h3><p>방향 · 기록 · 데이터 레이크<br>정리 문서 · 뉴스레터 · 칼럼<br>영상 편집 · 업로드</p></div>
+    <div class="card step"><h3>도와주시면 좋을 일</h3><p>발표자 섭외 · 댓글과 질문 담당<br>대외 홍보 · 장소 신청 · 온라인 셋업</p></div>
+  </div>
+  <div class="grid g4 step" style="margin-top:22px;text-align:center">
+    <div class="card"><h3>발견</h3><p>YouTube · 칼럼 · 소셜</p></div><div class="card"><h3>소식</h3><p>뉴스레터</p></div>
+    <div class="card"><h3>참여</h3><p>Teams · GOBI Space · Slack</p></div><div class="card"><h3>지식</h3><p>GitHub 기록</p></div>
+  </div>
+</section>
+
+<!-- 19 운영비 -->
+<section class="slide" data-theme="proposal" data-note="지금은 대부분 개인 부담이거나 무료. 오프라인 다과, 모임 차원 도구가 생기면 비용. 상반기 작은 후원 + 법인 리서치, 3분기 결정.">
+  <h2><small>3부 · 지속 가능성</small>기본 운영비를 준비합니다</h2>
+  <table>
+    <tr><th>무엇에</th><th>지금</th><th>앞으로</th></tr>
+    <tr class="step"><td>도구 구독</td><td>Teams 유료 버전 — 개인 부담</td><td>모임 비용으로 옮길 수 있음</td></tr>
+    <tr class="step"><td>오프라인 다과 · 물품</td><td>장소는 무료</td><td>핑거 푸드와 물품 예산 필요</td></tr>
+    <tr class="step"><td>모임 차원의 도구</td><td>없음</td><td>생기면 서버 · 도메인 · 토큰 비용</td></tr>
+  </table>
+  <p class="lead step" style="margin-top:26px">상반기: <span class="hl">작은 후원</span>으로 시작 + 법인 리서치 → 3분기: 법인 등록 여부 결정</p>
+</section>
+
+<!-- 20 로드맵 -->
+<section class="slide" data-theme="proposal" data-note="분기별 한 줄. 성공 기준 3개: 꾸준함(12회), 서로의 첫 사용자, 기록에서 나온 협업.">
+  <h2><small>3부 · 로드맵과 성공 기준</small>2027 한 해의 리듬</h2>
+  <div class="grid g4">
+    <div class="card step"><h3>1분기</h3><p>정체성 · 주제 공유, 역할 나누기, 기록 쓰는 법 안내</p></div>
+    <div class="card step"><h3>2분기</h3><p>기록 늘리기, 만든 에이전트 · 도구 소개</p></div>
+    <div class="card step"><h3>3분기</h3><p>각자의 에이전트로 매칭 시험, 법인 결정</p></div>
+    <div class="card step"><h3>4분기</h3><p>첫 협업 사례 소개, 1년 돌아보기</p></div>
+  </div>
+  <div class="grid g3 step" style="margin-top:22px;text-align:center">
+    <div class="card"><h3>네트워킹</h3><p>꾸준함 — 정기 모임 12회</p></div>
+    <div class="card"><h3>기록</h3><p>서로의 첫 사용자가 된 기록</p></div>
+    <div class="card"><h3>시너지</h3><p>기록에서 나온 첫 협업</p></div>
+  </div>
+</section>
+
+<!-- 21 구분 -->
+<section class="slide center" data-theme="personal" data-note="화면 색이 바뀐다. 여기부터는 공식 활동이 아니라 한 멤버의 계획.">
+  <p class="dim" style="font-size:24px;margin-bottom:26px">4부</p>
+  <div class="big">여기부터는 운영자가 아니라<br><span class="hl">한 멤버의 계획</span>입니다</div>
+</section>
+
+<!-- 22 홈페이지 -->
+<section class="slide" data-theme="personal" data-note="멤버가 만든 프로덕트와 근황을 나누는 곳. 피드백 루프가 첫째. 개인적으로 만들고, 도움이 되면 공개. 공식 프로덕트 여부는 나중에.">
+  <h2><small>4부 · 개인 플랜 ①</small>멤버 프로덕트 홈페이지</h2>
+  <div class="grid g3">
+    <div class="card step"><h3>첫째 목적 — 피드백 루프</h3><p>써 보고, 피드백을 남기고, 개선 과정이 쌓이는 곳. 「남은 숙제」를 메웁니다</p></div>
+    <div class="card step"><h3>쇼케이스와 근황</h3><p>멤버가 만든 것과 소식을 누구나 쉽게 찾아봅니다</p></div>
+    <div class="card step"><h3>기록을 쓰고, 더한다</h3><p>공개 기록을 화면에 보여 주고, 들어온 내용은 다시 기록이 됩니다</p></div>
+  </div>
+  <ul style="margin-top:22px"><li class="step">저도 한 멤버로서 <b>개인적으로</b> 만듭니다. 도움이 되면 공개합니다</li><li class="step">모임의 공식 프로덕트로 쓸지는 <b>나중에 보고 결정</b>합니다</li></ul>
+</section>
+
+<!-- 23 개인 목표 -->
+<section class="slide" data-theme="personal" data-note="한 달 $5,000 가 안정적으로 들어오는 시스템. 지금 하는 일 네 가지가 바탕. 시니어 가이드에서 배운 세 가지 — 2회차 수업에서 계획한 진도 대신 그분께 필요한 문서를 같이 만든 이야기.">
+  <h2><small>4부 · 개인 플랜 ②</small>한 달 <span class="hl">$5,000</span> 가 안정적으로 들어오는 시스템</h2>
+  <div class="chips" style="justify-content:flex-start;margin-bottom:22px">
+    <span class="chip step">AI 를 일상에 적용하는 실험</span><span class="chip step">시니어 맞춤 AI 사용 가이드</span><span class="chip step">비영리단체 봉사</span><span class="chip step">빌더스라운지</span>
+  </div>
+  <p class="dim step" style="font-size:22px;margin-bottom:12px">시니어 분들을 가이드하며 배운 것</p>
+  <div class="grid g3">
+    <div class="card step"><h3>① 그 사람의 그 일에 맞춘다</h3><p>범용 사용법보다 훨씬 효율적입니다. 개인에게도 FDE 방식</p></div>
+    <div class="card step"><h3>② 필요는 물어봐야 나온다</h3><p>계획한 진도 대신 그분께 필요한 일을 같이 했을 때 가장 만족하셨습니다</p></div>
+    <div class="card step"><h3>③ 내 기록은 내 컴퓨터에</h3><p>기록이 쌓일수록 AI 가 점점 나를 알아 갑니다</p></div>
+  </div>
+</section>
+
+<!-- 24 함께 정할 것 -->
+<section class="slide" data-note="카드를 클릭하면 뒤집힌다. 오늘 다 정하지 않아도 된다 — 의견을 듣는 자리.">
+  <h2><small>5부 · 함께 정할 것</small>여러분의 의견을 듣고 싶습니다</h2>
+  <div class="grid g5">
+    <div class="flip"><div class="inner"><div class="f"><em>1</em>정체성과<br>2027 주제</div><div class="b">오늘 소개한 한 문장과 2027 주제를 모임의 공식 문장으로 삼을까요?</div></div></div>
+    <div class="flip"><div class="inner"><div class="f"><em>2</em>오프라인<br>주기</div><div class="b">A 매달 · B 두 달에 한 번 · C 분기에 한 번 중 어느 쪽이 좋을까요?</div></div></div>
+    <div class="flip"><div class="inner"><div class="f"><em>3</em>함께할<br>역할</div><div class="b">간사, 댓글 · 질문 담당을 맡아 주실 분이 계실까요?</div></div></div>
+    <div class="flip"><div class="inner"><div class="f"><em>4</em>에이전트는<br>각자</div><div class="b">각자 만든 에이전트 · 도구를 소개하고 서로 참조하는 자리를 둘까요?</div></div></div>
+    <div class="flip"><div class="inner"><div class="f"><em>5</em>작은<br>후원</div><div class="b">다과비 수준의 후원 · 도네이션을 상반기에 시작해 볼까요?</div></div></div>
+  </div>
+  <p class="dim" style="font-size:20px;margin-top:22px;text-align:center">카드를 누르면 질문이 나옵니다</p>
+</section>
+
+<!-- 25 영상 ③ -->
+<section class="slide center vid" data-video="assets/video3.mp4" data-note="영상 ③. 60대의 내가 등장. 마지막 한 문장으로 마무리.">
+  <h2><small>클로징</small>그리고, 60대의 내가 찾아왔습니다</h2>
+  <video controls preload="metadata"></video>
+  <div class="trio">
+    <div class="me" style="width:520px"><div class="bubble step">그때 쌓아 둔 기록, 지금도 잘 쓰고 있습니다.<br>계속 만나세요.</div><div class="ph">👴</div><div class="age">60대 · 2030년대</div></div>
+  </div>
+  <p class="lead step" style="margin-top:26px">AI 가 주는 정보는 누구나 얻지만,<br><span class="hl">사람의 시도와 경험은 만나야 얻습니다.</span></p>
+</section>
+
+<!-- 26 Q&A -->
+<section class="slide center" data-note="질문과 의견 듣기. 10분.">
+  <div class="big">감사합니다</div>
+  <p class="lead" style="margin-top:22px">질문과 의견을 들려주세요</p>
+  <p style="margin-top:36px;font-size:22px">빌더스라운지 기록 저장소<br><a href="https://github.com/solkit70/builders-lounge-personal-notes" target="_blank" rel="noopener">github.com/solkit70/builders-lounge-personal-notes</a></p>
+</section>
+
+<div class="tag proposal">운영자의 제안</div>
+<div class="tag personal">한 멤버의 개인 플랜</div>
+<div id="notes"></div>
+<div id="bar"></div><div id="timer">00:00</div><div id="pageno"></div>
+</div>
+
+<script>
+(function(){
+  var stage=document.getElementById('stage'), slides=[].slice.call(document.querySelectorAll('.slide'));
+  var cur=0, t0=null, notesOn=false;
+  function fit(){var s=Math.min(innerWidth/1280,innerHeight/720);stage.style.transform='translate(-50%,-50%) scale('+s+')';}
+  addEventListener('resize',fit);fit();
+
+  // 표지 제목을 한 글자씩
+  var ct=document.getElementById('covertitle'), txt=ct.textContent; ct.textContent='';
+  txt.split('').forEach(function(ch,i){var sp=document.createElement('span');sp.textContent=ch===' '?' ':ch;sp.style.animationDelay=(i*0.07)+'s';ct.appendChild(sp);});
+
+  // 영상 파일이 있으면 영상을, 없으면 사진과 말풍선을 보여 준다
+  slides.forEach(function(s){ if(!s.dataset.video) return; var v=s.querySelector('video');
+    v.addEventListener('loadedmetadata',function(){s.classList.add('hasvideo');});
+    v.addEventListener('click',function(e){e.stopPropagation();});
+    v.src=s.dataset.video; });
+
+  function steps(s){return [].slice.call(s.querySelectorAll('.step')).filter(function(e){return !(s.classList.contains('hasvideo')&&e.closest('.trio'));});}
+  function count(s){[].forEach.call(s.querySelectorAll('[data-count]'),function(el){var to=+el.dataset.count,st=performance.now();
+    (function f(now){var p=Math.min((now-st)/900,1);el.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f);})(st);});}
+  function show(i,fromBack){
+    cur=Math.max(0,Math.min(slides.length-1,i));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===cur); if(k!==cur){var v=s.querySelector('video'); if(v&&!v.paused)v.pause();}});
+    var s=slides[cur]; steps(s).forEach(function(e){e.classList.toggle('on',!!fromBack);});
+    stage.className=s.dataset.theme?'t-'+s.dataset.theme:'';
+    document.getElementById('bar').style.width=((cur)/(slides.length-1)*100)+'%';
+    document.getElementById('pageno').textContent=cur+' / '+(slides.length-1);
+    document.getElementById('notes').textContent=s.dataset.note||'';
+    count(s); try{history.replaceState(null,'','#'+cur);}catch(e){}
+  }
+  function next(){ if(t0===null){t0=Date.now();} var hid=steps(slides[cur]).filter(function(e){return !e.classList.contains('on');});
+    if(hid.length){hid[0].classList.add('on');} else if(cur<slides.length-1){show(cur+1);} }
+  function prev(){ var on=steps(slides[cur]).filter(function(e){return e.classList.contains('on');});
+    if(on.length){on[on.length-1].classList.remove('on');} else if(cur>0){show(cur-1,true);} }
+
+  addEventListener('keydown',function(e){
+    var k=e.key;
+    if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='Enter'){e.preventDefault();next();}
+    else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'){e.preventDefault();prev();}
+    else if(k==='Home'){show(0);} else if(k==='End'){show(slides.length-1);}
+    else if(k==='f'||k==='F'){if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen();}
+    else if(k==='t'||k==='T'){var t=document.getElementById('timer');t.style.display=t.style.display==='block'?'none':'block';}
+    else if(k==='n'||k==='N'){notesOn=!notesOn;document.getElementById('notes').style.display=notesOn?'block':'none';}
+  });
+  [].forEach.call(document.querySelectorAll('.flip'),function(c){c.addEventListener('click',function(e){e.stopPropagation();c.classList.toggle('flipped');});});
+  stage.addEventListener('click',function(e){ if(e.target.closest('a,video,.flip'))return; next(); });
+  setInterval(function(){ if(t0===null)return; var s=Math.floor((Date.now()-t0)/1000);
+    document.getElementById('timer').textContent=('0'+Math.floor(s/60)).slice(-2)+':'+('0'+s%60).slice(-2); },1000);
+
+  show(parseInt(location.hash.slice(1),10)||0);
+})();
+</script>
+</body>
+</html>
