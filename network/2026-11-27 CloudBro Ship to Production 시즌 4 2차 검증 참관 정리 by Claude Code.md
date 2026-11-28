@@ -12,7 +12,7 @@ tags:
 
 ## 요약
 
-2026년 11월 27일(금) 오후 8:05 시애틀 시각(한국 11월 28일 토요일 오후 1:05)부터 약 2시간 동안, **CloudBro**의 오픈소스 인큐베이팅 프로그램 **Ship to Production(STP) 시즌 4 · 2차 검증**이 Google Meet 온라인으로 열렸다. Builders Lounge 운영자 **박창수**와 멤버 **김성진(James)**이 「**시애틀 기술검증단**」으로 처음 참여했다. CloudBro와 Builders Lounge의 협업(→ [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro 협업 정리 - 온라인 미팅 · 이메일 by Claude Code|CloudBro 협업 정리]])에서 약속한 「STP 2차 기술 검증 참여」가 실제로 이뤄진 자리다. 참석자는 15명 안팎이었다.
+2026년 11월 27일(금) 오후 8:05 시애틀 시각(한국 11월 28일 토요일 오후 1:05)부터 약 2시간 동안, **CloudBro**의 오픈소스 인큐베이팅 프로그램 **Ship to Production(STP) 시즌 4 · 2차 검증**이 Google Meet 온라인으로 열렸다. Builders Lounge 운영자 **박창수**와 멤버 **김성진(James)**이 「**시애틀 기술검증단**」으로 처음 참여했다. CloudBro와 Builders Lounge의 협업(→ [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro × Builders Lounge 협업 정리 (공개용) by Claude Code|CloudBro 협업 정리]])에서 약속한 「STP 2차 기술 검증 참여」가 실제로 이뤄진 자리다. 참석자는 15명 안팎이었다.
 
 오프닝에서 두 사람이 Builders Lounge를 소개했고, 이어서 네 프로젝트 팀(**CUBRID Lab · T2 · 두레 · ARG**)이 각각 발표 10분 + Q&A 10분으로 2차 검증 발표를 했다. 다섯 번째 팀(엑토리)은 사정상 최종 발표 때 오프라인으로 발표하기로 했다. 질의응답에서는 기술검증단이 쿠버네티스 Operator 설계, 장애 탐지 카탈로그, 조직 지식 엔진의 티어 구조, LLM 평가 프레임워크 같은 실무 조언을 줬다. 마지막에 박창수 · 김성진이 소감을 말했고, CloudBro는 12월 11일 「**CloudBro Ship Night**」 행사와 1월 중순 최종 발표 일정을 안내했다.
 
@@ -111,7 +111,7 @@ tags:
 
 - Builders Lounge 운영진이 CloudBro 기술검증단으로 **처음 참여**한 자리다. 협업의 첫 단계(서로의 모임에서 발표 · 검증 참여)가 11/24(이서연 · Jerry 발표)와 11/27(STP 검증 참여)로 양방향 이뤄졌다.
 - 이날 질의응답 주제(에이전트 신뢰성 · LLM 평가 · 조직 지식 엔진 · 장애 진단)는 Builders Lounge 멤버들의 관심사(예: 김진영 님의 멀티 에이전트 평가, 손민수 님의 장애 대응 에이전트)와 겹친다. 박창수가 말한 「토픽이 맞는 사람 연결」이 다음 협업 후보다.
-- 이어서 할 일: 서면 검증 기간(약 1주일) 피드백, 시즌 5 해외 참가자 온라인 참여 논의(2027 1분기), 시애틀 기술 커뮤니티 공동 세션 · 미국 기업 검증 사례 구상 — 상세는 [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro 협업 정리 - 온라인 미팅 · 이메일 by Claude Code|CloudBro 협업 정리]].
+- 이어서 할 일: 서면 검증 기간(약 1주일) 피드백, 시즌 5 해외 참가자 온라인 참여 논의(2027 1분기), 시애틀 기술 커뮤니티 공동 세션 · 미국 기업 검증 사례 구상 — 상세는 [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro × Builders Lounge 협업 정리 (공개용) by Claude Code|CloudBro 협업 정리]].
 
 ## 자주 나올 질문 (AI Agent 답변용)
 
@@ -123,6 +123,5 @@ tags:
 
 ## 관련 기록
 
-- [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro 협업 정리 - 온라인 미팅 · 이메일 by Claude Code|CloudBro 협업 정리 (11/18 미팅 · 11/19 이메일)]]
-- [[Initiatives/Builders Lounge/network/2026-11-18 CloudBro · Seoyeon Lee 조사 by Claude Code|CloudBro · Seoyeon Lee 조사]]
+- [[Initiatives/Builders Lounge/network/2026-11-19 CloudBro × Builders Lounge 협업 정리 (공개용) by Claude Code|CloudBro × Builders Lounge 협업 정리]]
 - 볼트 내부 원본(공개 저장소 밖): 보정 · 화자 구분 전사 `Ingest/Transcripts/2026-11-27_CloudBro_OpenSourceIncubator/`
