@@ -164,6 +164,9 @@ builders-lounge-personal-notes/
 | [2026-05-26 Builders Lounge 스페이스 이름 및 AI 이름 논의 Slack.md](slack/2026-05-26%20Builders%20Lounge%20%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%9D%B4%EB%A6%84%20%EB%B0%8F%20AI%20%EC%9D%B4%EB%A6%84%20%EB%85%BC%EC%9D%98%20Slack.md) | MinSuk Kang과 DM — 창발 Space 이름 변경, Builders Lounge 독립성, 커뮤니티 AI 이름(Bila 후보), Dreaming 프로세스 |
 | [2026-06-05 Builders Lounge AI 코디네이터 GOBI Mika 피드백 Slack.md](slack/2026-06-05%20Builders%20Lounge%20AI%20%EC%BD%94%EB%94%94%EB%84%A4%EC%9D%B4%ED%84%B0%20GOBI%20Mika%20%ED%94%BC%EB%93%9C%EB%B0%B1%20Slack.md) | GOBI 개발자 Mika — Phase 1~3 기술 검토: QnA 즉시 가능, Phase 3는 웹훅 트리거 구조, Phase 2는 Cron 방식 |
 | [2026-09-29 CTS 부스 미팅 메모 - 강민석님.md](ideas/2026-09-29%20CTS%20%EB%B6%80%EC%8A%A4%20%EB%AF%B8%ED%8C%85%20%EB%A9%94%EB%AA%A8%20-%20%EA%B0%95%EB%AF%BC%EC%84%9D%EB%8B%98.md) | CTS 2026 부스 합의 — 커뮤니티 중심, 뉴스레터 신청, 역할, 250명 뉴스레터 |
+| [Builders Lounge 영상 인덱스 (플레이리스트).md](videos/Builders%20Lounge%20%EC%98%81%EC%83%81%20%EC%9D%B8%EB%8D%B1%EC%8A%A4%20%28%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8%29.md) | Builders Lounge 유튜브 재생목록 전체 영상(16편) 목록과 링크 · 영상별 안내 |
+| [2026-11-23 창발 Dev 임현욱 발표 정리 - AI는 왜 거짓말을 할까 by Claude Code.md](videos/2026-11-23%20%EC%B0%BD%EB%B0%9C%20Dev%20%EC%9E%84%ED%98%84%EC%9A%B1%20%EB%B0%9C%ED%91%9C%20%EC%A0%95%EB%A6%AC%20-%20AI%EB%8A%94%20%EC%99%9C%20%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84%20%ED%95%A0%EA%B9%8C%20by%20Claude%20Code.md) | 2026-11-23 창발 Dev 그룹 임현욱(Google Cloud) 발표 「AI는 왜 거짓말을 할까?」 상세 정리 — 영상 https://youtu.be/eFSBzQDO9Q4 · 챕터 · 4가지 반칙 · 3가지 원인 · 혼낼수록 교묘(32%→77%) · 런타임 3축 해법 · 최신 모델 22.2% · 질의응답 8개 · 7가지 습관 · 칼럼 링크(게재 후) |
+| [2026-11-27 CloudBro Ship to Production 시즌 4 2차 검증 참관 정리 by Claude Code.md](network/2026-11-27%20CloudBro%20Ship%20to%20Production%20%EC%8B%9C%EC%A6%8C%204%202%EC%B0%A8%20%EA%B2%80%EC%A6%9D%20%EC%B0%B8%EA%B4%80%20%EC%A0%95%EB%A6%AC%20by%20Claude%20Code.md) | 2026-11-27(한국 11/28) CloudBro STP 시즌 4 · 2차 검증에 Builders Lounge 운영진(박창수 · 김성진)이 시애틀 기술검증단으로 첫 참여 — 4개 팀(CUBRID Lab · T2 · 두레 · ARG) 발표와 검증단 피드백, 12/11 Ship Night · 1월 최종 발표 일정 |
 
 ## 모임 운영에 도움이 되는 Product, 언제든 환영합니다
 
@@ -226,9 +229,14 @@ AI로 활용할 수 있는 예시는 아래와 같습니다.
 - Changbal Space: https://www.gobispace.com/spaces/changbal
 - Builders Lounge 기록 저장소: https://github.com/solkit70/builders-lounge-personal-notes
 - Builders Lounge #1 GOBI Hands-on video: https://youtu.be/AoOhKZ4LoKs
+- Builders Lounge 유튜브 재생목록: https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
+- 창발(Changbal) 홈페이지 — Builders Lounge가 시작된 시애틀 한인 IT 커뮤니티: https://www.changbal.org/
+- CloudBro (협업 커뮤니티, Ship to Production 오픈소스 인큐베이팅) — 기술검증단 지원: http://cloudbro.ai/stp/reviewer
 
 ### 언론 보도
 - 시애틀 코리안 데일리 (2026-10-14) — [빌더스 라운지] AI로 앱은 만들었는데, 왜 아무도 안 쓸까? · 첫 온라인 특강(10/21, 송재희 강사) 안내: https://www.seattlekdaily.com/news/articleView.html?idxno=22783
+- 시애틀코리안데일리 (2026-11-20) — [빌더스라운지 뉴스레터] 시애틀의 AI 커뮤니티 빌더스라운지 한국 스타트업과 협업 확대 · 11월 24일 모임(CloudBro 이서연 · 매니패스트 허재혁) · 멤버 소식(GOBI · 나루 우동 · 상공회의소 · H-Mart · 피클볼), 박창수 AI·IT 전문기자: http://www.seattlekdaily.com/news/articleView.html?idxno=23412
+- 시애틀코리안데일리 (2026-11-27 승인 요청, 게재 대기) — [빌더스 라운지] AI는 왜 거짓말을 할까? “‘테스트 100% 통과’라더니… 확인해 보니 거짓말이었다” · 창발 Dev 그룹 임현욱(Google Cloud) 발표를 일반 독자용으로 풀어 쓴 칼럼 · 게재되면 링크 추가 · 상세: [2026-11-23 창발 Dev 임현욱 발표 정리 - AI는 왜 거짓말을 할까 by Claude Code.md](videos/2026-11-23%20%EC%B0%BD%EB%B0%9C%20Dev%20%EC%9E%84%ED%98%84%EC%9A%B1%20%EB%B0%9C%ED%91%9C%20%EC%A0%95%EB%A6%AC%20-%20AI%EB%8A%94%20%EC%99%9C%20%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84%20%ED%95%A0%EA%B9%8C%20by%20Claude%20Code.md)
 
 ### 멤버 Product
 - Gobi Space (강민석): https://www.gobispace.com/

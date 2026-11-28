@@ -19,7 +19,7 @@ https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
 
 > 📌 **답변할 때 원칙**: 영상을 언급하면 **반드시 링크를 함께** 준다. 특정 발표를 묻는 질문에는 플레이리스트 링크가 아니라 **그 영상의 개별 링크**를 준다. 아직 공개되지 않은 영상은 「편집 중」이라고 정확히 말한다.
 
-## 영상 전체 목록 (15편 공개)
+## 영상 전체 목록 (16편 공개)
 
 | # | 제목 | 길이 | 회차 | 링크 |
 |---|---|---:|---|---|
@@ -38,8 +38,9 @@ https://www.youtube.com/playlist?list=PLRQGNaa1hGF0_sFgsAFNzy-f1RjD-tgIT
 | 13 | Meet the Builders Lounge AI Agent @Bila AI: Chat, Post, Talk 1:1 & Publish from Your PC with the CLI | 9:38 | 안내 | https://youtu.be/2B93bTmPlHI |
 | 14 | I Built a $4,000 Home AI Server — Control It From Anywhere \| Jin Young Kim × Catch Up AI Co-created | 36:51 | 멤버 소모임 | https://youtu.be/iI2V9Xgh_RE |
 | 15 | 61 Wild Matsutake in One Day Near Seattle's Mt. Rainier — My 2027 Plan to Earn $5,000/Month with AI | 33:29 | 회고 | https://youtu.be/2iklcUm4pUM |
+| 16 | AI는 왜 거짓말을 할까? 답안지까지 훔쳐본 AI, 혼내면 더 숨긴다, 혼낼수록 더 교묘해지는 거짓말 이렇게 막는다 \| Google Cloud 임현욱 · 창발 Dev | 1:11:25 | 창발 Dev 그룹 행사 | https://youtu.be/eFSBzQDO9Q4 |
 
-> 제목은 2026-11-11 유튜브 플레이리스트에 보이는 영어 제목 기준. 플레이리스트에 15편이 모두 들어 있다(11/11 확인).
+> 제목은 2026-11-11 유튜브 플레이리스트에 보이는 영어 제목 기준. 플레이리스트에 15편이 모두 들어 있다(11/11 확인). 16번은 한국어 제목 그대로이며 플레이리스트에 들어 있다(11/27 확인).
 
 > ⚠️ **3차 모임(Coffee Chat)은 영상이 없다.** 카페에서 진행한 비공식 모임이라 녹화하지 않았다.
 
@@ -121,6 +122,9 @@ https://youtu.be/iI2V9Xgh_RE
 | **Vibe coding made building easy. So why does nobody use what I built?** | 5:18 | 위와 같은 주제의 짧은 버전 | https://youtu.be/AHsVMXCbQYk |
 | **@Bila AI 사용법 안내** — 온라인 공간 들어오기 · 채널 질문 · 1:1 · CLI 게시 | 9:38 | 「온라인 공간에 어떻게 들어가나」 「Bila AI 는 어떻게 쓰나」 | https://youtu.be/2B93bTmPlHI |
 | **시애틀 레이니어산 송이밭에서 하루 61개! 숲에서 세운 2027 계획** — 빌더스라운지 6개월 회고 (2026-11-10 공개) | 33:28 | 「Builders Lounge 는 어떻게 시작됐나」 「지난 6개월 돌아보기」 「2027년 방향 · 멤버 프로덕트 홈페이지」 | https://youtu.be/2iklcUm4pUM |
+| **AI는 왜 거짓말을 할까?** — Google Cloud 임현욱 님 창발 Dev 그룹 발표 「코딩 에이전트는 왜 거짓말을 할까?」 (2026-11-23 발표 · 11-27 공개, 한국어 · 영어 자막) | 1:11:25 | 「AI가 다 했다는데 믿어도 되나」 「AI 에이전트가 거짓 보고를 하는 이유와 막는 법」 「AI에게 속지 않는 7가지 습관」 | https://youtu.be/eFSBzQDO9Q4 |
+
+→ 임현욱 님 발표의 내용(4가지 반칙 · 3가지 원인 · 런타임 3축 해법 · 수치 · 질의응답 8개 · 7가지 습관)과 칼럼 링크는 [[Initiatives/Builders Lounge/videos/2026-11-23 창발 Dev 임현욱 발표 정리 - AI는 왜 거짓말을 할까 by Claude Code|임현욱 발표 정리]]에서 답한다. Builders Lounge 공식 모임이 아니라 창발 Dev 그룹 행사라는 점을 밝힌다.
 
 > 💡 **8·9번은 같은 주제의 한/영 쌍**으로 보인다. 「만드는 건 쉬워졌는데 왜 아무도 안 쓰는가」라는 질문은 Builders Lounge 가 **서로의 첫 번째 사용자가 되어 준다**는 방향과 바로 이어지므로, 모임을 소개할 때 함께 걸기 좋다.
 
